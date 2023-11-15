@@ -4,9 +4,7 @@ function signUp(){
     let pass = document.getElementById("pass").value;
     console.log(pass);
 
-
     localStorage.setItem(email, pass);
-
 }
 
 function login(){
@@ -14,7 +12,7 @@ function login(){
     let pass = document.getElementById("pass").value;
 
     if (localStorage.getItem(email)){
-        if (pass === localStorage.getItem(email)){
+        if (pass == localStorage.getItem(email)){
             location.replace("menu.html");
         }
         else{
