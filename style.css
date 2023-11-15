@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.backgroundimg {
+    height:100vh;
+    background-image: url(images/207817-freshly-baked-bread-and-pastries-in-the-window-of-.jpg);
+    background-size: cover;
+    position:relative;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero_title {
+    font-size: 4.5rem;
+}
+.hero_description {
+    font-size: 2rem;
+}
+.hero-text {
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    font-size: larger;
+}
+
+.hero_button{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.hero_button:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+    transform: scale(1.1);
+}
