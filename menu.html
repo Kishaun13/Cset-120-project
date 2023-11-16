@@ -1,22 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
     <link rel="stylesheet" href="menu.css">
-
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Caveat&family=Glass+Antiqua&family=Indie+Flower&family=Lato:wght@100;300;400&family=Shadows+Into+Light&family=Sometype+Mono&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
+    <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
+        <div class="container">
+            <a class="navbar-brand" href="#"> <img src="images/Logo.jpg" alt="logo"> Jean-Claude’s Patisserie's</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="true" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-content">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="logorsignup.html">Log In</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <section id="page">
 
-        <div id="menu"><h1>MENU</h1></div>
+        <div id="menu">
+            <h1>MENU</h1>
+        </div>
     </section>
-    
+
     <div class="Breakfast">
         <div class="b1">
             <img src="https://lamadeleine.com/wp-content/uploads/2019/04/LMD061720_SummerLTODigital_PT004_1rt5.jpg" alt="">
@@ -24,51 +55,52 @@
             <p>Smoked ham & Swiss with garlic cream sauce baked on country bread & topped with a fried egg. Served with wild field & balsamic on the side. Daily before 11am.</p>
             <p>$29</p>
         </div>
-    <div class="b2">
-        <img src="https://lamadeleine.com/wp-content/uploads/2019/02/LMD_101518_MenuItemImageResize_196x274_PT0004-Breakfast-CountryFrenchBfast-Bacon.jpg" alt="">
-        <h3>Big French Breakfast</h3>
-        <p>This Breakfast will make you full for hours. You might even get lunch as well</p>
-        <p>$27</p>
-    </div>
-    <div class="b3">
-        <img src="images/products/fritters.jpeg" alt="">
-        <h3>Fritters</h3>
-        <p>fritter, any of various types of fried foods, generally consisting of small pieces of meat, vegetables, fruit, or dough</p>
-    </div>
-    <div class="">
-        <img src="images/products/mousse.jpeg" alt="">
-        <h3>Mousse cake</h3>
-        <p> This super moist dark chocolate mousse cake combines unsweetened natural cocoa powder and dark cocoa powder for an extra rich flavor.</p>
-        <p>$35</p>
-    </div>
-    <div>
-        <img src="images/products/dessert.jpeg" alt="">
-        <h3>Vanilla cake</h3>
-        <p> With its outstanding vanilla flavor, pillowy soft crumb, and creamy vanilla buttercream, this is truly the best vanilla cake I've ever had.</p>
-        <p>$40</p>
-    </div>
-    <div>
-        <img src="images/products/donut.jpeg" alt="">
-        <h3>Donuts</h3>
-        <p>We are not gonna give three donuts, or two Donuts, but only one donut for 10.99</p>
-        <p>$10.99</p>
-    </div>
-    <div>
-        <img src="images/products/plum-cake.jpeg" alt="">
-        <h3>Plum cake</h3>
-        <p>Very good cake to have if you want to eat your feelings away</p>
-        <p>$25</p>
-    </div>
-    <div>
-        <img src="images/products/rye-bread.jpeg" alt="">
-        <h3>Rye Bread</h3>
-        <p>This is the best rye bread around</p>
-        <p>$14</p>
-    </div>
+        <div class="b2">
+            <img src="https://lamadeleine.com/wp-content/uploads/2019/02/LMD_101518_MenuItemImageResize_196x274_PT0004-Breakfast-CountryFrenchBfast-Bacon.jpg" alt="">
+            <h3>Big French Breakfast</h3>
+            <p>This Breakfast will make you full for hours. You might even get lunch as well</p>
+            <p>$27</p>
+        </div>
+        <div class="b3">
+            <img src="images/products/fritters.jpeg" alt="">
+            <h3>Fritters</h3>
+            <p>fritter, any of various types of fried foods, generally consisting of small pieces of meat, vegetables, fruit, or dough</p>
+        </div>
+        <div class="">
+            <img src="images/products/mousse.jpeg" alt="">
+            <h3>Mousse cake</h3>
+            <p> This super moist dark chocolate mousse cake combines unsweetened natural cocoa powder and dark cocoa powder for an extra rich flavor.</p>
+            <p>$35</p>
+        </div>
+        <div>
+            <img src="images/products/dessert.jpeg" alt="">
+            <h3>Vanilla cake</h3>
+            <p> With its outstanding vanilla flavor, pillowy soft crumb, and creamy vanilla buttercream, this is truly the best vanilla cake I've ever had.</p>
+            <p>$40</p>
+        </div>
+        <div>
+            <img src="images/products/donut.jpeg" alt="">
+            <h3>Donuts</h3>
+            <p>We are not gonna give three donuts, or two Donuts, but only one donut for 10.99</p>
+            <p>$10.99</p>
+        </div>
+        <div>
+            <img src="images/products/plum-cake.jpeg" alt="">
+            <h3>Plum cake</h3>
+            <p>Very good cake to have if you want to eat your feelings away</p>
+            <p>$25</p>
+        </div>
+        <div>
+            <img src="images/products/rye-bread.jpeg" alt="">
+            <h3>Rye Bread</h3>
+            <p>This is the best rye bread around</p>
+            <p>$14</p>
+        </div>
 
     </div>
-=======
-        <div id="menu"><h1>Menu Items</h1></div>
+    <div id="menu">
+        <h1>Menu Items</h1>
+    </div>
     </section>
     <section id="products">
         <div id="products-container" class="items-container">
@@ -90,6 +122,7 @@
         </div>
     </section>
 
-
+    <script src="index.js"></script>
 </body>
+
 </html>
