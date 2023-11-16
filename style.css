@@ -4,7 +4,10 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
+body{
+    background-image: url(images/background/paris.jpeg);
+    background-position: cover;
+}
 .backgroundimg {
     height:100vh;
     background-image: url(images/207817-freshly-baked-bread-and-pastries-in-the-window-of-.jpg);
