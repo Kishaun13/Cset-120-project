@@ -41,8 +41,8 @@ window.onscroll = function() {
     } else {
         header.classList.remove('navbarDark');
     }
-=======
+}
 
-function editMenu(){
+function editMenu() {
     let edit = document.getElementById('')
 }
