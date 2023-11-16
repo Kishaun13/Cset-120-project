@@ -28,9 +28,8 @@ body {
 
 .backgroundimg3 {
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.099), rgba(0, 0, 0, 0.663)), url(images/download\ \(3\).jpg);
     background-size: cover;
-    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.099), rgba(0, 0, 0, 0.663)), url(images/270241-food-bakery-chok-and-barcelona-hd.jpg);
     animation: fadeIn 2s ease-in-out;
 }
 
@@ -65,12 +64,11 @@ body {
 }
 
 .hero_button:hover {
-    background-color: rgb(255, 255, 255);
+    background-color: gold;
     color: rgb(0, 0, 0);
     transition: 0.5s;
     transform: scale(1.1);
 }
-
 
 @keyframes fadeIn {
     from {
@@ -196,7 +194,7 @@ body {
 
 .backgroundimg5 {
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.099), rgba(0, 0, 0, 0.663)), url(images/backgroundimg50.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.099), rgba(0, 0, 0, 0.663)), url(images/258899-trays-at-a-french-bakery-with-pain-au-chocolatpain.jpg);
     background-size: cover;
     position: relative;
     animation: fadeIn 2s ease-in-out;
