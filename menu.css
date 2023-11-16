@@ -10,7 +10,7 @@ html
     color: rgb(172, 118, 36);
 }
 /* @media screen and (max-width: 1440px){
-    will shrink screen and move items when screen sixe is smaller
+
 } */
 
 body{
@@ -24,11 +24,46 @@ body{
 {
     margin-top: 1cm;
     display: flex;
+
+    background-color: antiquewhite;
+    background-image: linear-gradient(rgba(255, 239, 239, 0.099))
     background-color: rgba(250, 235, 215, 0.615);
     width: fit-content;
     margin: 0 auto;
     margin-top: 1cm;
     padding: 1%;
+}
+#menu
+{
+    font-size: 200%;    
+}
+.Breakfast{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.b1{
+    border-color: white;
+    background-color: white;
+    box-sizing: border-box;
+}
+.b1 p{
+    width: 300px;
+    padding: 50px;
+    margin: 20px;
+}
+.b3 img{
+    height: 100px;
+    width: 100px;
+}
+.b2{
+    box-sizing: border-box;
+    display: flex;
+    
+}
+=======
     border-radius: 20px;
 }
 #menu
