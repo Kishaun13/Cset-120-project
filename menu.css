@@ -6,6 +6,7 @@
 }
 html
 {
+    scroll-behavior: smooth;
     font-family: Glass Antiqua;
     color: rgb(172, 118, 36);
 }
@@ -24,49 +25,89 @@ body{
 {
     margin-top: 1cm;
     display: flex;
-
     background-color: antiquewhite;
-    background-image: linear-gradient(rgba(255, 239, 239, 0.099))
-    background-color: rgba(250, 235, 215, 0.615);
-    width: fit-content;
-    margin: 0 auto;
+    background-image: linear-gradient(rgba(255, 239, 239, 0.099));
+    background-color: rgba(250, 235, 215, 0.342);
+    width: 100%;
     margin-top: 1cm;
     padding: 1%;
 }
 #menu
 {
-    font-size: 200%;    
+    display: flex;
+    font-size: 200%;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#every-menu{
+    font-size: 150%;
+    text-align: center;
 }
 .Breakfast{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: center;
+    background-color: rgba(250, 235, 215, 0.492);
+    padding: 2%;
 }
-
+#breakfeast-contain{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
 
 .b1{
     border-color: white;
     background-color: white;
     box-sizing: border-box;
+    text-align: center;
+    padding: 3%;
+    margin: 1%;
 }
 .b1 p{
     width: 300px;
-    padding: 50px;
+    padding: 1%;
     margin: 20px;
 }
-.b3 img{
-    height: 100px;
-    width: 100px;
-}
 .b2{
-    box-sizing: border-box;
-    display: flex;
-    
+    border-color: white;
+    background-color: white;
+    text-align: center;
+    padding: 3%;
+    margin: 1%;
 }
-=======
-    border-radius: 20px;
+.b2 p{
+    width: 300px;
+    padding: 1%;
+    margin: 20px;
 }
-#menu
+.b3{
+    border-color: white;
+    background-color: white;
+    text-align: center;
+    padding: 3%;
+    margin: 1%;
+}
+.b3 p{
+    width: 300px;
+    padding: 1%;
+    margin: 20px;
+}
+#breakfeast-contain a
+{
+color: rgb(174, 107, 20);
+font-size: 150%;
+}
+#breakfeast-contain a:hover
+{
+background-color: rgba(233, 145, 29, 0.542);
+padding: 5%;
+border-radius: 10%;
+}
+
+#menu h1
 {
     font-size: 200%;   
     color: rgb(30, 85, 67); 
@@ -74,6 +115,7 @@ body{
 #products-container
 {
     display: flex;
+    flex-direction: column;
     gap: 20px;
     margin: 1cm;
 }
