@@ -47,11 +47,12 @@ function staffLogin(){
         if(staffPass === localStorage.getItem(staffEmail)){
             location.replace("edit-menu.html")
         }
-        else[
+        else{
             alert("Login Failed")
-        ]
+        }
+            
     }
-
+    }
 const header = document.querySelector('.navbar');
 
 window.onscroll = function() {
