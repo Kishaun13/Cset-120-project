@@ -62,9 +62,14 @@ window.onscroll = function() {
     } else {
         header.classList.remove('navbarDark');
     }
-=======
+}
 
-function editMenu(){
+function editMenu() {
     let edit = document.getElementById('')
+
+}
+
+function contactAlert() {
+    alert("Thank you for contacting us. We will get back to you as soon as possible.");
 
 }
