@@ -4,7 +4,10 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
+body{
+    background-image: url(images/background/paris.jpeg);
+    background-position: cover;
+}
 .backgroundimg {
     height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.099), rgba(0, 0, 0, 0.663)), url(images/207817-freshly-baked-bread-and-pastries-in-the-window-of-.jpg);
@@ -64,6 +67,8 @@
     transition: 0.5s;
     transform: scale(1.1);
 }
+
+=======
 
 @keyframes fadeIn {
     from {
@@ -143,3 +148,4 @@
     font-size: 13px;
     color: #777;
 }
+

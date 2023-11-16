@@ -30,3 +30,7 @@ function login() {
         alert("Login Failed");
     }
 }
+
+function editMenu(){
+    let edit = document.getElementById('')
+}
