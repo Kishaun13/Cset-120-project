@@ -1,3 +1,4 @@
+
 *
 {
     margin: 0;
@@ -53,6 +54,11 @@ body{
     color: rgb(247, 247, 247);
     margin-right: 30px;
 }
+.nav-link img
+{
+    width: 30px;
+    height: auto;
+}
 
 
 
@@ -77,12 +83,8 @@ body{
 }
 #title-menu
 {
-margin-left: 38%;
+justify-content: center;
 font-family: Glass Antiqua;
-}
-#img-icon
-{
-margin-left: 25%;
 }
 #every-menu
 {
@@ -93,6 +95,7 @@ margin-left: 25%;
     padding: 20px;
     font-family: Glass Antiqua;
 }
+
 .Breakfast
 {
     display: flex;
@@ -101,12 +104,20 @@ margin-left: 25%;
     background-color: rgba(250, 235, 215, 0.492);
     padding: 2%;
 }
+
 #breakfeast-contain
 {
     display: flex;
     flex-wrap: wrap;
+    flex-wrap: wrap;
     justify-content: center;
     align-content: center;
+    font-family: Glass Antiqua;
+    color: rgb(174, 107, 20);
+}
+
+.b1
+{
     font-family: Glass Antiqua;
     color: rgb(174, 107, 20);
 }
@@ -122,10 +133,20 @@ margin-left: 25%;
 }
 .b1 p
 {
+.b1 p
+{
     width: 300px;
+    padding: 3%;
     padding: 3%;
     margin: 20px;
 }
+.b2
+{
+    border-color: white;
+    background-color: white;
+    text-align: center;
+    padding: 3%;
+    margin: 1%;
 .b2
 {
     border-color: white;
@@ -142,6 +163,14 @@ margin-left: 25%;
 }
 .b3
 {
+.b2 p
+{
+    width: 300px;
+    padding: 3%;
+    margin: 20px;
+}
+.b3
+{
     border-color: white;
     background-color: white;
     text-align: center;
@@ -150,7 +179,17 @@ margin-left: 25%;
 }
 .b3 p
 {
+.b3 p
+{
     width: 300px;
+    padding: 3%;
+    margin: 20px;
+}
+.b4
+{
+    border-color: white;
+    background-color: white;
+    text-align: center;
     padding: 3%;
     margin: 20px;
 }
@@ -170,9 +209,22 @@ margin-left: 25%;
 }
 .b5
 {
+.b4 p
+{
+    width: 300px;
+    padding: 3%;
+    margin: 1%;
+}
+.b5
+{
     border-color: white;
     background-color: white;
     text-align: center;
+    padding: 1%;
+    margin: 20px;
+}
+.b5 p{
+    width: 300px;
     padding: 1%;
     margin: 20px;
 }
@@ -188,8 +240,23 @@ margin-left: 25%;
     padding: 1%;
     margin: 20px;
 }
+
+.b6{
+    border-color: white;
+    background-color: white;
+    text-align: center;
+    padding: 1%;
+    margin: 20px;
+}
 .b6 p{
     width: 300px;
+    padding: 3%;
+    margin: 1%;
+}
+.b7{
+    border-color: white;
+    background-color: white;
+    text-align: center;
     padding: 3%;
     margin: 1%;
 }
@@ -211,8 +278,9 @@ margin-left: 25%;
 {
 color: rgb(174, 107, 20);
 font-size: 150%;
+border-radius: 20px;
 }
-#breakfeast-contain a:hover
+#breakfeast-contain button:hover
 {
 background-color: rgba(233, 145, 29, 0.542);
 padding: 5%;
@@ -220,16 +288,23 @@ border-radius: 20px;
 }
 
 /* Starting the removable menu items */
+/* Starting the removable menu items */
 #menu h1
 {
     font-family: Glass Antiqua;
+    font-family: Glass Antiqua;
     font-size: 200%;   
-    color: rgb(30, 85, 67); 
+    color: rgb(99, 155, 137); 
 }
+
+    
 #products-container
 {
     font-family: Glass Antiqua;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;

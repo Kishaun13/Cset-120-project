@@ -24,7 +24,8 @@ function login() {
 
     if (localStorage.getItem(email)) {
         if (pass == localStorage.getItem(email)) {
-            location.replace("index.html");
+            location.replace("menu.html");
+            alert("Login Successful");
         } else {
             alert("Login Failed");
         }
@@ -32,27 +33,38 @@ function login() {
         alert("Login Failed");
     }
 }
-function staffSignUp(){
+
+function staffSignUp() {
     let staffEmail = document.getElementById('staffU').value
+    console.log(staffEmail)
     let staffPass = document.getElementById('Staffpass').value
+    console.log(staffPass)
+    if (document.getElementById("staffU").value == "" || document.getElementById("Staffpass").value == "") {
+        alert("Please fill the forms");
+    } else {
+        localStorage.setItem(staffEmail, staffPass);
+        alert("Account Created");
+        location.replace("staff-login.html");
+    }
 
 
     localStorage.setItem(staffEmail, staffPass)
 }
-function staffLogin(){
+
+function staffLogin() {
     let staffEmail = document.getElementById('staffU').value;
     let staffPass = document.getElementById('Staffpass').value;
+    let managerPass = "admin123";
 
-    if(localStorage.getItem(staffEmail)){
-        if(staffPass === localStorage.getItem(staffEmail)){
-            location.replace("edit-menu.html")
+    if (localStorage.getItem(staffEmail)) {
+        if (staffPass === managerPass) {
+            location.replace("edit-menu.html");
+        } else {
+            alert("Login Failed Enter the correct password");
         }
-        else{
-            alert("Login Failed")
-        }
-            
     }
-    }
+}
+
 const header = document.querySelector('.navbar');
 
 window.onscroll = function() {
