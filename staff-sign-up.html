@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
-    <title>Jean-Claude’s Patisserie's</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -42,14 +42,15 @@
             </div>
         </div>
     </nav>
-
-    <section class="backgroundimg" id="home">
+    <section class="backgroundimg3" id="home">
         <div class="container-fluid">
             <div class="row">
                 <div class="hero-text">
-                    <h1 class="hero_title">Jean-Claude’s Patisserie's</h1>
+                    <h1 class="hero_title">Staff Sign up</h1>
                     <p class="hero_description"></p>
-                    <h3>Do you want to <a href="sign-up.html"><button class="hero_button">sign up</button></a> or <a href="login.html"><button class="hero_button">log in</button></a>
+                    Email: <input type="text" id="staffU" required><br> Create Password: <input type="password" id="Staffpass" required><br><br>
+                    <button onclick="staffSignUp()">Sign Up</button> <br><br>
+                    <h3>Already have an account? <a href="staff-login.html"><button class="hero_button">log in</button></a>
                     </h3>
                 </div>
             </div>
@@ -57,13 +58,13 @@
     <section class="footer">
         <div class="social">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/princek_._/"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
             <a href="#"><i class="fab fa-twitter"></i></a>
         </div>
         <ul class="list">
-            <li><a href="about.html">About Us</a>
+            <li><a href="#">About Us</a>
             </li>
-            <li><a href="contact.html">Contact Us</a>
+            <li><a href="#">Contact Us</a>
             </li>
             <li><a href="#">Privacy Policy</a>
             </li>
@@ -73,10 +74,15 @@
         <p class="copyright">
             Jean-Claude’s Patisserie's © 2021
         </p>
+
     </section>
+
 
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     <script src="index.js"></script>
+
+
+
 </body>
 
 </html>

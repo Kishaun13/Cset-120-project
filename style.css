@@ -2,12 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
-body{
+
+body {
     background-image: url(images/background/paris.jpeg);
     background-position: cover;
+    font-family: Glass Antiqua;
 }
+
 .backgroundimg {
     height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.099), rgba(0, 0, 0, 0.663)), url(images/207817-freshly-baked-bread-and-pastries-in-the-window-of-.jpg);
@@ -26,14 +28,14 @@ body{
 
 .backgroundimg3 {
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.099), rgba(0, 0, 0, 0.663)), url(images/download\ \(3\).jpg);
     background-size: cover;
-    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.099), rgba(0, 0, 0, 0.663)), url(images/270241-food-bakery-chok-and-barcelona-hd.jpg);
     animation: fadeIn 2s ease-in-out;
 }
 
 .hero_title {
     font-size: 4.5rem;
+    font-weight: bold;
 }
 
 .hero_description {
@@ -62,13 +64,11 @@ body{
 }
 
 .hero_button:hover {
-    background-color: rgb(255, 255, 255);
+    background-color: gold;
     color: rgb(0, 0, 0);
     transition: 0.5s;
     transform: scale(1.1);
 }
-
-
 
 @keyframes fadeIn {
     from {
@@ -137,7 +137,7 @@ body{
 }
 
 .footer ul li:hover {
-    opacity: 1;
+    background-color: gold;
 }
 
 .footer .copyright {
@@ -148,7 +148,6 @@ body{
     font-size: 13px;
     color: #777;
 }
-
 
 .navbar a {
     color: black
@@ -180,3 +179,46 @@ body{
     margin-right: 30px;
 }
 
+.contact {
+    padding: 50px 0;
+    padding-top: 100px;
+}
+
+.backgroundimg4 {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.099), rgba(0, 0, 0, 0.663)), url(images/background4.jpg);
+    background-size: cover;
+    position: relative;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.backgroundimg5 {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.099), rgba(0, 0, 0, 0.663)), url(images/258899-trays-at-a-french-bakery-with-pain-au-chocolatpain.jpg);
+    background-size: cover;
+    position: relative;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.row img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding-top: 10px;
+}
+
+.row img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.gallery {
+    padding: 50px 0;
+}
