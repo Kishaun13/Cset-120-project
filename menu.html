@@ -45,6 +45,11 @@
                     <li class="nav-item">
                         <a class="nav-link" href="staff-sign-up.html">Staff</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cart-container">
+                            <img src="images/icons/icons8-basket-48.png" alt="cart">
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -55,7 +60,6 @@
     <section id="page">
         <div id="menu">
             <div id="title-menu"><h1>MENU</h1></div>
-            <div id="img-icon"><a href="#cart"><img width="40px" src="images/icons/icons8-basket-48.png" alt="cart"></a></div>
         </div>
     </section>
     <br><br><br><br>
@@ -65,54 +69,68 @@
 
     <div class="Breakfast">
         <div id="breakfeast-contain">
-            <div class="b1">
-                <img width="200" src="https://lamadeleine.com/wp-content/uploads/2019/04/LMD061720_SummerLTODigital_PT004_1rt5.jpg" alt="">
-                <h3>Croque Madame</h3>
-                <p>Smoked ham & Swiss with garlic cream sauce baked on country bread & topped with a fried egg. Served with wild field & balsamic on the side. Daily before 11am.</p>
-                <p>$29</p>
-                <a href="" onclick="" style="text-decoration: none;">Add to Order</a>
+            <div class="b1 product-item">
+                <img class="product-img" width="200" src="https://lamadeleine.com/wp-content/uploads/2019/04/LMD061720_SummerLTODigital_PT004_1rt5.jpg" alt="">
+                <h3 class="product-title">Croque Madame</h3>
+                <div class="products-item-details">
+                    <p>Smoked ham & Swiss with garlic cream sauce baked on country bread & topped with a fried egg. Served with wild field & balsamic on the side. Daily before 11am.</p>
+                    <p class="product-price">$29</p>
+                    <button class="btn prime-btn product-btn">Add to Order</button>
+                </div>
             </div>
-            <div class="b2">
-                <img width="200" src="https://lamadeleine.com/wp-content/uploads/2019/02/LMD_101518_MenuItemImageResize_196x274_PT0004-Breakfast-CountryFrenchBfast-Bacon.jpg" alt="">
-                <h3>Big French Breakfast</h3>
-                <p>This Breakfast will make you full for hours. You might even get lunch as well.</p>
-                <p>$27</p>
-                <a href="" onclick="" style="text-decoration: none;">Add to Order</a>
+            <div class="b2 product-item">
+                <img class="product-img" width="200" src="https://lamadeleine.com/wp-content/uploads/2019/02/LMD_101518_MenuItemImageResize_196x274_PT0004-Breakfast-CountryFrenchBfast-Bacon.jpg" alt="">
+                <h3 class="product-title">Big French Breakfast</h3>
+                <div class="products-item-details">
+                    <p>This Breakfast will make you full for hours. You might even get lunch as well.</p>
+                    <p class="product-price">$27</p>
+                    <button class="btn prime-btn product-btn">Add to Order</button>
+                </div>
             </div>
-            <div class="b3">
-                <img width="200" src="images/products/fritters.jpeg" alt="">
-                <h3>Fritters</h3>
-                <p>fritter, any of various types of fried foods, generally consisting of small pieces of meat, vegetables, fruit, or dough.</p>
-                <p>$15</p>
-                <a href="" onclick="" style="text-decoration: none;">Add to Order</a>
+            <div class="b3 product-item">
+                <img class="product-img" width="200" src="images/products/fritters.jpeg" alt="">
+                <h3 class="product-title">Fritters</h3>
+                <div class="products-item-details">
+                    <p>fritter, any of various types of fried foods, generally consisting of small pieces of meat, vegetables, fruit, or dough.</p>
+                    <p class="product-price">$15</p>
+                    <button class="btn prime-btn product-btn">Add to Order</button>
+                </div>
             </div>
-            <div class="b4">
-                <img width="200" src="images/products/mousse.jpeg" alt="">
-                <h3>Mousse</h3>
-                <p> This super moist dark chocolate mousse combines unsweetened natural cocoa powder and dark cocoa powder for an extra rich flavor.</p>
-                <p>$35.00</p>
-                <a href="" onclick="" style="text-decoration: none;">Add to Order</a>
+            <div class="b4 product-item">
+                <img class="product-img" width="200" src="images/products/mousse.jpeg" alt="">
+                <h3 class="product-title">Mousse</h3>
+                <div class="products-item-details">
+                    <p> This super moist dark chocolate mousse combines unsweetened natural cocoa powder and dark cocoa powder for an extra rich flavor.</p>
+                    <p class="product-price">$35.00</p>
+                    <button class="btn prime-btn product-btn">Add to Order</button>
+                </div>
             </div>
-            <div class="b5">
-                <img width="200" src="images/products/cheese-cake-2.jpeg" alt="">
-                <h3>Vanilla Cheesecake</h3>
-                <p> With its outstanding vanilla flavor, pillowy soft crumb, and creamy vanilla buttercream, this is truly the best vanilla cheesecake I've ever had.</p>
-                <p>$40.00</p>
-                <a href="" onclick="" style="text-decoration: none;">Add to Order</a>
+            <div class="b5 product-item">
+                <img class="product-img" width="200" src="images/products/cheese-cake-2.jpeg" alt="">
+                <h3 class="product-title">Vanilla Cheesecake</h3>
+                <div class="products-item-details">
+                    <p> With its outstanding vanilla flavor, pillowy soft crumb, and creamy vanilla buttercream, this is truly the best vanilla cheesecake I've ever had.</p>
+                    <p class="product-price">$40.00</p>
+                    <button class="btn prime-btn product-btn">Add to Order</button>
+                </div>
             </div>
-            <div class="b6">
-                <img width="200" src="images/products/donut.jpeg" alt="">
-                <h3>Donuts</h3>
-                <p>We are not gonna give three donuts, or two Donuts, but only one donut for 10.99 and its topped with freshly picked strawberries.</p>
-                <p>$10.99</p>
-                <a href="" onclick="" style="text-decoration: none;">Add to Order</a>
+            <div class="b6 product-item">
+                <img class="product-img" width="200" src="images/products/donut.jpeg" alt="">
+                <h3 class="product-title">Donuts</h3>
+                <div class="products-item-details">
+                    <p>We are not gonna give three donuts, or two Donuts, but only one donut for 10.99 and its topped with freshly picked strawberries.</p>
+                    <p class="product-price">$10.99</p>
+                    <button class="btn prime-btn product-btn">Add to Order</button>
+                </div>
             </div>
-            <div class="b7">
-                <img width="200" src="images/products/plum-cake.jpeg" alt="">
-                <h3>Plum cake</h3>
-                <p>Very good cake to have if you want to eat your feelings away. Taste's especially nice on a rainy day after your mother's funeral.</p>
-                <p>$25.00</p>
-                <a href="" onclick="" style="text-decoration: none;">Add to Order</a>
+            <div class="b7  product-item">
+                <img class="product-img" width="200" src="images/products/plum-cake.jpeg" alt="">
+                <h3 class="product-title">Plum cake</h3>
+                <div class="products-item-details">
+                    <p>Very good cake to have if you want to eat your feelings away. Taste's especially nice on a rainy day after your mother's funeral.</p>
+                    <p class="product-price">$25.00</p>
+                    <button class="btn prime-btn product-btn">Add to Order</button>
+                </div>
             </div>
         </div>
     </div><br><br><br><br><br>
@@ -122,106 +140,162 @@
 
     <section id="products">
         <div id="products-container" class="items-container">
-                <div class="item product-bread"><img width="200" src="images/products/bagel.jpeg" alt="" srcset="">
-                    <h3>Bagels</h3>
-                    <p>Made fresh on Location: toasted and smothered with homemade creamcheese.</p>
-                    <p>$4.00</p>
-                    <a href="" onclick="" style="text-decoration: none;">Add to Order</a>
+                <div class="item product-item">
+                    <img class="product-img" width="200" src="images/products/bagel.jpeg" alt="" srcset="">
+                    <h3 class="product-title">Bagels</h3>
+                    <div class="products-item-details">
+                        <p>Made fresh on Location: toasted and smothered with homemade creamcheese.</p>
+                        <p class="product-price">$4.00</p>
+                        <button class="btn prime-btn product-btn">Add to Order</button>
+                    </div>
                 </div>
-                <div class="item product-bread"><img width="200" src="images/products/rye-bread-2.jpeg" alt="" srcset="">
-                    <h3>Fresh Rye Bread</h3>
-                    <p>Made fresh on Location. Whole loaf can come sliced upon request.</p>
-                    <p>$12.00</p>
-                    <a href="" onclick="" style="text-decoration: none;">Add to Order</a>
+                <div class="item product-item">
+                    <img class="product-img" width="200" src="images/products/rye-bread-2.jpeg" alt="" srcset="">
+                    <h3 class="product-title">Fresh Rye Bread</h3>
+                    <div class="products-item-details">
+                        <p>Made fresh on Location. Whole loaf can come sliced upon request.</p>
+                        <p class="product-price">$12.00</p>
+                        <button class="btn prime-btn product-btn">Add to Order</button>
+                    </div>
                 </div>
-                <div class="item product-beverage"><img width="200" src="images/products/affogato-el-cafe.jpeg" alt="">
-                    <h3>Affogato el Cafe</h3>
-                    <p>Made by pouring expresso from freshly ground coffe beans over two scoops of vanilla icecream.</p>
-                    <p>$4.00</p>
-                    <a href="" onclick="" style="text-decoration: none;">Add to Order</a>
+                <div class="item product-item">
+                    <img class="product-img" width="200" src="images/products/affogato-el-cafe.jpeg" alt="">
+                    <h3 class="product-title">Affogato el Cafe</h3>
+                    <div class="products-item-details">
+                        <p>Made by pouring expresso from freshly ground coffe beans over two scoops of vanilla icecream.</p>
+                        <p class="product-price">$4.00</p>
+                        <button class="btn prime-btn product-btn">Add to Order</button>
+                    </div>
                 </div>
-                <div class="item product-beverage"><img width="200" src="images/products/beverage.jpeg" alt="">
-                    <h3>Frozen Cappuccino</h3>
-                    <p>Double blended with ice and topped with whipped cream and caramel.</p>
-                    <p>$12.00</p>
-                    <a href="" onclick="" style="text-decoration: none;">Add to Order</a>
+                <div class="item product-item">
+                    <img class="product-img" width="200" src="images/products/beverage.jpeg" alt="">
+                    <h3 class="product-title">Frozen Cappuccino</h3>
+                    <div class="products-item-details">
+                        <p>Double blended with ice and topped with whipped cream and caramel.</p>
+                        <p class="product-price">$12.00</p>
+                        <button class="btn prime-btn product-btn">Add to Order</button>
+                    </div>
                 </div>
-                <div class="item product-beverage"><img width="200" src="images/products/cappuccino.jpeg" alt="" srcset="">
-                    <h3>Cappuccino</h3>
-                    <p>Hot shot of expresso with steamed milk and topped with a sweet milk foam.</p>
-                    <p>$9.00</p>
-                    <a href="" onclick="" style="text-decoration: none;">Add to Order</a>
+                <div class="item product-item">
+                    <img class="product-img" width="200" src="images/products/cappuccino.jpeg" alt="" srcset="">
+                    <h3 class="product-title">Cappuccino</h3>
+                    <div class="products-item-details">
+                        <p>Hot shot of expresso with steamed milk and topped with a sweet milk foam.</p>
+                        <p class="product-price">$9.00</p>
+                        <button class="btn prime-btn product-btn">Add to Order</button>
+                    </div>
                 </div>
-                <div class="item product-beverage"><img width="200" src="images/products/chamomile-tea.jpeg" alt="" srcset="">
-                    <h3>Chamomile Tea</h3>
-                    <p>Freshly dried Chamomile flower tea optionally sweetened with sugar or honey.</p>
-                    <p>$5.00</p>
-                    <a href="" onclick="" style="text-decoration: none;">Add to Order</a>
+                <div class="item product-item">
+                    <img class="product-img" width="200" src="images/products/chamomile-tea.jpeg" alt="" srcset="">
+                    <h3 class="product-title">Chamomile Tea</h3>
+                    <div class="products-item-details">
+                        <p>Freshly dried Chamomile flower tea optionally sweetened with sugar or honey.</p>
+                        <p class="product-price">$5.00</p>
+                        <button class="btn prime-btn product-btn">Add to Order</button>
+                    </div>
                 </div>
-                <div class="item product-beverage"><img width="200" src="images/products/coffee-milk.jpeg" alt="" srcset="">
-                    <h3>Black Coffee with fresh cream</h3>
-                    <p>Newly toasted coffee beans grounded and made into a nice hotcup of cofee with fresh cream.</p>
-                    <p>$5.00</p>
-                    <a href="" onclick="" style="text-decoration: none;">Add to Order</a>
+                <div class="item product-item">
+                    <img class="product-img" width="200" src="images/products/coffee-milk.jpeg" alt="" srcset="">
+                    <h3 class="product-title">Black Coffee with fresh cream</h3>
+                    <div class="products-item-details">
+                        <p>Newly toasted coffee beans grounded and made into a nice hotcup of cofee with fresh cream.</p>
+                        <p class="product-price">$5.00</p>
+                        <button class="btn prime-btn product-btn">Add to Order</button>
+                    </div>
                 </div>
-                <div class="item product-beverage"><img width="200" src="images/products/french-press.jpeg" alt="">
-                    <h3>Black Coffee French Press</h3>
-                    <p>Freshly toasted and ground coffee beans with two-three cups of coffee inside the french press.</p>
-                    <p>$12.00</p>
-                    <a href="" onclick="" style="text-decoration: none;">Add to Order</a>
+                <div class="item product-item">
+                    <img class="product-img" width="200" src="images/products/french-press.jpeg" alt="">
+                    <h3 class="product-title">Black Coffee French Press</h3>
+                    <div class="products-item-details">
+                        <p>Freshly toasted and ground coffee beans with two-three cups of coffee inside the french press. Coffee box for to-go orders.</p>
+                        <p class="product-price">$12.00</p>
+                        <button class="btn prime-btn product-btn">Add to Order</button>
+                    </div>
                 </div>
-                <div class="item product-beverage"><img width="200" src="images/products/expresso.jpeg" alt="" srcset="">
-                    <h3>Expresso Shot</h3>
-                    <p>A single shot of expresso.</p>
-                    <p>$7.49</p>
-                    <a href="" onclick="" style="text-decoration: none;">Add to Order</a>
+                <div class="item product-item">
+                    <img class="product-img" width="200" src="images/products/expresso.jpeg" alt="" srcset="">
+                    <h3 class="product-title">Expresso Shot</h3>
+                    <div class="products-item-details">
+                        <p>A single shot of expresso.</p>
+                        <p class="product-price">$7.49</p>
+                        <button class="btn prime-btn product-btn">Add to Order</button>
+                    </div>
                 </div>
 
-                <div class="item product-dessert"><img width="200" src="images/products/cream-puff2.jpeg" alt="" srcset="">
-                    <h3>Cream-Puff</h3>
-                    <p>A single cream puff with freshly whipped cream and strawberries from the local market.</p>
-                    <p>$5.49</p>
-                    <a href="" onclick="" style="text-decoration: none;">Add to Order</a>
+                <div class="item product-item">
+                    <img class="product-img" width="200" src="images/products/cream-puff2.jpeg" alt="" srcset="">
+                    <h3 class="product-title">Cream-Puff</h3>
+                    <div class="products-item-details"> 
+                        <p>A single cream puff with freshly whipped cream and strawberries from the local market.</p>
+                        <p class="product-price">$5.49</p>
+                        <button class="btn prime-btn product-btn">Add to Order</button>
+                    </div>
                 </div>
-                <div class="item product-dessert"><img width="200" src="images/products/apple-strudel.jpeg" alt="" srcset="">
-                    <h3>Apple Strudel</h3>
-                    <p>Apple strudel is a traditional Viennese strudel, a popular pastry in Austria, Bavaria, the Czech Republic, Northern Italy, Slovenia, Croatia, and other countries in Europe.</p>
-                    <p>$14.49</p>
-                    <a href="" onclick="" style="text-decoration: none;">Add to Order</a>
+                <div class="item product-item">
+                    <img class="product-img" width="200" src="images/products/apple-strudel.jpeg" alt="" srcset="">
+                    <h3 class="product-title">Apple Strudel</h3>
+                    <div class="products-item-details">
+                        <p>Apple strudel is a traditional Viennese strudel, a popular pastry in Austria, Bavaria, the Czech Republic, Northern Italy, Slovenia, Croatia, and other countries in Europe.</p>
+                        <p class="product-price">$14.49</p>
+                        <button class="btn prime-btn product-btn">Add to Order</button>
+                    </div>
                 </div>
-                <div class="item product-dessert"><img width="200" src="images/products/cup-cakes-2.jpeg" alt="" srcset="">
-                    <h3>Cupcake</h3>
-                    <p>A single cupcake waiting to be eaten.</p>
-                    <p>$5.49</p>
-                    <a href="" onclick="" style="text-decoration: none;">Add to Order</a>
+                <div class="item product-item">
+                    <img class="product-img" class="product-img" width="200" src="images/products/cup-cakes-2.jpeg" alt="" srcset="">
+                    <h3 class="product-title">Cupcake</h3>
+                    <div class="products-item-details">
+                        <p>A single cupcake waiting to be eaten.</p>
+                        <p class="product-price">$5.49</p>
+                        <button class="btn prime-btn product-btn">Add to Order</button>
+                    </div>
                 </div>
-                <div class="item product-dessert"><img width="200" src="images/products/tart-coco2.jpeg" alt="" srcset="">
-                    <h3>Chocolate Tart</h3>
-                    <p>A single Chocolate tart with fresh chocolate cream and candied raspberries.</p>
-                    <p>$9.99</p>
-                    <a href="" onclick="" style="text-decoration: none;">Add to Order</a>
+                <div class="item product-item">
+                    <img class="product-img" width="200" src="images/products/tart-coco2.jpeg" alt="" srcset="">
+                    <h3 class="product-title">Chocolate Tart</h3>
+                    <div class="products-item-details">
+                        <p>A single Chocolate tart with fresh chocolate cream and candied raspberries.</p>
+                        <p class="product-price">$9.99</p>
+                        <button class="btn prime-btn product-btn">Add to Order</button>
+                    </div>
                 </div>
-                <div class="item product-dessert"><img width="200" src="images/products/macaroons.jpeg" alt="" srcset="">
-                    <h3>Macaroons</h3>
-                    <p>Eight maccaroons with strawberry filling per order.</p>
-                    <p>$34.49</p>
-                    <a href="" onclick="" style="text-decoration: none;">Add to Order</a>
+                <div class="item product-item">
+                    <img class="product-img" width="200" src="images/products/macaroons.jpeg" alt="" srcset="">
+                    <h3 class="product-title">Macaroons</h3>
+                    <div class="products-item-details">
+                        <p>Eight maccaroons with strawberry filling per order.</p>
+                        <p class="product-price">$34.49</p>
+                        <button class="btn prime-btn product-btn">Add to Order</button>
+                    </div>
                 </div>
-                <div class="item product-dessert"><img width="200" src="images/products/meringue.jpeg" alt="" srcset="">
-                    <h3>Meringue cookies</h3>
-                    <p>Light and fluffly little crisps that melt away on the tongue. Pack of 24 per order.</p>
-                    <p>$29.99</p>
-                    <a href="" onclick="" style="text-decoration: none;">Add to Order</a>
+                <div class="item product-item">
+                    <img class="product-img" width="200" src="images/products/meringue.jpeg" alt="" srcset="">
+                    <h3 class="product-title">Meringue cookies</h3>
+                    <div class="products-item-details">
+                        <p>Light and fluffly little crisps that melt away on the tongue. Pack of 24 per order.</p>
+                        <p class="product-price">$29.99</p>
+                        <button class="btn prime-btn product-btn">Add to Order</button>
+                    </div>
                 </div>
         </div>
     </section>
 
-    <section id="cart">
+    <section id="cart-container">
         <div id="cart-header"><h1>~ Cart Order ~</h1></div>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">Item</span>
+            <span class="cart-price cart-header cart-column">Price</span>
+            <span class="cart-quantity cart-header cart-column">Quantity</span>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total:</strong>
+            <span class="cart-total-price">$0</span>
+        </div>
         <br><br><br><br>
         <div class="buttons">
-            <div id="clear"><button onclick="">Clear Order</button></div>
-            <div id="checkout"><button onclick="">Purchase Order</button></div>
+            <div id="clear"><button onclick="" class="btn prime-btn btn-clear">Clear Order</button></div>
+            <div id="checkout"><button onclick="" class="btn prime-btn btn-purchase">Purchase Order</button></div>
         </div>
         <br>
     </section>
