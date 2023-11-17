@@ -177,6 +177,11 @@ body {
     transition: 0.5s;
 }
 
+.navbarScroll.navbarDark .nav-link:hover {
+    color: gold;
+    transition: 0.5s;
+}
+
 .navbar-brand {
     font-size: 2rem;
     font-weight: bold;
