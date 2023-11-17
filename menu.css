@@ -1,53 +1,67 @@
-* {
+*
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-
-html {
-
 html
 {
     scroll-behavior: smooth;
-
     font-family: Glass Antiqua;
     color: rgb(172, 118, 36);
 }
-
-
-/* @media screen and (max-width: 1440px){
+/* @media screen and (max-width: 1440px){ should figure out how this works
 
 } */
 
-body {
+body{
     background-image: linear-gradient(rgba(0, 0, 0, 0.099), rgba(0, 0, 0, 0.86)), url(images/background/paris.jpeg);
     height: 100vh;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: Glass Antiqua;
+}
+/* MENU BAR */
+.navbar a {
+    color: black;
+    font-family: Glass Antiqua;
 }
 
-#page {
+.navbar a:hover {
+    color: gold;
+    font-family: Glass Antiqua;
+}
+
+.navbar img {
+    width: 100px;
+    height: 100px;
+}
+
+.navbarScroll.navbarDark{
+    background-color: white;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+.nav-link {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(247, 247, 247);
+    margin-right: 30px;
+}
+
+
+
+
+#page
+{
     margin-top: 1cm;
-    display: flex;
+    /* display: flex; */
     background-color: antiquewhite;
-
-    background-image: linear-gradient(rgba(255, 239, 239, 0.099));
-    background-color: rgba(250, 235, 215, 0.615);
-=======
-
-    background-image: linear-gradient(rgba(255, 239, 239, 0.099)) background-color: rgba(250, 235, 215, 0.615);
-
-    width: fit-content;
-    margin: 0 auto;
-    margin-top: 1cm;
-    padding: 1%;
-}
-
-#menu {
-    font-size: 200%;
-
     background-image: linear-gradient(rgba(255, 239, 239, 0.099));
     background-color: rgba(250, 235, 215, 0.342);
     width: 100%;
@@ -57,35 +71,48 @@ body {
 #menu
 {
     display: flex;
+    justify-content: space-evenly;
     font-size: 200%;
     align-items: center;
-    margin: 0 auto;
 }
-
-#every-menu{
+#title-menu
+{
+margin-left: 38%;
+font-family: Glass Antiqua;
+}
+#img-icon
+{
+margin-left: 25%;
+}
+#every-menu
+{
+    color: rgb(30, 85, 67); 
     font-size: 150%;
+    background-color: rgba(250, 235, 215, 0.492);
     text-align: center;
-
+    padding: 20px;
+    font-family: Glass Antiqua;
 }
-
-.Breakfast {
+.Breakfast
+{
     display: flex;
     flex-direction: row;
     justify-content: center;
     background-color: rgba(250, 235, 215, 0.492);
     padding: 2%;
 }
-#breakfeast-contain{
+#breakfeast-contain
+{
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-content: center;
+    font-family: Glass Antiqua;
+    color: rgb(174, 107, 20);
 }
 
-
-
-.b1{
-
+.b1
+{
     border-color: white;
     background-color: white;
     box-sizing: border-box;
@@ -93,60 +120,93 @@ body {
     padding: 3%;
     margin: 1%;
 }
-
-.b1 p {
+.b1 p
+{
     width: 300px;
-    padding: 1%;
+    padding: 3%;
     margin: 20px;
 }
-
-
-.b3 img {
-    height: 100px;
-    width: 100px;
-}
-
-.b2 {
-    box-sizing: border-box;
-    display: flex;
-}
-
-
-
-#menu
-
-.b2 img {
-    border-radius: 20px;
-}
-
-#menu {
-    font-size: 200%;
-    color: rgb(30, 85, 67);
-
-.b2{
+.b2
+{
     border-color: white;
     background-color: white;
     text-align: center;
     padding: 3%;
     margin: 1%;
 }
-.b2 p{
+.b2 p
+{
     width: 300px;
-    padding: 1%;
+    padding: 3%;
     margin: 20px;
 }
-.b3{
+.b3
+{
     border-color: white;
     background-color: white;
     text-align: center;
     padding: 3%;
     margin: 1%;
 }
-.b3 p{
+.b3 p
+{
     width: 300px;
+    padding: 3%;
+    margin: 20px;
+}
+.b4
+{
+    border-color: white;
+    background-color: white;
+    text-align: center;
     padding: 1%;
     margin: 20px;
 }
+.b4 p
+{
+    width: 300px;
+    padding: 3%;
+    margin: 1%;
+}
+.b5
+{
+    border-color: white;
+    background-color: white;
+    text-align: center;
+    padding: 1%;
+    margin: 20px;
+}
+.b5 p{
+    width: 300px;
+    padding: 3%;
+    margin: 1%;
+}
+.b6{
+    border-color: white;
+    background-color: white;
+    text-align: center;
+    padding: 1%;
+    margin: 20px;
+}
+.b6 p{
+    width: 300px;
+    padding: 3%;
+    margin: 1%;
+}
+.b7{
+    border-color: white;
+    background-color: white;
+    text-align: center;
+    padding: 1%;
+    margin: 20px;
+}
+.b7 p{
+    width: 300px;
+    padding: 3%;
+    margin: 1%;
+}
+
+/* add to cart buttons/links */
 #breakfeast-contain a
 {
 color: rgb(174, 107, 20);
@@ -156,18 +216,161 @@ font-size: 150%;
 {
 background-color: rgba(233, 145, 29, 0.542);
 padding: 5%;
-border-radius: 10%;
+border-radius: 20px;
 }
 
+/* Starting the removable menu items */
 #menu h1
 {
+    font-family: Glass Antiqua;
     font-size: 200%;   
     color: rgb(30, 85, 67); 
 }
-
-#products-container {
+#products-container
+{
+    font-family: Glass Antiqua;
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
     margin: 1cm;
+}
+.item
+{
+    border-color: white;
+    background-color: white;
+    text-align: center;
+    padding: 1%;
+    margin: 1%;
+}
+.item p
+{
+    width: 300px;
+    padding: 1%;
+    margin: 10px;
+}
+.item a
+{
+color: rgb(174, 107, 20);
+font-size: 150%;
+}
+.item a:hover
+{
+background-color: rgba(233, 145, 29, 0.542);
+padding: 3%;
+border-radius: 20px;
+}
+
+
+/* This starts the order/CART */
+#cart
+{
+    background-color: bisque;
+    font-family: Glass Antiqua;
+    justify-content: center;
+}
+#cart-header
+{
+    font-size: 200%;
+    display: flex;
+    justify-content: center;
+}
+.buttons
+{
+    display: flex;
+    justify-content: center;
+}
+#clear button
+{
+    padding: 2%;
+    width: 200px;
+    margin-right: 20px;
+    border-radius: 20px;
+}
+#clear button:hover
+{
+ background-color: #777;
+ color: blanchedalmond;
+}
+#checkout button
+{
+    padding: 2%;
+    width: 200px;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+#checkout button:hover
+{
+ background-color: #777;
+ color: blanchedalmond;
+}
+
+
+
+
+
+/* FOOTER */
+
+
+.footer {
+    font-family: Glass Antiqua;
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+.footer .social {
+    text-align: center;
+    padding-bottom: 30px;
+    color: 4b4c4d;
+}
+
+.footer .social a {
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid #ddd;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    border: none;
+    margin: 0 10px;
+    opacity: 0.75;
+}
+
+.footer .social a:hover {
+    opacity: 1;
+}
+
+.footer ul {
+    margin: top 0;
+    padding: 0;
+    list-style: none;
+    font-size: 19px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: .8;
+}
+
+.footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer ul li:hover {
+    background-color: gold;
+}
+
+.footer .copyright {
+    text-align: center;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+    font-size: 13px;
+    color: #777;
 }
