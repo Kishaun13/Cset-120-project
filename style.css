@@ -38,11 +38,14 @@ body {
     font-size: 4.5rem;
     font-weight: bold;
     font-family: Glass Antiqua;
+    color: rgb(17, 229, 162);
+    padding-top: 200px;
 }
 
 .hero_description {
     font-size: 2rem;
     font-family: Glass Antiqua;
+    color: white;
 }
 
 .hero-text {
@@ -166,6 +169,7 @@ body {
 
 .navbar a:hover {
     color: gold;
+    ;
 }
 
 .navbar img {
