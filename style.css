@@ -6,7 +6,7 @@
 
 body {
     background-image: url(images/background/paris.jpeg);
-    background-position: cover;
+    background-position: fill;
     font-family: Glass Antiqua;
 }
 
@@ -16,6 +16,7 @@ body {
     background-size: cover;
     position: relative;
     animation: fadeIn 2s ease-in-out;
+    font-family: Glass Antiqua;
 }
 
 .backgroundimg2 {
@@ -36,10 +37,12 @@ body {
 .hero_title {
     font-size: 4.5rem;
     font-weight: bold;
+    font-family: Glass Antiqua;
 }
 
 .hero_description {
     font-size: 2rem;
+    font-family: Glass Antiqua;
 }
 
 .hero-text {
@@ -50,6 +53,7 @@ body {
     transform: translate(-50%, -50%);
     color: rgb(255, 255, 255);
     font-size: larger;
+    font-family: Glass Antiqua;
 }
 
 .hero_button {
@@ -61,6 +65,7 @@ body {
     font-size: 1.2rem;
     cursor: pointer;
     transition: 0.5s;
+    font-family: Glass Antiqua;
 }
 
 .hero_button:hover {
@@ -85,17 +90,20 @@ body {
     transform: translate(-50%, -50%);
     position: absolute;
     text-align: center;
+    font-family: Glass Antiqua;
 }
 
 .footer {
     padding: 40px 0;
     background-color: #fff;
+    font-family: Glass Antiqua;
 }
 
 .footer .social {
     text-align: center;
     padding-bottom: 30px;
     color: 4b4c4d;
+    font-family: Glass Antiqua;
 }
 
 .footer .social a {
@@ -109,6 +117,7 @@ body {
     border: none;
     margin: 0 10px;
     opacity: 0.75;
+    font-family: Glass Antiqua;
 }
 
 .footer .social a:hover {
@@ -147,10 +156,12 @@ body {
     border-top: 1px solid #ddd;
     font-size: 13px;
     color: #777;
+    font-family: Glass Antiqua;
 }
 
 .navbar a {
-    color: black
+    color: white;
+    font-family: Glass Antiqua;
 }
 
 .navbar a:hover {
@@ -164,12 +175,29 @@ body {
 
 .navbarScroll.navbarDark {
     background-color: white;
+    transition: 0.5s;
+}
+
+.navbarScroll.navbarDark .navbar-brand {
+    color: black;
+    transition: 0.5s;
+}
+
+.navbarScroll.navbarDark .nav-link {
+    color: black;
+    transition: 0.5s;
+}
+
+.navbarScroll.navbarDark .nav-link:hover {
+    color: gold;
+    transition: 0.5s;
 }
 
 .navbar-brand {
     font-size: 2rem;
     font-weight: bold;
     color: white;
+    font-family: Glass Antiqua;
 }
 
 .nav-link {
@@ -177,11 +205,13 @@ body {
     font-weight: bold;
     color: rgb(247, 247, 247);
     margin-right: 30px;
+    font-family: Glass Antiqua;
 }
 
 .contact {
     padding: 50px 0;
     padding-top: 100px;
+    font-family: Glass Antiqua;
 }
 
 .backgroundimg4 {
@@ -221,4 +251,9 @@ body {
 
 .gallery {
     padding: 50px 0;
+    font-family: Glass Antiqua;
+}
+
+.gallery .col-md-4 {
+    padding: 15px;
 }
