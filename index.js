@@ -59,9 +59,10 @@ function staffLogin() {
     if (localStorage.getItem(staffEmail)) {
         if (staffPass === localStorage.getItem(staffEmail)) {
             location.replace("edit-menu.html")
-        } else [
+        } else {
             alert("Login Failed")
-        ]
+        }
+
     }
 }
 
