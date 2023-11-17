@@ -1,3 +1,4 @@
+
 *
 {
     margin: 0;
@@ -94,6 +95,7 @@ font-family: Glass Antiqua;
     padding: 20px;
     font-family: Glass Antiqua;
 }
+
 .Breakfast
 {
     display: flex;
@@ -102,12 +104,20 @@ font-family: Glass Antiqua;
     background-color: rgba(250, 235, 215, 0.492);
     padding: 2%;
 }
+
 #breakfeast-contain
 {
     display: flex;
     flex-wrap: wrap;
+    flex-wrap: wrap;
     justify-content: center;
     align-content: center;
+    font-family: Glass Antiqua;
+    color: rgb(174, 107, 20);
+}
+
+.b1
+{
     font-family: Glass Antiqua;
     color: rgb(174, 107, 20);
 }
@@ -123,10 +133,20 @@ font-family: Glass Antiqua;
 }
 .b1 p
 {
+.b1 p
+{
     width: 300px;
+    padding: 3%;
     padding: 3%;
     margin: 20px;
 }
+.b2
+{
+    border-color: white;
+    background-color: white;
+    text-align: center;
+    padding: 3%;
+    margin: 1%;
 .b2
 {
     border-color: white;
@@ -143,6 +163,14 @@ font-family: Glass Antiqua;
 }
 .b3
 {
+.b2 p
+{
+    width: 300px;
+    padding: 3%;
+    margin: 20px;
+}
+.b3
+{
     border-color: white;
     background-color: white;
     text-align: center;
@@ -151,7 +179,17 @@ font-family: Glass Antiqua;
 }
 .b3 p
 {
+.b3 p
+{
     width: 300px;
+    padding: 3%;
+    margin: 20px;
+}
+.b4
+{
+    border-color: white;
+    background-color: white;
+    text-align: center;
     padding: 3%;
     margin: 20px;
 }
@@ -171,9 +209,22 @@ font-family: Glass Antiqua;
 }
 .b5
 {
+.b4 p
+{
+    width: 300px;
+    padding: 3%;
+    margin: 1%;
+}
+.b5
+{
     border-color: white;
     background-color: white;
     text-align: center;
+    padding: 1%;
+    margin: 20px;
+}
+.b5 p{
+    width: 300px;
     padding: 1%;
     margin: 20px;
 }
@@ -189,8 +240,23 @@ font-family: Glass Antiqua;
     padding: 1%;
     margin: 20px;
 }
+
+.b6{
+    border-color: white;
+    background-color: white;
+    text-align: center;
+    padding: 1%;
+    margin: 20px;
+}
 .b6 p{
     width: 300px;
+    padding: 3%;
+    margin: 1%;
+}
+.b7{
+    border-color: white;
+    background-color: white;
+    text-align: center;
     padding: 3%;
     margin: 1%;
 }
@@ -208,7 +274,7 @@ font-family: Glass Antiqua;
 }
 
 /* add to cart buttons/links */
-#breakfeast-contain button
+#breakfeast-contain a
 {
 color: rgb(174, 107, 20);
 font-size: 150%;
@@ -217,19 +283,28 @@ border-radius: 20px;
 #breakfeast-contain button:hover
 {
 background-color: rgba(233, 145, 29, 0.542);
+padding: 5%;
+border-radius: 20px;
 }
 
+/* Starting the removable menu items */
 /* Starting the removable menu items */
 #menu h1
 {
     font-family: Glass Antiqua;
+    font-family: Glass Antiqua;
     font-size: 200%;   
     color: rgb(99, 155, 137); 
 }
+
+    
 #products-container
 {
     font-family: Glass Antiqua;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
@@ -242,32 +317,28 @@ background-color: rgba(233, 145, 29, 0.542);
     text-align: center;
     padding: 1%;
     margin: 1%;
-    color: rgb(131, 80, 14);
-        width: 300px;
-    padding: 1%;
-    margin: 10px;
 }
-/* .item p
+.item p
 {
     width: 300px;
     padding: 1%;
     margin: 10px;
-} */
-.item button
+}
+.item a
 {
 color: rgb(174, 107, 20);
 font-size: 150%;
-border-radius: 20px;
 }
-.item button:hover
+.item a:hover
 {
 background-color: rgba(233, 145, 29, 0.542);
-color: rgb(160, 106, 106);
+padding: 3%;
+border-radius: 20px;
 }
 
 
 /* This starts the order/CART */
-#cart-container
+#cart
 {
     background-color: bisque;
     font-family: Glass Antiqua;
@@ -287,44 +358,29 @@ color: rgb(160, 106, 106);
 #clear button
 {
     padding: 2%;
-    width: 300px;
+    width: 200px;
     margin-right: 20px;
     border-radius: 20px;
-    color: rgb(106, 79, 40);
-    font-size: 150%;
-    border-color:rgb(165, 86, 86);
-    background-color:rgb(219, 178, 178);
 }
 #clear button:hover
 {
-    background-color: rgba(233, 145, 29, 0.542);
-    color: rgb(160, 106, 106);
+ background-color: #777;
+ color: blanchedalmond;
 }
 #checkout button
 {
     padding: 2%;
-    width: 300px;
+    width: 200px;
     margin-left: 20px;
     border-radius: 20px;
-    color: rgb(106, 79, 40);
-    font-size: 150%;
-    border-color:rgb(165, 86, 86);
-    background-color:rgb(219, 178, 178);
 }
 #checkout button:hover
 {
-    background-color: rgba(233, 145, 29, 0.542);
-    color: rgb(160, 106, 106);
-}
-.cart-header 
-{
-    font-weight: bold;
-    font-size: 1.25em;
-    color: #333;
+ background-color: #777;
+ color: blanchedalmond;
 }
 
-.cart-column 
-{
+.cart-column {
     display: flex;
     align-items: center;
     border-bottom: 1px solid black;
@@ -333,59 +389,11 @@ color: rgb(160, 106, 106);
     margin-top: 10px;
 }
 
-.cart-row 
-{
-    display: flex;
-    justify-content: center;
-}
-
-.cart-item 
-{
-    width: 25%;
-    
-}
-
-.cart-price {
-    width: 20%;
-    font-size: 1.2em;
-    color: #333;
-}
-
-.cart-quantity {
-    width: 20%;
-}
-
-.cart-item-title {
-    color: #333;
-    margin-left: .5em;
-    font-size: 1.2em;
-}
-
-.cart-item-image {
-    width: 75px;
-    height: auto;
-    border-radius: 10px;
-}
-.cart-total {
-    text-align: end;
-    margin-top: 200px;
-    margin-right: 325px;
-}
-
-.cart-total-title {
-    font-weight: bold;
-    font-size: 1.5em;
-    color: black;
-    margin-right: 20px;
-}
-
-.cart-total-price {
-    color: #333;
-    font-size: 130%;
-}
 
 
 /* FOOTER */
+
+
 .footer {
     font-family: Glass Antiqua;
     padding: 40px 0;
