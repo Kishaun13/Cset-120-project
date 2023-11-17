@@ -150,7 +150,7 @@ body {
 }
 
 .navbar a {
-    color: black
+    color: white;
 }
 
 .navbar a:hover {
@@ -164,6 +164,22 @@ body {
 
 .navbarScroll.navbarDark {
     background-color: white;
+    transition: 0.5s;
+}
+
+.navbarScroll.navbarDark .navbar-brand {
+    color: black;
+    transition: 0.5s;
+}
+
+.navbarScroll.navbarDark .nav-link {
+    color: black;
+    transition: 0.5s;
+}
+
+.navbarScroll.navbarDark .nav-link:hover {
+    color: gold;
+    transition: 0.5s;
 }
 
 .navbar-brand {
@@ -221,4 +237,8 @@ body {
 
 .gallery {
     padding: 50px 0;
+}
+
+.gallery .col-md-4 {
+    padding: 15px;
 }
