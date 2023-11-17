@@ -6,21 +6,70 @@
     <title>Menu</title>
     <link rel="stylesheet" href="menu.css">
 
+    <!-- <link rel="stylesheet" href="home.css"> -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Caveat&family=Glass+Antiqua&family=Indie+Flower&family=Lato:wght@100;300;400&family=Shadows+Into+Light&family=Sometype+Mono&display=swap" rel="stylesheet">
 
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg fixed-top navbarScroll ">
+        <div class="container ">
+            <a class="navbar-brand " href="# "> <img src="images/Logo.jpg " alt="logo "> Jean-Claude’s Patisserie's</a>
+            <button class="navbar-toggler " type="button " data-bs-toggle="collapse " data-bs-target="#navbarScroll " aria-controls="navbarScroll " aria-expanded="true " aria-label="Toggle navigation ">
+                <span class="navbar-toggler-icon "><i class="fas fa-bars "></i></span>
+
+    <nav class="navbar navbar-expand-lg fixed-top navbarScroll ">
+        <div class="container ">
+
+            <a class="navbar-brand " href="# "> <img src="images/Jean-Claude 's.png" alt="logo"> Jean-Claude’s Patisserie's</a>
+
+    <a class="navbar-brand" href="#"> <img src="images/Logo.jpg" alt="logo"> Jean-Claude’s Patisserie's</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="true" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+
+            </button>
+    <div class="collapse navbar-collapse " id="navbar-content ">
+        <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll " style="--bs-scroll-height: 100px; ">
+            <li class="nav-item ">
+                <a class="nav-link " href="index.html ">Home</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link " href="about.html ">About</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link " href="menu.html ">Menu</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link " href="contact.html ">Contact</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link " href="logorsignup.html ">Log In</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="staff-sign-up.html">Staff</a>
+            </li>
+
+        </ul>
+    </div>
+    </div>
+    </nav><br><br><br><br><br>
+
     <section id="page">
         <div id="menu">
-            <h1>MENU</h1>
-            <a href="#cart"><img width="40px" src="images/icons/icons8-basket-48.png" alt="cart"></a>
+            <div id="title-menu"><h1>MENU</h1></div>
+            <div id="img-icon"><a href="#cart"><img width="40px" src="images/icons/icons8-basket-48.png" alt="cart"></a></div>
         </div>
     </section>
-    <br>
+    <br><br><br><br>
     <div id="every-menu">
-    <h2>Everyday Menu Items (Will always be in)</h2>
+        <h2>Everyday Menu Items (always in)</h2>
     </div>
     <div class="Breakfast">
         <div id="breakfeast-contain">
@@ -45,70 +94,173 @@
                 <p>$15</p>
                 <a href="" onclick="" style="text-decoration: none;">Add to Order</a>
             </div>
-        </div>
-        <!-- <div id="everyday-menu">
-            <div class="">
+            <div class="b4">
                 <img width="200" src="images/products/mousse.jpeg" alt="">
                 <h3>Mousse</h3>
-                <p> This super moist dark chocolate mousse cake combines unsweetened natural cocoa powder and dark cocoa powder for an extra rich flavor.</p>
+                <p> This super moist dark chocolate mousse combines unsweetened natural cocoa powder and dark cocoa powder for an extra rich flavor.</p>
                 <p>$35.00</p>
+                <a href="" onclick="" style="text-decoration: none;">Add to Order</a>
             </div>
-            <div>
-                <img width="200" src="images/products/dessert.jpeg" alt="">
-                <h3>Vanilla cake</h3>
-                <p> With its outstanding vanilla flavor, pillowy soft crumb, and creamy vanilla buttercream, this is truly the best vanilla cake I've ever had.</p>
+            <div class="b5">
+                <img width="200" src="images/products/cheese-cake-2.jpeg" alt="">
+                <h3>Vanilla Cheesecake</h3>
+                <p> With its outstanding vanilla flavor, pillowy soft crumb, and creamy vanilla buttercream, this is truly the best vanilla cheesecake I've ever had.</p>
                 <p>$40.00</p>
+                <a href="" onclick="" style="text-decoration: none;">Add to Order</a>
             </div>
-            <div>
+            <div class="b6">
                 <img width="200" src="images/products/donut.jpeg" alt="">
                 <h3>Donuts</h3>
-                <p>We are not gonna give three donuts, or two Donuts, but only one donut for 10.99.</p>
+                <p>We are not gonna give three donuts, or two Donuts, but only one donut for 10.99 and its topped with freshly picked strawberries.</p>
                 <p>$10.99</p>
+                <a href="" onclick="" style="text-decoration: none;">Add to Order</a>
             </div>
-            <div>
+            <div class="b7">
                 <img width="200" src="images/products/plum-cake.jpeg" alt="">
                 <h3>Plum cake</h3>
-                <p>Very good cake to have if you want to eat your feelings away.</p>
+                <p>Very good cake to have if you want to eat your feelings away. Taste's especially nice on a rainy day after your mother's funeral.</p>
                 <p>$25.00</p>
+                <a href="" onclick="" style="text-decoration: none;">Add to Order</a>
             </div>
-            <div>
-                <img width="200" src="images/products/rye-bread.jpeg" alt="">
-                <h3>Rye Bread</h3>
-                <p>This is the best rye bread around.</p>
-                <p>$14</p>
-            </div>
-        </div> -->
-    </div><br><br><hr>
+        </div>
+    </div><br><br><br><br><br>
 
-        <div id="menu" style="text-align: center;"><h1>Menu Items</h1></div>
+        <div id="menu" style="text-align: center;"><h1>Menu Items (Changed daily)</h1></div>
     </section>
+
     <section id="products">
         <div id="products-container" class="items-container">
-            <div id="bread">
-                <div class="item product-bread"><img width="200" src="images/products/bagel.jpeg" alt="" srcset=""></div>
-                <div class="item product-bread"><img width="200" src="images/products/rye-bread-2.jpeg" alt="" srcset=""></div>
-            </div>
-            <div id="beverage">
-                <div class="item product-beverage"><img width="200" src="images/products/affogato-el-cafe.jpeg" alt=""></div>
-                <div class="item product-beverage"><img width="200" src="images/products/beverage.jpeg" alt=""></div>
-                <div class="item product-beverage"><img width="200" src="images/products/cappuccino.jpeg" alt="" srcset=""></div>
-                <div class="item product-beverage"><img width="200" src="images/products/chamomile-tea.jpeg" alt="" srcset=""></div>
-                <div class="item product-beverage"><img width="200" src="images/products/coffee-milk.jpeg" alt="" srcset=""></div>
-                <div class="item product-beverage"><img width="200" src="images/products/expresso.jpeg" alt="" srcset=""></div>
-            </div>
-            <div id="dessert">
-                <div class="item product-dessert"><img width="200" src="images/products/cream-puff2.jpeg" alt="" srcset=""></div>
-                <div class="item product-dessert"><img width="200" src="images/products/apple-strudel.jpeg" alt="" srcset=""></div>
-                <div class="item product-dessert"><img width="200" src="images/products/cheese-cake-2.jpeg" alt="" srcset=""></div>
-                <div class="item product-dessert"><img width="200" src="images/products/cup-cakes-2.jpeg" alt="" srcset=""></div>
-                <div class="item product-dessert"><img width="200" src="images/products/tart-coco2.jpeg" alt="" srcset=""></div>
-                <div class="item product-dessert"><img width="200" src="images/products/macaroons.jpeg" alt="" srcset=""></div>
-                <div class="item product-dessert"><img width="200" src="images/products/meringue.jpeg" alt="" srcset=""></div>
-            </div>
-            
+                <div class="item product-bread"><img width="200" src="images/products/bagel.jpeg" alt="" srcset="">
+                    <h3>Bagels</h3>
+                    <p>Made fresh on Location: toasted and smothered with homemade creamcheese.</p>
+                    <p>$4.00</p>
+                    <a href="" onclick="" style="text-decoration: none;">Add to Order</a>
+                </div>
+                <div class="item product-bread"><img width="200" src="images/products/rye-bread-2.jpeg" alt="" srcset="">
+                    <h3>Fresh Rye Bread</h3>
+                    <p>Made fresh on Location. Whole loaf can come sliced upon request.</p>
+                    <p>$12.00</p>
+                    <a href="" onclick="" style="text-decoration: none;">Add to Order</a>
+                </div>
+                <div class="item product-beverage"><img width="200" src="images/products/affogato-el-cafe.jpeg" alt="">
+                    <h3>Affogato el Cafe</h3>
+                    <p>Made by pouring expresso from freshly ground coffe beans over two scoops of vanilla icecream.</p>
+                    <p>$4.00</p>
+                    <a href="" onclick="" style="text-decoration: none;">Add to Order</a>
+                </div>
+                <div class="item product-beverage"><img width="200" src="images/products/beverage.jpeg" alt="">
+                    <h3>Frozen Cappuccino</h3>
+                    <p>Double blended with ice and topped with whipped cream and caramel.</p>
+                    <p>$12.00</p>
+                    <a href="" onclick="" style="text-decoration: none;">Add to Order</a>
+                </div>
+                <div class="item product-beverage"><img width="200" src="images/products/cappuccino.jpeg" alt="" srcset="">
+                    <h3>Cappuccino</h3>
+                    <p>Hot shot of expresso with steamed milk and topped with a sweet milk foam.</p>
+                    <p>$9.00</p>
+                    <a href="" onclick="" style="text-decoration: none;">Add to Order</a>
+                </div>
+                <div class="item product-beverage"><img width="200" src="images/products/chamomile-tea.jpeg" alt="" srcset="">
+                    <h3>Chamomile Tea</h3>
+                    <p>Freshly dried Chamomile flower tea optionally sweetened with sugar or honey.</p>
+                    <p>$5.00</p>
+                    <a href="" onclick="" style="text-decoration: none;">Add to Order</a>
+                </div>
+                <div class="item product-beverage"><img width="200" src="images/products/coffee-milk.jpeg" alt="" srcset="">
+                    <h3>Black Coffee with fresh cream</h3>
+                    <p>Newly toasted coffee beans grounded and made into a nice hotcup of cofee with fresh cream.</p>
+                    <p>$5.00</p>
+                    <a href="" onclick="" style="text-decoration: none;">Add to Order</a>
+                </div>
+                <div class="item product-beverage"><img width="200" src="images/products/french-press.jpeg" alt="">
+                    <h3>Black Coffee French Press</h3>
+                    <p>Freshly toasted and ground coffee beans with two-three cups of coffee inside the french press.</p>
+                    <p>$12.00</p>
+                    <a href="" onclick="" style="text-decoration: none;">Add to Order</a>
+                </div>
+                <div class="item product-beverage"><img width="200" src="images/products/expresso.jpeg" alt="" srcset="">
+                    <h3>Expresso Shot</h3>
+                    <p>A single shot of expresso.</p>
+                    <p>$7.49</p>
+                    <a href="" onclick="" style="text-decoration: none;">Add to Order</a>
+                </div>
+
+                <div class="item product-dessert"><img width="200" src="images/products/cream-puff2.jpeg" alt="" srcset="">
+                    <h3>Cream-Puff</h3>
+                    <p>A single cream puff with freshly whipped cream and strawberries from the local market.</p>
+                    <p>$5.49</p>
+                    <a href="" onclick="" style="text-decoration: none;">Add to Order</a>
+                </div>
+                <div class="item product-dessert"><img width="200" src="images/products/apple-strudel.jpeg" alt="" srcset="">
+                    <h3>Apple Strudel</h3>
+                    <p>Apple strudel is a traditional Viennese strudel, a popular pastry in Austria, Bavaria, the Czech Republic, Northern Italy, Slovenia, Croatia, and other countries in Europe.</p>
+                    <p>$14.49</p>
+                    <a href="" onclick="" style="text-decoration: none;">Add to Order</a>
+                </div>
+                <div class="item product-dessert"><img width="200" src="images/products/cup-cakes-2.jpeg" alt="" srcset="">
+                    <h3>Cupcake</h3>
+                    <p>A single cupcake waiting to be eaten.</p>
+                    <p>$5.49</p>
+                    <a href="" onclick="" style="text-decoration: none;">Add to Order</a>
+                </div>
+                <div class="item product-dessert"><img width="200" src="images/products/tart-coco2.jpeg" alt="" srcset="">
+                    <h3>Chocolate Tart</h3>
+                    <p>A single Chocolate tart with fresh chocolate cream and candied raspberries.</p>
+                    <p>$9.99</p>
+                    <a href="" onclick="" style="text-decoration: none;">Add to Order</a>
+                </div>
+                <div class="item product-dessert"><img width="200" src="images/products/macaroons.jpeg" alt="" srcset="">
+                    <h3>Macaroons</h3>
+                    <p>Eight maccaroons with strawberry filling per order.</p>
+                    <p>$34.49</p>
+                    <a href="" onclick="" style="text-decoration: none;">Add to Order</a>
+                </div>
+                <div class="item product-dessert"><img width="200" src="images/products/meringue.jpeg" alt="" srcset="">
+                    <h3>Meringue cookies</h3>
+                    <p>Light and fluffly little crisps that melt away on the tongue. Pack of 24 per order.</p>
+                    <p>$29.99</p>
+                    <a href="" onclick="" style="text-decoration: none;">Add to Order</a>
+                </div>
         </div>
     </section>
 
+    <section id="cart">
+        <div id="cart-header"><h1>~ Cart Order ~</h1></div>
+        <br><br><br><br>
+        <div class="buttons">
+            <div id="clear"><button onclick="">Clear Order</button></div>
+            <div id="checkout"><button onclick="">Purchase Order</button></div>
+        </div>
+        <br>
+    </section>
 
+
+
+
+
+
+    <section class="footer ">
+        <div class="social ">
+            <a href="# "><i class="fab fa-facebook-f "></i></a>
+            <a href="https://www.instagram.com/princek_._/ "><i class="fab fa-instagram "></i></a>
+            <a href="# "><i class="fab fa-twitter "></i></a>
+        </div>
+        <ul class="list ">
+            <li><a href="about.html ">About Us</a>
+            </li>
+            <li><a href="contact.html ">Contact Us</a>
+            </li>
+            <li><a href="# ">Privacy Policy</a>
+            </li>
+            <li><a href="# ">Terms & Conditions</a>
+            </li>
+        </ul>
+        <p class="copyright ">
+            Jean-Claude’s Patisserie's © 2021
+        </p>
+    </section>
+
+    <script src="index.js"></script>
+    <script src="menu.js"></script>
 </body>
 </html>
