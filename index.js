@@ -55,14 +55,14 @@ function staffSignUp() {
 function staffLogin() {
     let staffEmail = document.getElementById('staffU').value;
     let staffPass = document.getElementById('Staffpass').value;
+    let managerPass = "admin123";
 
     if (localStorage.getItem(staffEmail)) {
-        if (staffPass === localStorage.getItem(staffEmail)) {
-            location.replace("edit-menu.html")
+        if (staffPass === managerPass) {
+            location.replace("edit-menu.html");
         } else {
-            alert("Login Failed")
+            alert("Login Failed Enter the correct password");
         }
-
     }
 }
 
