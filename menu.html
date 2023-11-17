@@ -216,26 +216,27 @@
         </div>
     </section>
 
-    <section id="cart">
+    <section id="cart-container">
         <div id="cart-header"><h1>~ Cart Order ~</h1></div>
-        <br><br><br><br>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">Item</span>
+            <span class="cart-price cart-header cart-column">Price</span>
+            <span class="cart-quantity cart-header cart-column">Quantity</span>
+        </div>
         <div class="cart-items">
-            <div class="cart-row">
-                <div class="cart-item cart-column">
-                    <span class="cart-item-title">T-Shirt</span>
-                </div>
-                <span class="cart-price cart-column">$19.99</span>
-                <div class="cart-quantity cart-column">
-                    <input class="cart-quantity-input" type="number" value="1">
-                    <button class="btn btn-danger" type="button">REMOVE</button>
-                </div>
-            </div>
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total:</strong>
+            <span class="cart-total-price">$0</span>
+        </div>
+        <br><br><br><br>
         <div class="buttons">
-            <div id="clear"><button onclick="">Clear Order</button></div>
-            <div id="checkout"><button onclick="">Purchase Order</button></div>
+            <div id="clear"><button onclick="" class="btn prime-btn btn-clear">Clear Order</button></div>
+            <div id="checkout"><button onclick="" class="btn prime-btn btn-purchase">Purchase Order</button></div>
         </div>
         <br>
     </section>
+
 
 
 
