@@ -13,9 +13,6 @@ html {
 
 /* @media screen and (max-width: 1440px){ should figure out how this works
 
-} */
-
-
 /* @keyframes fadeIn {
     from {
         opacity: 0;
@@ -74,7 +71,9 @@ body {
     height: auto;
 }
 
-#page {
+
+#page 
+{
     margin-top: 1cm;
     /* display: flex; */
     background-color: antiquewhite;
@@ -253,7 +252,8 @@ body {
     margin: 1cm;
 }
 
-.item {
+.item 
+{
     border-color: white;
     background-color: white;
     text-align: center;
@@ -287,9 +287,9 @@ body {
 
 /* This starts the order/CART */
 
-#cart-container {
+#cart-container 
+{
     background-color: bisque;
-    font-family: Glass Antiqua;
     justify-content: center;
 }
 
@@ -333,6 +333,7 @@ body {
 
 #cart {
     background-color: rgba(250, 235, 215, 0.492);
+    font-family: Glass Antiqua;
 }
 
 #checkout button:hover {
