@@ -38,11 +38,14 @@ body {
     font-size: 4.5rem;
     font-weight: bold;
     font-family: Glass Antiqua;
+    color: rgb(17, 229, 162);
+    padding-top: 200px;
 }
 
 .hero_description {
     font-size: 2rem;
     font-family: Glass Antiqua;
+    color: white;
 }
 
 .hero-text {
@@ -120,6 +123,14 @@ body {
     font-family: Glass Antiqua;
 }
 
+.backgroundimg6 {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.099), rgba(0, 0, 0, 0.663)), url(images/pexels-aysgul-11532359.jpg);
+    background-size: cover;
+    position: relative;
+    animation: fadeIn 2s ease-in-out;
+}
+
 .footer .social a:hover {
     opacity: 1;
 }
@@ -164,8 +175,17 @@ body {
     font-family: Glass Antiqua;
 }
 
+.backgroundimg8 {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.099), rgba(0, 0, 0, 0.663)), url(images/pexels-dominika-roseclay-1982485.jpg);
+    background-size: cover;
+    position: relative;
+    animation: fadeIn 2s ease-in-out;
+}
+
 .navbar a:hover {
     color: gold;
+    ;
 }
 
 .navbar img {

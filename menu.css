@@ -1,18 +1,18 @@
-*
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html
-{
+
+html {
     scroll-behavior: smooth;
     font-family: Glass Antiqua;
     color: rgb(172, 118, 36);
 }
+
+
 /* @media screen and (max-width: 1440px){ should figure out how this works
 
-} */
 /* @keyframes fadeIn {
     from {
         opacity: 0;
@@ -22,7 +22,7 @@ html
     }
 } */
 
-body{
+body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.099), rgba(0, 0, 0, 0.86)), url(images/background/paris.jpeg);
     height: 100vh;
     background-attachment: fixed;
@@ -30,7 +30,10 @@ body{
     background-size: cover;
     font-family: Glass Antiqua;
 }
+
+
 /* MENU BAR */
+
 .navbar a {
     color: black;
     font-family: Glass Antiqua;
@@ -46,7 +49,7 @@ body{
     height: 100px;
 }
 
-.navbarScroll.navbarDark{
+.navbarScroll.navbarDark {
     background-color: white;
 }
 
@@ -55,23 +58,21 @@ body{
     font-weight: bold;
     color: white;
 }
+
 .nav-link {
     font-size: 1.2rem;
     font-weight: bold;
     color: rgb(247, 247, 247);
     margin-right: 30px;
 }
-.nav-link img
-{
+
+.nav-link img {
     width: 30px;
     height: auto;
 }
 
 
-
-
-
-#page
+#page 
 {
     margin-top: 1cm;
     /* display: flex; */
@@ -82,37 +83,37 @@ body{
     margin-top: 1cm;
     padding: 1%;
 }
-#menu
-{
+
+#menu {
     display: flex;
     justify-content: space-evenly;
     font-size: 200%;
     align-items: center;
 }
-#title-menu
-{
-justify-content: center;
-font-family: Glass Antiqua;
+
+#title-menu {
+    justify-content: center;
+    font-family: Glass Antiqua;
 }
-#every-menu
-{
-    color: rgb(30, 85, 67); 
+
+#every-menu {
+    color: rgb(30, 85, 67);
     font-size: 150%;
     background-color: rgba(250, 235, 215, 0.492);
     text-align: center;
     padding: 20px;
     font-family: Glass Antiqua;
 }
-.Breakfast
-{
+
+.Breakfast {
     display: flex;
     flex-direction: row;
     justify-content: center;
     background-color: rgba(250, 235, 215, 0.492);
     padding: 2%;
 }
-#breakfeast-contain
-{
+
+#breakfeast-contain {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -121,8 +122,7 @@ font-family: Glass Antiqua;
     color: rgb(174, 107, 20);
 }
 
-.b1
-{
+.b1 {
     border-color: white;
     background-color: white;
     box-sizing: border-box;
@@ -130,113 +130,120 @@ font-family: Glass Antiqua;
     padding: 3%;
     margin: 1%;
 }
-.b1 p
-{
+
+.b1 p {
     width: 300px;
     padding: 3%;
     margin: 20px;
 }
-.b2
-{
+
+.b2 {
     border-color: white;
     background-color: white;
     text-align: center;
     padding: 3%;
     margin: 1%;
 }
-.b2 p
-{
+
+.b2 p {
     width: 300px;
     padding: 3%;
     margin: 20px;
 }
-.b3
-{
+
+.b3 {
     border-color: white;
     background-color: white;
     text-align: center;
     padding: 3%;
     margin: 1%;
 }
-.b3 p
-{
+
+.b3 p {
     width: 300px;
     padding: 3%;
     margin: 20px;
 }
-.b4
-{
-    border-color: white;
-    background-color: white;
-    text-align: center;
-    padding: 1%;
-    margin: 20px;
-}
-.b4 p
-{
-    width: 300px;
-    padding: 3%;
-    margin: 1%;
-}
-.b5
-{
+
+.b4 {
     border-color: white;
     background-color: white;
     text-align: center;
     padding: 1%;
     margin: 20px;
 }
-.b5 p{
+
+.b4 p {
     width: 300px;
     padding: 3%;
     margin: 1%;
 }
-.b6{
+
+.b5 {
     border-color: white;
     background-color: white;
     text-align: center;
     padding: 1%;
     margin: 20px;
 }
-.b6 p{
+
+.b5 p {
     width: 300px;
     padding: 3%;
     margin: 1%;
 }
-.b7{
+
+.b6 {
     border-color: white;
     background-color: white;
     text-align: center;
     padding: 1%;
     margin: 20px;
 }
-.b7 p{
+
+.b6 p {
     width: 300px;
     padding: 3%;
     margin: 1%;
 }
+
+.b7 {
+    border-color: white;
+    background-color: white;
+    text-align: center;
+    padding: 1%;
+    margin: 20px;
+}
+
+.b7 p {
+    width: 300px;
+    padding: 3%;
+    margin: 1%;
+}
+
 
 /* add to cart buttons/links */
-#breakfeast-contain button
-{
-color: rgb(174, 107, 20);
-font-size: 150%;
-border-radius: 20px;
-}
-#breakfeast-contain button:hover
-{
-background-color: rgba(233, 145, 29, 0.542);
+
+#breakfeast-contain button {
+    color: rgb(174, 107, 20);
+    font-size: 150%;
+    border-radius: 20px;
 }
 
-/* Starting the removable menu items */
-#menu h1
-{
-    font-family: Glass Antiqua;
-    font-size: 200%;   
-    color: rgb(99, 155, 137); 
+#breakfeast-contain button:hover {
+    background-color: rgba(233, 145, 29, 0.542);
 }
-#products-container
-{
+
+
+/* Starting the removable menu items */
+
+#menu h1 {
+    font-family: Glass Antiqua;
+    font-size: 200%;
+    color: rgb(99, 155, 137);
+}
+
+#products-container {
     font-family: Glass Antiqua;
     display: flex;
     flex-wrap: wrap;
@@ -244,7 +251,8 @@ background-color: rgba(233, 145, 29, 0.542);
     align-content: center;
     margin: 1cm;
 }
-.item
+
+.item 
 {
     border-color: white;
     background-color: white;
@@ -256,84 +264,90 @@ background-color: rgba(233, 145, 29, 0.542);
     padding: 1%;
     margin: 10px;
 }
+
+
 /* .item p
 {
     width: 300px;
     padding: 1%;
     margin: 10px;
 } */
-.item button
-{
-color: rgb(174, 107, 20);
-font-size: 150%;
-border-radius: 20px;
+
+.item button {
+    color: rgb(174, 107, 20);
+    font-size: 150%;
+    border-radius: 20px;
 }
-.item button:hover
-{
-background-color: rgba(233, 145, 29, 0.542);
-color: rgb(160, 106, 106);
+
+.item button:hover {
+    background-color: rgba(233, 145, 29, 0.542);
+    color: rgb(160, 106, 106);
 }
 
 
 /* This starts the order/CART */
-#cart-container
+
+#cart-container 
 {
     background-color: bisque;
-    font-family: Glass Antiqua;
     justify-content: center;
 }
-#cart-header
-{
+
+#cart-header {
     font-size: 200%;
     display: flex;
     justify-content: center;
 }
-.buttons
-{
+
+.buttons {
     display: flex;
     justify-content: center;
 }
-#clear button
-{
+
+#clear button {
     padding: 2%;
     width: 300px;
     margin-right: 20px;
     border-radius: 20px;
     color: rgb(106, 79, 40);
     font-size: 150%;
-    border-color:rgb(165, 86, 86);
-    background-color:rgb(219, 178, 178);
+    border-color: rgb(165, 86, 86);
+    background-color: rgb(219, 178, 178);
 }
-#clear button:hover
-{
+
+#clear button:hover {
     background-color: rgba(233, 145, 29, 0.542);
     color: rgb(160, 106, 106);
 }
-#checkout button
-{
+
+#checkout button {
     padding: 2%;
     width: 300px;
     margin-left: 20px;
     border-radius: 20px;
     color: rgb(106, 79, 40);
     font-size: 150%;
-    border-color:rgb(165, 86, 86);
-    background-color:rgb(219, 178, 178);
+    border-color: rgb(165, 86, 86);
+    background-color: rgb(219, 178, 178);
 }
-#checkout button:hover
-{
+
+#cart {
+    background-color: rgba(250, 235, 215, 0.492);
+    font-family: Glass Antiqua;
+}
+
+#checkout button:hover {
     background-color: rgba(233, 145, 29, 0.542);
     color: rgb(160, 106, 106);
 }
-.cart-header 
-{
+
+.cart-header {
     font-weight: bold;
     font-size: 1.25em;
-    color: #333;
+    color: white;
 }
 
-.cart-column 
-{
+.cart-column {
     display: flex;
     align-items: center;
     border-bottom: 1px solid black;
@@ -342,22 +356,19 @@ color: rgb(160, 106, 106);
     margin-top: 10px;
 }
 
-.cart-row 
-{
+.cart-row {
     display: flex;
     justify-content: center;
 }
 
-.cart-item 
-{
+.cart-item {
     width: 25%;
-    
 }
 
 .cart-price {
     width: 20%;
     font-size: 1.2em;
-    color: #333;
+    color: white;
 }
 
 .cart-quantity {
@@ -365,7 +376,7 @@ color: rgb(160, 106, 106);
 }
 
 .cart-item-title {
-    color: #333;
+    color: white;
     margin-left: .5em;
     font-size: 1.2em;
 }
@@ -375,6 +386,7 @@ color: rgb(160, 106, 106);
     height: auto;
     border-radius: 10px;
 }
+
 .cart-total {
     text-align: end;
     margin-top: 200px;
@@ -384,17 +396,19 @@ color: rgb(160, 106, 106);
 .cart-total-title {
     font-weight: bold;
     font-size: 1.5em;
-    color: black;
+    color: white;
     margin-right: 20px;
 }
 
 .cart-total-price {
-    color: #333;
+    color: white;
     font-size: 130%;
+    text-align: right;
 }
 
 
 /* FOOTER */
+
 .footer {
     font-family: Glass Antiqua;
     padding: 40px 0;

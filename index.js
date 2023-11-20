@@ -1,6 +1,5 @@
-let cart = []
 
-function signUp() {
+function signUp(){
     let email = document.getElementById("email").value;
     console.log(email);
     let pass = document.getElementById("pass").value;
@@ -79,8 +78,19 @@ window.onscroll = function() {
 }
 
 function editMenu() {
-    let edit = document.getElementById('')
-
+    let addedItems = document.createElement('div')
+    addedItems.classList.add('Menu-row')
+    let itemRow = document.getElementsByClassName('Menu-items')
+    let itemNames = itemRow.getElementsByClassName('Menu-item-title')
+    for(i = 0; i < itemNames.length; i++){
+        if(localStorage.getItem == itemNames){
+            location.replace("menu.html")
+        }
+        else{
+            alert("Addition failed")
+        }
+    }
+    
 }
 
 function contactAlert() {
