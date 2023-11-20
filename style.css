@@ -123,6 +123,14 @@ body {
     font-family: Glass Antiqua;
 }
 
+.backgroundimg6 {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.099), rgba(0, 0, 0, 0.663)), url(images/pexels-aysgul-11532359.jpg);
+    background-size: cover;
+    position: relative;
+    animation: fadeIn 2s ease-in-out;
+}
+
 .footer .social a:hover {
     opacity: 1;
 }
@@ -165,6 +173,14 @@ body {
 .navbar a {
     color: white;
     font-family: Glass Antiqua;
+}
+
+.backgroundimg8 {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.099), rgba(0, 0, 0, 0.663)), url(images/pexels-dominika-roseclay-1982485.jpg);
+    background-size: cover;
+    position: relative;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .navbar a:hover {
