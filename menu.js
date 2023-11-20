@@ -16,6 +16,7 @@ function addToCart(itemName, itemPrice) {
         localStorage.setItem("cart", JSON.stringify(cart));
         alert(`You added ${itemName} to your cart!`);
     }
+    // console.log(cart);
 }
 
 function displayCartItems() {
@@ -69,9 +70,13 @@ function updateCartTotal() {
         total += cart[itemName].price * cart[itemName].quantity;
     }
 
-    document.querySelector(".cart-total-price").innerText =
+    localStorage.setItem('totalPrice', total);
+
+    document.querySelector(".cart-total .cart-total-price").innerText =
         "$" + total.toFixed(2);
+    console.log(total);
 }
+
 
 function clearCart() {
     cart = {};
@@ -95,15 +100,9 @@ quantityInputs.forEach((input) => {
         console.log(`Item Name: ${itemName}, New Quantity: ${newQuantity}`);
         updateQuantity(itemName, newQuantity);
     });
+    updateCartTotal();
 });
 
-function updateQuantity(itemName, quantity) {
-    if (cart[itemName]) {
-        cart[itemName].quantity = quantity;
-        updateCartTotal();
-        localStorage.setItem("cart", JSON.stringify(cart));
-    }
-}
 
 function purchaseProducts() {
     if (Object.keys(cart).length === 0) {
