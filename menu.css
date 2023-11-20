@@ -132,27 +132,19 @@ body {
     margin: 1%;
 }
 
-
-.b1 p
-{
-=======
 .b1 p {
-
     width: 300px;
     padding: 3%;
     margin: 20px;
 }
 
-
 .b2 {
-
     border-color: white;
     background-color: white;
     text-align: center;
     padding: 3%;
     margin: 1%;
 }
-
 
 .b2 p {
     width: 300px;
@@ -168,7 +160,6 @@ body {
     margin: 1%;
 }
 
-
 .b3 p {
     width: 300px;
     padding: 3%;
@@ -182,7 +173,6 @@ body {
     padding: 1%;
     margin: 20px;
 }
-
 
 .b4 p {
     width: 300px;
@@ -341,6 +331,10 @@ body {
     background-color: rgb(219, 178, 178);
 }
 
+#cart {
+    background-color: rgba(250, 235, 215, 0.492);
+}
+
 #checkout button:hover {
     background-color: rgba(233, 145, 29, 0.542);
     color: rgb(160, 106, 106);
@@ -349,7 +343,7 @@ body {
 .cart-header {
     font-weight: bold;
     font-size: 1.25em;
-    color: #333;
+    color: white;
 }
 
 .cart-column {
@@ -373,7 +367,7 @@ body {
 .cart-price {
     width: 20%;
     font-size: 1.2em;
-    color: #333;
+    color: white;
 }
 
 .cart-quantity {
@@ -381,7 +375,7 @@ body {
 }
 
 .cart-item-title {
-    color: #333;
+    color: white;
     margin-left: .5em;
     font-size: 1.2em;
 }
@@ -401,13 +395,14 @@ body {
 .cart-total-title {
     font-weight: bold;
     font-size: 1.5em;
-    color: black;
+    color: white;
     margin-right: 20px;
 }
 
 .cart-total-price {
-    color: #333;
+    color: white;
     font-size: 130%;
+    text-align: right;
 }
 
 

@@ -47,7 +47,7 @@
                         <a class="nav-link" href="staff-sign-up.html">Staff</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#cart-container">
+                        <a class="nav-link" href="#cart">
                             <ion-icon name="cart-outline"></ion-icon>
                         </a>
                     </li>
@@ -139,149 +139,171 @@
     </div><br><br><br><br><br>
 
 
-        <section id="products">
-            <div id="products-container" class="items-container">
-                    <div class="item product-bread"><img class="shop-item-image" width="200" src="images/products/bagel.jpeg" alt="" srcset="">
-                        <span class="shop-item-title">Bagels</span>
-                        <p>Made fresh on Location: toasted and smothered with homemade creamcheese.</p>
-                        <span class="shop-item-price">$4.00</span>
-                        <button href="" onclick="addToCart('Bagels', 4.00)" style="text-decoration: none;">Add to Order</button>
-                    </div>
-                    <div class="item product-bread"><img class="shop-item-image" width="200" src="images/products/rye-bread-2.jpeg" alt="" srcset="">
-                        <span class="shop-item-title">Fresh Rye Bread</span>
-                        <p>Made fresh on Location. Whole loaf can come sliced upon request.</p>
-                        <span class="shop-item-price">$12.00</span>
-                        <button href="" onclick="addToCart('Fresh Rye bread', 12.00)" style="text-decoration: none;">Add to Order</button>
-                    </div>
-                    <div class="item product-beverage"><img class="shop-item-image" width="200" src="images/products/affogato-el-cafe.jpeg" alt="">
-                        <span class="shop-item-title">Affogato el Cafe</span>
-                        <p>Made by pouring expresso from freshly ground coffe beans over two scoops of vanilla icecream.</p>
-                        <span class="shop-item-price">$4.00</span>
-                        <button href="" onclick="addToCart('Affogato el Cafe', 4.00)" style="text-decoration: none;">Add to Order</a>
-                    </div>
-                    <div class="item product-beverage"><img class="shop-item-image" width="200" src="images/products/beverage.jpeg" alt="">
-                        <span class="shop-item-title">Frozen Cappuccino</span>
-                        <p>Double blended with ice and topped with whipped cream and caramel.</p>
-                        <span class="shop-item-price">$12.00</span>
-                        <button href="" onclick="addToCart('Frozen Cappuccino', 12.00)" style="text-decoration: none;">Add to Order</button>
-                    </div>
-                    <div class="item product-beverage"><img class="shop-item-image" width="200" src="images/products/cappuccino.jpeg" alt="" srcset="">
-                        <span class="shop-item-title">Cappuccino</span>
-                        <p>Hot shot of expresso with steamed milk and topped with a sweet milk foam.</p>
-                        <span class="shop-item-price">$9.00</span>
-                        <button href="" onclick="addToCart('Cappuccino', 9.00)" style="text-decoration: none;">Add to Order</button>
-                    </div>
-                    <div class="item product-beverage"><img class="shop-item-image" width="200" src="images/products/chamomile-tea.jpeg" alt="" srcset="">
-                        <span class="shop-item-title">Chamomile Tea</span>
-                        <p>Freshly dried Chamomile flower tea optionally sweetened with sugar or honey.</p>
-                        <span class="shop-item-price">$5.00</span>
-                        <button href="" onclick="addToCart('Chamomile Tea', 5.00)" style="text-decoration: none;">Add to Order</button>
-                    </div>
-                    <div class="item product-beverage"><img class="shop-item-image" width="200" src="images/products/coffee-milk.jpeg" alt="" srcset="">
-                        <span class="shop-item-title">Black Coffee with fresh cream</span>
-                        <p>Newly toasted coffee beans grounded and made into a nice hotcup of cofee with fresh cream.</p>
-                        <span class="shop-item-price">$5.00</span>
-                        <button href="" onclick="addToCart('Black Coffee with fresh cream', 5.00)" style="text-decoration: none;">Add to Order</button>
-                    </div>
-                    <div class="item product-beverage"><img class="shop-item-image" width="200" src="images/products/french-press.jpeg" alt="">
-                        <span class="shop-item-title">Black Coffee French Press</span>
-                        <p>Freshly toasted and ground coffee beans with two-three cups of coffee inside the french press.</p>
-                        <span class="shop-item-price">$12.00</span>
-                        <button href="" onclick="addToCart('Black Coffee French Press', 12.00)" style="text-decoration: none;">Add to Order</button>
-                    </div>
-                    <div class="item product-beverage"><img class="shop-item-image" width="200" src="images/products/expresso.jpeg" alt="" srcset="">
-                        <span class="shop-item-title">Expresso Shot</span>
-                        <p>A single shot of expresso.</p>
-                        <span class="shop-item-price">$7.49</span>
-                        <button href="" onclick="addToCart('Expresso Shot', 7.49)" style="text-decoration: none;">Add to Order</button>
-                    </div>
-    
-                    <div class="item product-dessert"><img class="shop-item-image" width="200" src="images/products/cream-puff2.jpeg" alt="" srcset="">
-                        <span class="shop-item-title">Cream-Puff</span>
-                        <p>A single cream puff with freshly whipped cream and strawberries from the local market.</p>
-                        <span class="shop-item-price">$5.49</span>
-                        <button href="" onclick="addToCart('Cream-Puff', 5.49)" style="text-decoration: none;">Add to Order</button>
-                    </div>
-                    <div class="item product-dessert"><img class="shop-item-image" width="200" src="images/products/apple-strudel.jpeg" alt="" srcset="">
-                        <span class="shop-item-title">Apple Strudel</span>
-                        <p>Apple strudel is a traditional Viennese strudel, a popular pastry in Austria, Bavaria, the Czech Republic, Northern Italy, Slovenia, Croatia, and other countries in Europe.</p>
-                        <span class="shop-item-price">$14.49</span>
-                        <button href="" onclick="addToCart('Apple Strudel', 14.49)" style="text-decoration: none;">Add to Order</button>
-                    </div>
-                    <div class="item product-dessert"><img class="shop-item-image" width="200" src="images/products/cup-cakes-2.jpeg" alt="" srcset="">
-                        <span class="shop-item-title">Cupcake</span>
-                        <p>A single cupcake waiting to be eaten.</p>
-                        <span class="shop-item-price">$5.49</span>
-                        <button href="" onclick="addToCart('Cupcake', 5.49)" style="text-decoration: none;">Add to Order</button>
-                    </div>
-                    <div class="item product-dessert"><img class="shop-item-image" width="200" src="images/products/tart-coco2.jpeg" alt="" srcset="">
-                        <span class="shop-item-title">Chocolate Tart</span>
-                        <p>A single Chocolate tart with fresh chocolate cream and candied raspberries.</p>
-                        <span>$9.99</span>
-                        <button href="" onclick="addToCart('Chocolate Tart', 9.99)" style="text-decoration: none;">Add to Order</button>
-                    </div>
-                    <div class="item product-dessert"><img class="shop-item-image" width="200" src="images/products/macaroons.jpeg" alt="" srcset="">
-                        <span class="shop-item-title">Macaroons</span>
-                        <p>Eight maccaroons with strawberry filling per order.</p>
-                        <span class="shop-item-price">$34.49</span>
-                        <button href="" onclick="addToCart('Macaroons', 34.49)" style="text-decoration: none;">Add to Order</button>
-                    </div>
-                    <div class="item product-dessert"><img class="shop-item-image" width="200" src="images/products/meringue.jpeg" alt="" srcset="">
-                        <span class="shop-item-title">Meringue cookies</span>
-                        <p>Light and fluffly little crisps that melt away on the tongue. Pack of 24 per order.</p>
-                        <span class="shop-item-price">$29.99</span>
-                        <button href="" onclick="addToCart('Meringue Cookies', 29.99)" style="text-decoration: none;">Add to Order</button>
-                    </div>
+    <section id="products">
+        <div id="products-container" class="items-container">
+            <div class="item product-bread"><img class="shop-item-image" width="200" src="images/products/bagel.jpeg" alt="" srcset="">
+                <span class="shop-item-title">Bagels</span>
+                <p>Made fresh on Location: toasted and smothered with homemade creamcheese.</p>
+                <span class="shop-item-price">$4.00</span>
+                <button href="" onclick="addToCart('Bagels', 4.00)" style="text-decoration: none;">Add to Order</button>
             </div>
-        </section>
-    
-        <section id="cart">
-            <div id="cart-header"><h1>~ Cart Order ~</h1></div>
-            <br><br><br><br>
+            <div class="item product-bread"><img class="shop-item-image" width="200" src="images/products/rye-bread-2.jpeg" alt="" srcset="">
+                <span class="shop-item-title">Fresh Rye Bread</span>
+                <p>Made fresh on Location. Whole loaf can come sliced upon request.</p>
+                <span class="shop-item-price">$12.00</span>
+                <button href="" onclick="addToCart('Fresh Rye bread', 12.00)" style="text-decoration: none;">Add to
+                    Order</button>
+            </div>
+            <div class="item product-beverage"><img class="shop-item-image" width="200" src="images/products/affogato-el-cafe.jpeg" alt="">
+                <span class="shop-item-title">Affogato el Cafe</span>
+                <p>Made by pouring expresso from freshly ground coffe beans over two scoops of vanilla icecream.</p>
+                <span class="shop-item-price">$4.00</span>
+                <button href="" onclick="addToCart('Affogato el Cafe', 4.00)" style="text-decoration: none;">Add to
+                    Order</a>
+            </div>
+            <div class="item product-beverage"><img class="shop-item-image" width="200"
+                    src="images/products/beverage.jpeg" alt="">
+                <span class="shop-item-title">Frozen Cappuccino</span>
+                <p>Double blended with ice and topped with whipped cream and caramel.</p>
+                <span class="shop-item-price">$12.00</span>
+                <button href="" onclick="addToCart('Frozen Cappuccino', 12.00)" style="text-decoration: none;">Add to
+                    Order</button>
+            </div>
+            <div class="item product-beverage"><img class="shop-item-image" width="200" src="images/products/cappuccino.jpeg" alt="" srcset="">
+                <span class="shop-item-title">Cappuccino</span>
+                <p>Hot shot of expresso with steamed milk and topped with a sweet milk foam.</p>
+                <span class="shop-item-price">$9.00</span>
+                <button href="" onclick="addToCart('Cappuccino', 9.00)" style="text-decoration: none;">Add to
+                    Order</button>
+            </div>
+            <div class="item product-beverage"><img class="shop-item-image" width="200" src="images/products/chamomile-tea.jpeg" alt="" srcset="">
+                <span class="shop-item-title">Chamomile Tea</span>
+                <p>Freshly dried Chamomile flower tea optionally sweetened with sugar or honey.</p>
+                <span class="shop-item-price">$5.00</span>
+                <button href="" onclick="addToCart('Chamomile Tea', 5.00)" style="text-decoration: none;">Add to
+                    Order</button>
+            </div>
+            <div class="item product-beverage"><img class="shop-item-image" width="200" src="images/products/coffee-milk.jpeg" alt="" srcset="">
+                <span class="shop-item-title">Black Coffee with fresh cream</span>
+                <p>Newly toasted coffee beans grounded and made into a nice hotcup of cofee with fresh cream.</p>
+                <span class="shop-item-price">$5.00</span>
+                <button href="" onclick="addToCart('Black Coffee with fresh cream', 5.00)" style="text-decoration: none;">Add to Order</button>
+            </div>
+            <div class="item product-beverage"><img class="shop-item-image" width="200" src="images/products/french-press.jpeg" alt="">
+                <span class="shop-item-title">Black Coffee French Press</span>
+                <p>Freshly toasted and ground coffee beans with two-three cups of coffee inside the french press.</p>
+                <span class="shop-item-price">$12.00</span>
+                <button href="" onclick="addToCart('Black Coffee French Press', 12.00)" style="text-decoration: none;">Add to Order</button>
+            </div>
+            <div class="item product-beverage"><img class="shop-item-image" width="200" src="images/products/expresso.jpeg" alt="" srcset="">
+                <span class="shop-item-title">Expresso Shot</span>
+                <p>A single shot of expresso.</p>
+                <span class="shop-item-price">$7.49</span>
+                <button href="" onclick="addToCart('Expresso Shot', 7.49)" style="text-decoration: none;">Add to
+                    Order</button>
+            </div>
+
+            <div class="item product-dessert"><img class="shop-item-image" width="200" src="images/products/cream-puff2.jpeg" alt="" srcset="">
+                <span class="shop-item-title">Cream-Puff</span>
+                <p>A single cream puff with freshly whipped cream and strawberries from the local market.</p>
+                <span class="shop-item-price">$5.49</span>
+                <button href="" onclick="addToCart('Cream-Puff', 5.49)" style="text-decoration: none;">Add to
+                    Order</button>
+            </div>
+            <div class="item product-dessert"><img class="shop-item-image" width="200" src="images/products/apple-strudel.jpeg" alt="" srcset="">
+                <span class="shop-item-title">Apple Strudel</span>
+                <p>Apple strudel is a traditional Viennese strudel, a popular pastry in Austria, Bavaria, the Czech Republic, Northern Italy, Slovenia, Croatia, and other countries in Europe.</p>
+                <span class="shop-item-price">$14.49</span>
+                <button href="" onclick="addToCart('Apple Strudel', 14.49)" style="text-decoration: none;">Add to
+                    Order</button>
+            </div>
+            <div class="item product-dessert"><img class="shop-item-image" width="200" src="images/products/cup-cakes-2.jpeg" alt="" srcset="">
+                <span class="shop-item-title">Cupcake</span>
+                <p>A single cupcake waiting to be eaten.</p>
+                <span class="shop-item-price">$5.49</span>
+                <button href="" onclick="addToCart('Cupcake', 5.49)" style="text-decoration: none;">Add to
+                    Order</button>
+            </div>
+            <div class="item product-dessert"><img class="shop-item-image" width="200" src="images/products/tart-coco2.jpeg" alt="" srcset="">
+                <span class="shop-item-title">Chocolate Tart</span>
+                <p>A single Chocolate tart with fresh chocolate cream and candied raspberries.</p>
+                <span>$9.99</span>
+                <button href="" onclick="addToCart('Chocolate Tart', 9.99)" style="text-decoration: none;">Add to
+                    Order</button>
+            </div>
+            <div class="item product-dessert"><img class="shop-item-image" width="200" src="images/products/macaroons.jpeg" alt="" srcset="">
+                <span class="shop-item-title">Macaroons</span>
+                <p>Eight maccaroons with strawberry filling per order.</p>
+                <span class="shop-item-price">$34.49</span>
+                <button href="" onclick="addToCart('Macaroons', 34.49)" style="text-decoration: none;">Add to
+                    Order</button>
+            </div>
+            <div class="item product-dessert"><img class="shop-item-image" width="200" src="images/products/meringue.jpeg" alt="" srcset="">
+                <span class="shop-item-title">Meringue cookies</span>
+                <p>Light and fluffly little crisps that melt away on the tongue. Pack of 24 per order.</p>
+                <span class="shop-item-price">$29.99</span>
+                <button href="" onclick="addToCart('Meringue Cookies', 29.99)" style="text-decoration: none;">Add to
+                    Order</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="cart">
+        <div id="cart-header">
+            <h1 style="color: white;">~ Cart Order ~</h1>
+        </div>
+        <br><br><br><br>
         <div class="cart-items">
 
         </div>
-        <br>
-            <div class="buttons">
-                <div id="clear"><button onclick="clearCart()">Clear Order</button></div>
-                <div id="checkout"><button onclick="">Purchase Order</button></div>
-            </div>
-            <br>
-        </section>
-    
-    
-    
-    
-    
-    
-        <section class="footer ">
-            <div class="social ">
-                <a href="# "><i class="fab fa-facebook-f "></i></a>
-                <a href="https://www.instagram.com/princek_._/ "><i class="fab fa-instagram "></i></a>
-                <a href="# "><i class="fab fa-twitter "></i></a>
-            </div>
-            <ul class="list ">
-                <li><a href="about.html ">About Us</a>
-                </li>
-                <li><a href="contact.html ">Contact Us</a>
-                </li>
-                <li><a href="# ">Privacy Policy</a>
-                </li>
-                <li><a href="# ">Terms & Conditions</a>
-                </li>
-            </ul>
-            <p class="copyright ">
-                Jean-Claude’s Patisserie's © 2021
-            </p>
-        </section>
-    
-        <script src="index.js"></script>
+        <br><br><br><br>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total:</strong>
+            <div class="cart-total-price">$0.00</div>
 
- 
+        </div>
+        <br><br><br><br>
+        <br>
+        <div class="buttons">
+            <div id="clear"><button onclick="clearCart()">Clear Order</button></div>
+            <div id="checkout"><button onclick="purchaseProducts()">Purchase Order</button></div>
+        </div>
+        <br>
+    </section>
+
+
+
+
+
+
+    <section class="footer ">
+        <div class="social ">
+            <a href="# "><i class="fab fa-facebook-f "></i></a>
+            <a href="https://www.instagram.com/princek_._/ "><i class="fab fa-instagram "></i></a>
+            <a href="# "><i class="fab fa-twitter "></i></a>
+        </div>
+        <ul class="list ">
+            <li><a href="about.html ">About Us</a>
+            </li>
+            <li><a href="contact.html ">Contact Us</a>
+            </li>
+            <li><a href="# ">Privacy Policy</a>
+            </li>
+            <li><a href="# ">Terms & Conditions</a>
+            </li>
+        </ul>
+        <p class="copyright ">
+            Jean-Claude’s Patisserie's © 2021
+        </p>
+    </section>
+
+    <script src="index.js"></script>
+
+
     <script src="menu.js"></script>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
- </html> 
+</html>
