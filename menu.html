@@ -7,10 +7,11 @@
     <title>Menu</title>
     <link rel="stylesheet" href="menu.css">
 
-    <!-- <link rel="stylesheet" href="home.css"> -->
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <!-- <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="style.css"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,16 +43,26 @@
                     <li class="nav-item">
                         <a class="nav-link" href="logorsignup.html">Log In</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="staff-sign-up.html">Staff</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cart-container">
+                            <ion-icon name="cart-outline"></ion-icon>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-<br><br><br><br>
+    <br><br><br><br>
 
     <section id="page">
         <div id="menu">
-            <h1>MENU</h1>
+            <div id="title-menu">
+                <h1>MENU</h1>
+            </div>
         </div>
     </section>
     <br><br><br><br>
@@ -88,7 +99,45 @@
                     <button class="btn prime-btn product-btn">Add to Order</button>
                 </div>
             </div>
+            <div class="b4 product-item">
+                <img class="product-img" width="200" src="images/products/mousse.jpeg" alt="">
+                <h3 class="product-title">Mousse</h3>
+                <div class="products-item-details">
+                    <p> This super moist dark chocolate mousse combines unsweetened natural cocoa powder and dark cocoa powder for an extra rich flavor.</p>
+                    <p class="product-price">$35.00</p>
+                    <button class="btn prime-btn product-btn">Add to Order</button>
+                </div>
+            </div>
+            <div class="b5 product-item">
+                <img class="product-img" width="200" src="images/products/cheese-cake-2.jpeg" alt="">
+                <h3 class="product-title">Vanilla Cheesecake</h3>
+                <div class="products-item-details">
+                    <p> With its outstanding vanilla flavor, pillowy soft crumb, and creamy vanilla buttercream, this is truly the best vanilla cheesecake I've ever had.</p>
+                    <p class="product-price">$40.00</p>
+                    <button class="btn prime-btn product-btn">Add to Order</button>
+                </div>
+            </div>
+            <div class="b6 product-item">
+                <img class="product-img" width="200" src="images/products/donut.jpeg" alt="">
+                <h3 class="product-title">Donuts</h3>
+                <div class="products-item-details">
+                    <p>We are not gonna give three donuts, or two Donuts, but only one donut for 10.99 and its topped with freshly picked strawberries.</p>
+                    <p class="product-price">$10.99</p>
+                    <button class="btn prime-btn product-btn">Add to Order</button>
+                </div>
+            </div>
+            <div class="b7  product-item">
+                <img class="product-img" width="200" src="images/products/plum-cake.jpeg" alt="">
+                <h3 class="product-title">Plum cake</h3>
+                <div class="products-item-details">
+                    <p>Very good cake to have if you want to eat your feelings away. Taste's especially nice on a rainy day after your mother's funeral.</p>
+                    <p class="product-price">$25.00</p>
+                    <button class="btn prime-btn product-btn">Add to Order</button>
+                </div>
+            </div>
         </div>
+    </div><br><br><br><br><br>
+
 
         <section id="products">
             <div id="products-container" class="items-container">
@@ -227,7 +276,12 @@
         </section>
     
         <script src="index.js"></script>
+
+ 
     <script src="menu.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
  </html> 
