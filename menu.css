@@ -13,9 +13,6 @@ html {
 
 /* @media screen and (max-width: 1440px){ should figure out how this works
 
-} */
-
-
 /* @keyframes fadeIn {
     from {
         opacity: 0;
@@ -74,7 +71,9 @@ body {
     height: auto;
 }
 
-#page {
+
+#page 
+{
     margin-top: 1cm;
     /* display: flex; */
     background-color: antiquewhite;
@@ -131,6 +130,7 @@ body {
     padding: 3%;
     margin: 1%;
 }
+
 
 .b1 p {
     width: 300px;
@@ -253,7 +253,8 @@ body {
     margin: 1cm;
 }
 
-.item {
+.item 
+{
     border-color: white;
     background-color: white;
     text-align: center;
@@ -287,9 +288,9 @@ body {
 
 /* This starts the order/CART */
 
-#cart-container {
+#cart-container 
+{
     background-color: bisque;
-    font-family: Glass Antiqua;
     justify-content: center;
 }
 
@@ -333,6 +334,7 @@ body {
 
 #cart {
     background-color: rgba(250, 235, 215, 0.492);
+    font-family: Glass Antiqua;
 }
 
 #checkout button:hover {
@@ -367,7 +369,8 @@ body {
 .cart-price {
     width: 20%;
     font-size: 1.2em;
-    color: white;
+    color: violet;
+
 }
 
 .cart-quantity {
@@ -375,7 +378,9 @@ body {
 }
 
 .cart-item-title {
-    color: white;
+
+    color: violet;
+
     margin-left: .5em;
     font-size: 1.2em;
 }
@@ -395,12 +400,12 @@ body {
 .cart-total-title {
     font-weight: bold;
     font-size: 1.5em;
-    color: white;
+    color: rgb(99, 155, 137);
     margin-right: 20px;
 }
 
 .cart-total-price {
-    color: white;
+    color: rgb(99, 155, 137);
     font-size: 130%;
     text-align: right;
 }
