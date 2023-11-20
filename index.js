@@ -1,5 +1,4 @@
-
-function signUp(){
+function signUp() {
     let email = document.getElementById("email").value;
     console.log(email);
     let pass = document.getElementById("pass").value;
@@ -34,36 +33,39 @@ function login() {
     }
 }
 
-function staffSignUp() {
-    let staffEmail = document.getElementById('staffU').value
-    console.log(staffEmail)
-    let staffPass = document.getElementById('Staffpass').value
-    console.log(staffPass)
-    if (document.getElementById("staffU").value == "" || document.getElementById("Staffpass").value == "") {
-        alert("Please fill the forms");
-    } else {
-        localStorage.setItem(staffEmail, staffPass);
-        alert("Account Created");
-        location.replace("staff-login.html");
-    }
+// function staffSignUp() {
+//     let staffEmail = document.getElementById('staffU').value
+//     console.log(staffEmail)
+//     let staffPass = document.getElementById('Staffpass').value
+//     console.log(staffPass)
+//     if (document.getElementById("staffU").value == "" || document.getElementById("Staffpass").value == "") {
+//         alert("Please fill the forms");
+//     } else {
+//         localStorage.setItem(staffEmail, staffPass);
+//         alert("Account Created");
+//         location.replace("staff-login.html");
+//     }
 
 
-    localStorage.setItem(staffEmail, staffPass)
-}
+//     localStorage.setItem(staffEmail, staffPass)
+// }
 
 function staffLogin() {
-    let staffEmail = document.getElementById('staffU').value;
-    let staffPass = document.getElementById('Staffpass').value;
-    let managerPass = "admin123";
+    let hardcodedEmail = "Admin@gmail.com";
+    let hardcodedPassword = "Admin123";
 
-    if (localStorage.getItem(staffEmail)) {
-        if (staffPass === managerPass) {
-            location.replace("edit-menu.html");
-        } else {
-            alert("Login Failed Enter the correct password");
-        }
+    let inputEmail = document.getElementById('staffU').value;
+    let inputPassword = document.getElementById('Staffpass').value;
+
+    if (inputEmail === hardcodedEmail && inputPassword === hardcodedPassword) {
+        location.replace("edit-menu.html");
+    } else {
+        alert("Login Failed. Enter the correct email and password");
     }
 }
+
+
+
 
 const header = document.querySelector('.navbar');
 
@@ -82,15 +84,14 @@ function editMenu() {
     addedItems.classList.add('Menu-row')
     let itemRow = document.getElementsByClassName('Menu-items')
     let itemNames = itemRow.getElementsByClassName('Menu-item-title')
-    for(i = 0; i < itemNames.length; i++){
-        if(localStorage.getItem == itemNames){
+    for (i = 0; i < itemNames.length; i++) {
+        if (localStorage.getItem == itemNames) {
             location.replace("menu.html")
-        }
-        else{
+        } else {
             alert("Addition failed")
         }
     }
-    
+
 }
 
 function contactAlert() {
