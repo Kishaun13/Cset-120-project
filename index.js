@@ -51,16 +51,15 @@ function login() {
 // }
 
 function staffLogin() {
-    let hardcodedEmail = "Admin@gmail.com";
-    let hardcodedPassword = "Admin123";
-
-    let inputEmail = document.getElementById('staffU').value;
-    let inputPassword = document.getElementById('Staffpass').value;
-
-    if (inputEmail === hardcodedEmail && inputPassword === hardcodedPassword) {
-        location.replace("edit-menu.html");
-    } else {
-        alert("Login Failed. Enter the correct email and password");
+    let staffEmail = document.getElementById('staffU').value;
+    let staffPass = document.getElementById('Staffpass').value;
+    if(staffEmail === 'Gorlock' && staffPass === 'Quack'){
+        sessionStorage.setItem('manager', true)
+        alert('You are now in manager mode.')
+        location.replace('edit-menu.html')
+    }
+    else{
+        alert('Login failed')
     }
 }
 
@@ -97,4 +96,3 @@ function editMenu() {
 function contactAlert() {
     alert("Thank you for contacting us. We will get back to you as soon as possible.");
 
-}
