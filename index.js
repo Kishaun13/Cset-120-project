@@ -54,14 +54,13 @@ function staffSignUp() {
 function staffLogin() {
     let staffEmail = document.getElementById('staffU').value;
     let staffPass = document.getElementById('Staffpass').value;
-    let managerPass = "admin123";
-
-    if (localStorage.getItem(staffEmail)) {
-        if (staffPass === managerPass) {
-            location.replace("edit-menu.html");
-        } else {
-            alert("Login Failed Enter the correct password");
-        }
+    if(staffEmail === 'Gorlock' && staffPass === 'Quack'){
+        sessionStorage.setItem('manager', true)
+        alert('You are now in manager mode.')
+        location.replace('edit-menu.html')
+    }
+    else{
+        alert('Login failed')
     }
 }
 
@@ -96,4 +95,8 @@ function editMenu() {
 function contactAlert() {
     alert("Thank you for contacting us. We will get back to you as soon as possible.");
 
+}
+
+function addNewItems(){
+    
 }
