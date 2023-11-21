@@ -1,4 +1,4 @@
-let cart = [];
+let cart = {};
 if (localStorage.getItem("cart")) {
   cart = JSON.parse(localStorage.getItem("cart"));
   displayCartItems();
@@ -95,10 +95,23 @@ quantityInputs.forEach((input) => {
     updateQuantity(itemName, newQuantity);
   });
 });
+
 function updateQuantity(itemName, quantity) {
   if (cart[itemName]) {
     cart[itemName].quantity = quantity;
     updateCartTotal();
     localStorage.setItem("cart", JSON.stringify(cart));
   }
+
+
+
+function purchaseProducts() {
+    if (Object.keys(cart).length === 0) {
+        alert("Your cart is empty!");
+    } else {
+        alert("Thank you for your purchase!");
+        location.replace("payment.html");
+        // document.getElementsByClassName("cart-quantity-input").disabled = true;
+    }
+
 }

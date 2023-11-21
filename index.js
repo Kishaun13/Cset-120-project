@@ -1,4 +1,6 @@
 function signUp() {
+    let name = document.getElementById("name").value;
+    console.log(name);
     let email = document.getElementById("email").value;
     console.log(email);
     let pass = document.getElementById("pass").value;
@@ -13,7 +15,7 @@ function signUp() {
 
 
 
-    localStorage.setItem(email, pass);
+    localStorage.setItem(email, pass, name);
 }
 
 function login() {
@@ -243,7 +245,8 @@ function staffLogin() {
     let staffEmail = document.getElementById('staffU').value;
     let staffPass = document.getElementById('Staffpass').value;
 
-    if(staffEmail === 'Gorlock' && staffPass === 'Quack'){
+    if (staffEmail === 'Gorlock' && staffPass === 'Quack') {
+
         sessionStorage.setItem('manager', true)
         alert('You are now in manager mode.')
         if(firstLogin === false){
@@ -251,8 +254,7 @@ function staffLogin() {
         }
         
         location.replace('edit-menu.html')
-    }
-    else{
+    } else {
         alert('Login failed')
     }
 }
@@ -291,4 +293,6 @@ function editMenu() {
 
 function contactAlert() {
     alert("Thank you for contacting us. We will get back to you as soon as possible.");
+
 }
+
