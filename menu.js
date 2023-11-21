@@ -1,4 +1,4 @@
-let cart = [];
+let cart = {};
 if (localStorage.getItem("cart")) {
     cart = JSON.parse(localStorage.getItem("cart"));
     displayCartItems();
@@ -110,5 +110,6 @@ function purchaseProducts() {
     } else {
         alert("Thank you for your purchase!");
         location.replace("payment.html");
+        // document.getElementsByClassName("cart-quantity-input").disabled = true;
     }
 }

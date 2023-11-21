@@ -1,4 +1,6 @@
 function signUp() {
+    let name = document.getElementById("name").value;
+    console.log(name);
     let email = document.getElementById("email").value;
     console.log(email);
     let pass = document.getElementById("pass").value;
@@ -13,7 +15,7 @@ function signUp() {
 
 
 
-    localStorage.setItem(email, pass);
+    localStorage.setItem(email, pass, name);
 }
 
 function login() {
