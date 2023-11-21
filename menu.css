@@ -409,6 +409,7 @@ body {
 .cart-total-price {
     font-size: 130%;
     text-align: right;
+    color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
