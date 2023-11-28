@@ -1,11 +1,14 @@
 
-
 var removeItems = document.querySelectorAll('remove-buttons')
 console.log(sessionStorage.getItem('Original-Menu'))
 console.log(displayItems())
 removeItems.forEach(item => {
     item.addEventListener('click', removeItem)
 });
+function editMenu(){
+  document.getElementById('menus').contentEditable = true
+}
+
 function removeFromMenu(itemName) {
     // delete cart[itemName];
     // displayCartItems();
@@ -16,7 +19,7 @@ function removeFromMenu(itemName) {
   }
   function removeItem(){
      var menuCard = this.parentElement
-    menuCard.remove()
+     menuCard.remove()
   }
 function addToMenu(){
     const additemsform = document.querySelector('item')
@@ -24,7 +27,7 @@ function addToMenu(){
     let newProduct = document.getElementsByClassName('')
     
 }
-  function displayCartItems(){
+  function displayCartItems(newItems){
     const cartItemsContainer = document.querySelector(".cart-items");
     cartItemsContainer.innerHTML = "";
   
@@ -51,36 +54,27 @@ function addToMenu(){
       cartItemsContainer.append(cartRow);
     }
   }
+  function addRemove(){
+    
+  }
   function displayItems(){
     let sessionMenu = sessionStorage.getItem('Original-Menu')
      var displayMenu = document.getElementById("display-menu")
      console.log(displayMenu)
      displayMenu.innerHTML = sessionMenu
+     
 
   }
   displayItems()
-function saveSession(){
-    var testdiv = document.getElementById('products-container').outerHTML
-    sessionStorage.setItem('itemName', testdiv)
-    console.log(sessionStorage.getItem('itemName'))
-}
-//   function editMenu(){
-//     let menuItems = document.getElementsByClassName('item')
-//     let 
-//     for(){
-        
-//     }
-//   }
+  
 
-// function editMenu() {
-//     let addedItems = document.createElement('div')
-//     addedItems.classList.add('Menu-row')
-//     let itemRow = document.getElementsByClassName('Menu-items')
-//     let itemNames = itemRow.getElementsByClassName('Menu-item-title')
-//     for (i = 0; i < itemNames.length; i++) {
-//         if (localStorage.getItem == itemNames) {
-//             console.log(itemNames)
-//         }
-//     }
-// }
+ function removeItem(){
+
+ }
+function saveSession(){
+    var testdiv = document.getElementById('menus').outerHTML
+    localStorage.setItem('itemName', testdiv)
+    console.log(localStorage.getItem('itemName'))
+    
+  }
 

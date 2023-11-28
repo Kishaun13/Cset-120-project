@@ -35,19 +35,27 @@
                     <li class="nav-item">
                         <a class="nav-link" href="staff-login.html">Staff</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cart">
+                            <ion-icon name="cart-outline"></ion-icon>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
     <div class="managerMode">
         <p>Add items to the Menu</p>
-        <input type="text" name="product-name" class="productName">
-        <input type="text" name="product-price" class="product-price">
-        <input type="text" name="product-img" class="product-img">
+        <input type="text" name="product-name" id="productName">
+        <input type="text" name="product-price" id="product-price">
+        <input type="text" name="product-img" id="product-img">
         
     </div>
+    <button onclick="addNewItems()">Add</button>
+    <button onclick="editMenu()">Edit</button>
+    <br>
     <button onclick="saveSession()">Save</button>
-    <br><br><br><br>
+    <br><br><br>
     <div id="every-menu">
         <h2>Everyday Menu Items (always in)</h2>
     </div>
@@ -55,6 +63,13 @@
     <div id="display-menu">
         
     </div>
+    <script>
+        $(document).ready(function ()
+        {
+           var element = document.getElementById('display-menu')
+           element.innerHTML = sessionStorage.getItem('itemName')
+        })
+    </script>
     <script src="index.js"></script>
     <script src="edit.menu.js"></script>
 </body>
