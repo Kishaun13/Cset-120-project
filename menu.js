@@ -6,7 +6,7 @@ if (localStorage.getItem("cart")) {
 }
 
 function addToCart(itemName, itemPrice) {
-  let itemName = document.getElementsByClassName('shop-item-title')
+   itemName = document.getElementsByClassName('shop-item-title')
   if (cart[itemName]) {
     alert(`${itemName} is already in the cart!`);
   } else {
@@ -22,7 +22,7 @@ function displayCartItems() {
   const cartItemsContainer = document.querySelector(".cart-items");
   cartItemsContainer.innerHTML = "";
 
-  for (let itemName in cart) {
+  for ( itemName in cart) {
     const item = cart[itemName];
 
     const cartRow = document.createElement("div");

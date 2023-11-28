@@ -17,6 +17,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Caveat&family=Glass+Antiqua&family=Indie+Flower&family=Lato:wght@100;300;400&family=Shadows+Into+Light&family=Sometype+Mono&display=swap" rel="stylesheet">
 
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
     <style>
         .hidden {
             display: none;
@@ -319,16 +321,22 @@
             </p>
         </section>
     
-        <script src="index.js"></script>
+
 
 
     </section>
+    <script>
+        $(document).ready(function ()
+        {
+           var element = document.getElementById('menus')
+           element.innerHTML = sessionStorage.getItem('itemName')
+        })
+    </script>
 
 
 
 
-
-    <script src="index.js"></script>
+    <!-- <script src="index.js"></script> -->
 
 
 
