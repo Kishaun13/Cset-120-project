@@ -289,46 +289,38 @@
         </div>
         <br>
 
-            <div class="buttons">
-                <div id="clear"><button onclick="clearCart()">Clear Order</button></div>
-                <div id="checkout"><button href="payment.html" onclick="purchaseProducts()">Purchase Order</button></div>
-            </div>
-            <br>
-        </section>
-    
-    
-    
-    
-    
-    
-        <section class="footer ">
-            <div class="social ">
-                <a href="# "><i class="fab fa-facebook-f "></i></a>
-                <a href="https://www.instagram.com/princek_._/ "><i class="fab fa-instagram "></i></a>
-                <a href="# "><i class="fab fa-twitter "></i></a>
-            </div>
-            <ul class="list ">
-                <li><a href="about.html ">About Us</a>
-                </li>
-                <li><a href="contact.html ">Contact Us</a>
-                </li>
-                <li><a href="# ">Privacy Policy</a>
-                </li>
-                <li><a href="# ">Terms & Conditions</a>
-                </li>
-            </ul>
-            <p class="copyright ">
-                Jean-Claude’s Patisserie's © 2021
-            </p>
-        </section>
-    
-
-
         <div class="buttons">
             <div id="clear"><button onclick="clearCart()">Clear Order</button></div>
             <div id="checkout"><button href="payment.html" onclick="purchaseProducts()">Purchase Order</button></div>
         </div>
         <br>
+    </section>
+
+
+
+
+
+
+    <section class="footer ">
+        <div class="social ">
+            <a href="# "><i class="fab fa-facebook-f "></i></a>
+            <a href="https://www.instagram.com/princek_._/ "><i class="fab fa-instagram "></i></a>
+            <a href="# "><i class="fab fa-twitter "></i></a>
+        </div>
+        <ul class="list ">
+            <li><a href="about.html ">About Us</a>
+            </li>
+            <li><a href="contact.html ">Contact Us</a>
+            </li>
+            <li><a href="# ">Privacy Policy</a>
+            </li>
+            <li><a href="# ">Terms & Conditions</a>
+            </li>
+        </ul>
+        <p class="copyright ">
+            Jean-Claude’s Patisserie's © 2021
+        </p>
+    </section>
     </section>
 
 
@@ -363,10 +355,9 @@
 
     </section>
     <script>
-        $(document).ready(function ()
-        {
-           var element = document.getElementById('menus')
-           element.innerHTML = sessionStorage.getItem('itemName')
+        $(document).ready(function() {
+            var element = document.getElementById('menus')
+            element.innerHTML = sessionStorage.getItem('itemName')
         })
     </script>
 
@@ -379,8 +370,8 @@
 
     <script src="menu.js"></script>
 
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
