@@ -6,7 +6,8 @@ if (localStorage.getItem("cart")) {
 }
 
 function addToCart(itemName, itemPrice) {
-    itemName = document.getElementsByClassName('shop-item-title')
+
+
     if (cart[itemName]) {
         alert(`${itemName} is already in the cart!`);
     } else {
@@ -15,6 +16,7 @@ function addToCart(itemName, itemPrice) {
         displayCartItems();
         updateCartTotal();
         localStorage.setItem("cart", JSON.stringify(cart));
+        alert(`${itemName} is added to the cart!`);
     }
 }
 
