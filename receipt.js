@@ -7,6 +7,7 @@ window.onload = function() {
 
 function returnHome() {
     location.replace("index.html");
+    clearCart();
 }
 
 let cart = {};
@@ -95,12 +96,19 @@ function clearCart() {
     updateCartTotal();
 }
 
-
 window.onload = function() {
     let name = localStorage.getItem('name');
-    document.getElementById('name').innerText = name;
-    console.log(name);
+    document.querySelector(".displayName").innerText = name;
 }
+
+
+
+// window.onload = function() {
+//     let name = localStorage.getItem('name');
+//     document.getElementById('name').innerText = name;
+//     console.log(name);
+// }
+
 
 
 
