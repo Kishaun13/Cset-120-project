@@ -1,21 +1,16 @@
 function signUp() {
     let name = document.getElementById("name").value;
-    console.log(name);
     let email = document.getElementById("email").value;
-    console.log(email);
     let pass = document.getElementById("pass").value;
-    console.log(pass);
-    if (document.getElementById("email").value == "" || document.getElementById("pass").value == "") {
+
+    if (email == "" || pass == "") {
         alert("Please fill the forms");
     } else {
+        localStorage.setItem('name', name); // Store the name
         localStorage.setItem(email, pass);
         alert("Account Created");
         location.replace("login.html");
     }
-
-
-
-    localStorage.setItem(email, pass, name);
 }
 
 function login() {
@@ -34,7 +29,8 @@ function login() {
         alert("Login Failed");
     }
 }
-function addNewItems(){
+
+function addNewItems() {
     let newTitle = document.getElementById('productName')
     let newPrice = document.getElementById('product-price')
     let newImg = document.getElementById('product-img')
@@ -220,8 +216,9 @@ const orgMenu = `
 </section>
 </div>`
 let firstLogin = false
+
 function staffLogin() {
-    
+
     let staffEmail = document.getElementById('staffU').value;
     let staffPass = document.getElementById('Staffpass').value;
 
@@ -229,16 +226,16 @@ function staffLogin() {
 
         sessionStorage.setItem('manager', true)
         alert('You are now in manager mode.')
-        if(firstLogin === false){
+        if (firstLogin === false) {
             sessionStorage.setItem('Original-Menu', orgMenu)
         }
-        
+
         location.replace('edit-menu.html')
     } else {
         alert('Login failed')
     }
 }
-    
+
 
 
 
@@ -275,4 +272,3 @@ function contactAlert() {
     alert("Thank you for contacting us. We will get back to you as soon as possible.");
 
 }
-
