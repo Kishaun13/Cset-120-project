@@ -58,10 +58,10 @@ function displayCartItems() {
     cartItemsContainer.innerHTML = "";
 
 
-  for (let itemName in cart) {
-    const item = cart[itemName];
-//     for (itemName in cart) {
-//         const item = cart[itemName];
+    for (let itemName in cart) {
+        const item = cart[itemName];
+        //     for (itemName in cart) {
+        //         const item = cart[itemName];
 
 
         const cartRow = document.createElement("div");
@@ -144,7 +144,7 @@ function updateQuantity(itemName, quantity) {
     }
 }
 
-}
+
 
 function purchaseProducts() {
     if (Object.keys(cart).length === 0) {
