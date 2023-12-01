@@ -90,6 +90,7 @@ function updateCartTotal() {
 
     document.querySelector(".cart-total-price").innerText =
         "$" + total.toFixed(2);
+        console.log(total)
 }
 
 function clearCart() {
@@ -132,6 +133,7 @@ function purchaseProducts() {
     if (Object.keys(cart).length === 0) {
         alert("Your cart is empty!");
     } else {
+        alert('Time for Checkout!');
         location.replace("payment.html");
     }
 }
@@ -154,13 +156,13 @@ function openForm2() {
 
 function closeForm1() {
     document.getElementById('forms').style.display = "none";
-    alert("Thank you for your purchase!")
+    // alert("Thank you for your purchase!")
     window.location.assign("/receipt.html")
 };
 
 function closeForm2() {
     document.getElementById('forms').style.display = "none"
-    alert("Thank you for your purchase!")
+    // alert("Thank you for your purchase!")
     window.location.assign("/receipt.html")
 };
 

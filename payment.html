@@ -137,11 +137,11 @@
                                         <h4 style="text-align: center;">Credit/Debit</h4>
                                         <div class="content">
                                             <label for="cardName">Name on card:</label>
-                                            <input type="text" id="cardName" placeholder="Name on Card" name="Name-card">
+                                            <input type="text" id="cardName" placeholder="Name on Card">
                                         </div>
                                         <div class="content">
                                             <label for="creditCard">Credit/Debit card:</label>
-                                            <input class="required" type="text" id="creditCard" placeholder="1234-1234-1234-1234" name="Card_Number" minlength="16" maxlength="16" required>
+                                            <input class="required" type="text" id="creditCard" placeholder="1234-1234-1234-1234" minlength="16" maxlength="16" required>
                                         </div>
                                         <div class="content">    
                                             <label for="exMonth">Expiration Month</label>
@@ -162,7 +162,11 @@
                                         <div class="content"> 
                                             <h4 style="text-align: center;">Pickup or Delivery?</h4>
                                             <div style="text-align: center;" class="dropdown">
-                                                <select class="required" class="select" required>
+
+                                               // <select class="required" class="select" required>
+
+
+                                                <select class="required" class="select">
 
                                                     <option id="none1" value="n/a1"></option>
                                                     <option id="pickup1" value="pickup-1">Pickup</option>
@@ -186,7 +190,7 @@
 
                     <div class="row">
                         <div class="column-container">
-                            <div class="column"><button onclick="closeForm1()">Submit</button></div>
+                            <div class="column"><button type="submit" onclick="closeForm1()">Submit</button></div>
                             <div class="column"><button onclick="back()">Cancel</button></div>
                         </div>
                     </div>
