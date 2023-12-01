@@ -1,14 +1,15 @@
+window.onload = function() {
 
+  document.getElementById('menus').contentEditable = true
 
-var removeItems = document.querySelectorAll('remove-buttons')
+}
+let priceChange = document.querySelectorAll('.product-price')
 console.log(sessionStorage.getItem('Original-Menu'))
 console.log(displayItems())
 
-function editMenu(){
-  document.getElementById('menus').contentEditable = true
-  
-}
 
+
+stopEdit()
 function removeFromMenu(itemName) {
     // delete cart[itemName];
     // displayCartItems();
@@ -95,6 +96,7 @@ function addToMenu(){
 function saveSession(){
     var testdiv = document.getElementById('menus').outerHTML
     localStorage.setItem('Original-Menu', testdiv)
+    document.getElementById('menus').contentEditable = false
     console.log(localStorage.getItem('Original-Menu'))
     // location.replace('menu.html')
   }

@@ -1,37 +1,37 @@
-* {
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
 
-.home {
+.home{
     background-image: linear-gradient(), url(images/background/OIP\ \(1\).jpg);
 }
-
-.container1 {
+.container1
+{
     display: flex;
     justify-content: center;
     font-family: glass antiqua;
-}
 
-.contained-1 {
+.contained-1
+{
     margin-top: 120px;
     color: bisque;
 }
-
-.hero_button {
+.hero_button
+{
     color: bisque;
 }
-
-.form-popup {
+.form-popup
+{
     display: none;
     position: absolute;
     font-size: 250%;
     font-family: glass antiqua;
     width: 100%;
-}
 
-.form-contain {
+.form-contain
+{
     font-size: 15px;
     padding: 30px;
     background-color: rgb(172, 173, 172);
@@ -43,17 +43,20 @@
     flex-direction: column;
 }
 
-.row {
+.row
+{
     display: flex;
     flex-direction: row;
     padding: 10px;
-}
+  }
 
-.column-container {
+.column-container
+{
     display: flex;
 }
+.column 
+{
 
-.column {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,26 +67,30 @@
     background-color: rgb(54, 79, 71);
     border: 2px solid black;
     border-radius: 15px;
-}
 
-.content-align {
+.content-align
+{
+
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
-}
 
-.content {
+.content
+{
     padding: 10px;
 }
+.column button
+{
 
-.column button {
     border-radius: 15px;
     width: 200px;
     height: 30px;
 }
 
-.select {
+.select
+{
+
     padding: 15px;
     width: 100px;
 }
@@ -91,12 +98,12 @@
 
 /*FORMS FOR PAYMENT PAGE*/
 
-#itemsincart button,
-h1 {
+#itemsincart button, h1
+{
     display: none;
 }
-
-#itemsincart input {
+#itemsincart input
+{
     background-color: transparent;
     border: transparent;
     width: 30px;
@@ -131,13 +138,13 @@ h1 {
 
 .cart-quantity {
     width: 20%;
-}
+  }
 
-.cart-items .cart-column {
+.cart-items .cart-column{
     border-bottom: none;
 }
+.cart-total{
 
-.cart-total {
     text-align: right;
     font-size: 150%;
 }
