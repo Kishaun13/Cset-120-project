@@ -79,7 +79,6 @@
         <h2>Everyday Menu Items (always in)</h2>
     </div>
 
-
  <div id="display-menu">
 
    
@@ -93,17 +92,17 @@
         </div>
         <div class="cart-row">
             <span class="cart-item cart-header cart-column">ITEM</span>
-            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-price cart-header cart-column" style="font-family: glass antiqua; color: white;">PRICE PER ITEM</span>
             <span class="cart-quantity cart-header cart-column">QUANTITY</span>
         </div>
-        <br><br><br><br>
-        <div class="cart-items">
+        <br><br>
+        <div class="cart-items" style="font-family: glass antiqua; color: white;">
 
         </div>
 
         <div class="cart-total">
-            <strong class="cart-total-title">Total</strong>
-            <span class="cart-total-price">$0.00</span>
+            <strong class="cart-total-title" style="font-family: glass antiqua; color: white;">Total</strong>
+            <span class="cart-total-price" style="font-family: glass antiqua; color: white;">$0.00</span>
         </div>
         <br>
 
@@ -137,7 +136,7 @@
                 </li>
             </ul>
             <p class="copyright ">
-                Jean-Claude’s Patisserie's © 2021
+                Jean-Claude’s Patisserie © 2021
             </p>
         </section>
     
@@ -154,6 +153,21 @@
 
     <script src="index.js"></script>
     <script src="menu.js"></script>
+
+    <script>
+        $(document).ready(function ()
+        {
+           var element = document.getElementById('display-menu')
+           element.innerHTML = localStorage.getItem('Original-Menu')
+        })
+    </script> 
+
+
+
+
+
+    <script src="index.js"></script>
+
 
 
     </section>
@@ -188,13 +202,22 @@
 
 
 
+<!-- 
+<script src="index.js"></script>
 
-    <!-- <script src="index.js"></script>
 
 
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script>
+    if (localStorage.getItem("cart")) {
+    // cart = JSON.parse(localStorage.getItem("cart"));
+    displayCartItems();
+    updateCartTotal();
+}
+</script> -->
+
 </body>
 
 </html>
