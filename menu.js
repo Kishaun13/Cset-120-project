@@ -125,3 +125,31 @@ function purchaseProducts() {
     }
 
 }
+
+function openForm1() {
+    document.getElementById('forms').style.display = "block"
+    document.getElementById('cardcredit').style.display = "none"
+    document.getElementById('cash').style.display = "block"
+};
+
+function openForm2() {
+    document.getElementById('forms').style.display = "block"
+    document.getElementById('cardcredit').style.display = "block"
+    document.getElementById('cash').style.display = "none"
+};
+
+function closeForm1() {
+    document.getElementById('forms').style.display = "none";
+    alert("Thank you for your purchase!")
+    window.location.assign("/receipt.html")
+};
+
+function closeForm2() {
+    document.getElementById('forms').style.display = "none"
+    alert("Thank you for your purchase!")
+    window.location.assign("/receipt.html")
+};
+
+function back() {
+    document.getElementById('forms').style.display = "none"
+}
