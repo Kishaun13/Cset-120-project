@@ -2,11 +2,10 @@
 var removeItems = document.querySelectorAll('remove-buttons')
 console.log(sessionStorage.getItem('Original-Menu'))
 console.log(displayItems())
-removeItems.forEach(item => {
-    item.addEventListener('click', removeItem)
-});
+
 function editMenu(){
   document.getElementById('menus').contentEditable = true
+  
 }
 
 function removeFromMenu(itemName) {
@@ -17,10 +16,37 @@ function removeFromMenu(itemName) {
     var testdiv = document.getElementById('products-container')
     // console.log(testdiv.outerHTML)
   }
-  function removeItem(){
-     var menuCard = this.parentElement
-     menuCard.remove()
+  function removeSelected(){
+    const checkedItems = document.querySelectorAll('.checkedItems')
+    checkedItems.forEach(item => {
+        
+            if(item.checked){
+                var card = item.parentElement
+                removeItem(card)
+            }
+           
+        }
+        )
+};
+        
+function removeItem(divToRemove){
+    divToRemove.remove()
   }
+  function addNewItems(){
+    let newTitle = document.getElementById('productName')
+    let newPrice = document.getElementById('product-price')
+    let newImg = document.getElementById('product-img')
+
+    const newItem = `
+    <div id = "pasteMenu" class ="item">
+    <img id ="product-img" width="200" src="" alt="">
+    <h3 class="product-title">Croque Madame</h3>
+    <div class="products-item-details">
+        <p>Smoked ham & Swiss with garlic cream sauce baked on country bread & topped with a fried egg. Served with wild field & balsamic on the side. Daily before 11am.</p>
+        <p class="product-price">$29</p>
+        <button onclick="addToCart('Croque Madame', 29.00)" class="btn prime-btn product-btn">Add To Cart</button>
+    </div>`
+}
 function addToMenu(){
     const additemsform = document.querySelector('item')
     const cartRows = document.createElement('div')
@@ -54,9 +80,6 @@ function addToMenu(){
       cartItemsContainer.append(cartRow);
     }
   }
-  function addRemove(){
-    
-  }
   function displayItems(){
     let sessionMenu = sessionStorage.getItem('Original-Menu')
      var displayMenu = document.getElementById("display-menu")
@@ -68,13 +91,11 @@ function addToMenu(){
   displayItems()
   
 
- function removeItem(){
-
- }
 function saveSession(){
     var testdiv = document.getElementById('menus').outerHTML
-    localStorage.setItem('itemName', testdiv)
-    console.log(localStorage.getItem('itemName'))
-    
+    localStorage.setItem('Original-Menu', testdiv)
+    console.log(localStorage.getItem('Original-Menu'))
+    // location.replace('menu.html')
   }
+
 

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Menu</title>
     <link rel="stylesheet" href="menu.css">
-    
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
 <body>
     <h1>Manager's View</h1>
@@ -55,6 +55,7 @@
     <button onclick="editMenu()">Edit</button>
     <br>
     <button onclick="saveSession()">Save</button>
+    <button onclick="removeSelected()">Remove</button>
     <br><br><br>
     <div id="every-menu">
         <h2>Everyday Menu Items (always in)</h2>
@@ -63,14 +64,15 @@
     <div id="display-menu">
         
     </div>
+    <button onclick="staffLogout()">Log Out</button>
     <script>
         $(document).ready(function ()
         {
            var element = document.getElementById('display-menu')
-           element.innerHTML = sessionStorage.getItem('itemName')
+           element.innerHTML = localStorage.getItem('Original-Menu')
         })
     </script>
     <script src="index.js"></script>
-    <script src="edit.menu.js"></script>
+    <script src="edit-menu.js"></script>
 </body>
 </html>
