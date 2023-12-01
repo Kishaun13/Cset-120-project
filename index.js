@@ -15,7 +15,6 @@ function signUp() {
 
 function login() {
     let email = document.getElementById("email").value;
-    let manager = document.getElementById('ManagerPass')
     let pass = document.getElementById("pass").value;
 
     if (localStorage.getItem(email)) {
