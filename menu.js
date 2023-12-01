@@ -14,6 +14,7 @@ if (localStorage.getItem("cart")) {
 function addToCart(itemName, itemPrice) {
 
 
+
     if (cart[itemName]) {
         alert(`${itemName} is already in the cart!`);
     } else {
@@ -25,19 +26,56 @@ function addToCart(itemName, itemPrice) {
         alert(`${itemName} is added to the cart!`);
     }
 }
+// function editProduct(event) {
+//   event.preventDefault(); // prevent the form from submitting
+//   let productName = document.getElementById("product-name").value; // get the product name from the form
+//   let newName = document.getElementById("new-name").value; // get the new name from the form
+//   let newPrice = parseFloat(document.getElementById("new-price").value); // get the new price from the form
+//   changeProductPrice(productName, newPrice); // call the function to change the product price
+//   if (cart[productName]) {
+//     cart[newName] = cart[productName]; // copy the product object with the new name
+//     delete cart[productName]; // delete the old product object
+//     localStorage.setItem("cart", JSON.stringify(cart)); // update the local storage
+//     alert(`You changed the name of ${productName} to ${newName}!`); // alert the user
+//   } else {
+//     alert(`${productName} is not in the cart!`); // alert the user
+//   }
+// }
+
+// function addNewProduct(itemName, itemPrice, itemImage) {
+//   if (cart[itemName]) {
+//     alert(`${itemName} is already in the cart!`);
+//   } else {
+//     cart[itemName] = {
+//       price: itemPrice,
+//       quantity: 1,
+//       image: itemImage
+//     };
+//     console.log(cart);
+//     displayCartItems();
+//     updateCartTotal();
+//     localStorage.setItem("cart", JSON.stringify(cart));
+//     alert(`You added ${itemName} to your cart!`);
+//   }
+// }
 
 function displayCartItems() {
     const cartItemsContainer = document.querySelector(".cart-items");
     cartItemsContainer.innerHTML = "";
 
-    for (itemName in cart) {
+
+    for (let itemName in cart) {
         const item = cart[itemName];
+        //     for (itemName in cart) {
+        //         const item = cart[itemName];
+
+
         const cartRow = document.createElement("div");
         cartRow.classList.add("cart-row");
 
         const cartRowHTML = `
         <div class="cart-item cart-column">
-          <span class="cart-item-title">${itemName}</span>
+          <span class="cart-item-title">'${itemName}'</span>
         </div>
         <span class="cart-price cart-column">$${item.price.toFixed(2)}</span>
         <div class="cart-quantity cart-column">
