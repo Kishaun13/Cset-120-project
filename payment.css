@@ -1,8 +1,9 @@
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+
 .home{
     background-image: linear-gradient(), url(images/background/OIP\ \(1\).jpg);
 }
@@ -11,7 +12,7 @@
     display: flex;
     justify-content: center;
     font-family: glass antiqua;
-}
+
 .contained-1
 {
     margin-top: 120px;
@@ -28,7 +29,7 @@
     font-size: 250%;
     font-family: glass antiqua;
     width: 100%;
-}
+
 .form-contain
 {
     font-size: 15px;
@@ -47,13 +48,15 @@
     display: flex;
     flex-direction: row;
     padding: 10px;
-}
+  }
+
 .column-container
 {
     display: flex;
 }
 .column 
 {
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,20 +67,22 @@
     background-color: rgb(54, 79, 71);
     border: 2px solid black;
     border-radius: 15px;
-}
+
 .content-align
 {
+
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
-}
+
 .content
 {
     padding: 10px;
 }
 .column button
 {
+
     border-radius: 15px;
     width: 200px;
     height: 30px;
@@ -85,6 +90,7 @@
 
 .select
 {
+
     padding: 15px;
     width: 100px;
 }
@@ -104,7 +110,6 @@
     pointer-events: none;
     color: white;
 }
-
 
 .cart-column {
     display: flex;
@@ -133,16 +138,20 @@
 
 .cart-quantity {
     width: 20%;
-}
+  }
+
 .cart-items .cart-column{
     border-bottom: none;
 }
 .cart-total{
+
     text-align: right;
     font-size: 150%;
 }
 
+
 /*CART SECTIOn*/
+
 
 /* #cart-container 
 {
