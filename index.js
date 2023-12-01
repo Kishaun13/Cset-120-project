@@ -30,6 +30,12 @@ function login() {
     }
 }
 
+function addNewItems() {
+    let newTitle = document.getElementById('productName')
+    let newPrice = document.getElementById('product-price')
+    let newImg = document.getElementById('product-img')
+    }
+
 const orgMenu = `
 <div id ="menus">
 <div class="Breakfast">
@@ -238,8 +244,9 @@ const orgMenu = `
 </section>
 </div>`
 let firstLogin = false
+
 function staffLogin() {
-    
+
     let staffEmail = document.getElementById('staffU').value;
     let staffPass = document.getElementById('Staffpass').value;
 
@@ -247,19 +254,24 @@ function staffLogin() {
 
         sessionStorage.setItem('manager', true)
         alert('You are now in manager mode.')
+
         if(firstLogin === false){
             localStorage.setItem('Original-Menu', orgMenu)
+
+
         }
-        
+
         location.replace('edit-menu.html')
     } else {
         alert('Login failed')
     }
 }
+
     
 function staffLogout(){
     sessionStorage.setItem('manager', true)
     localStorage.setItem('Original-Menu', orgMenu)
+
 
     localStorage.clear()
     location.replace('staff-login.html')
@@ -299,4 +311,3 @@ function contactAlert() {
     alert("Thank you for contacting us. We will get back to you as soon as possible.");
 
 }
-

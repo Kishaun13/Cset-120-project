@@ -1,4 +1,5 @@
 
+
 var removeItems = document.querySelectorAll('remove-buttons')
 console.log(sessionStorage.getItem('Original-Menu'))
 console.log(displayItems())
