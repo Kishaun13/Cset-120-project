@@ -79,23 +79,23 @@
             <br><br><br>
             <div class="form-popup" id="forms">
                 <form class="form-contain">
-                    <div class="column"><h4>~ Prepay or In-Person ~</h4></div>
+                    <div class="column"><h4>~ Payment ~</h4></div>
                         <div class="row">
                             <div class="column-container">
                                 <div class="column">
                                     <h4>Personal Information</h4>
                                     <div class="content-align">
-                                        <div class="content">
+                                        <!-- <div class="content">
                                             <label for="name1">Name:</label>
                                             <input type="text" id="name1" placeholder="Name for Order" name="namefororder1" required>
-                                        </div>
+                                        </div> -->
                                         <div class="content">
                                             <label for="phone1">Phone Number:</label>
-                                            <input type="text" id="phone1" placeholder="04.XX.XX.XX.XX" name="phonenumber1" minlength="10" maxlength="10" required>
+                                            <input class="required" type="text" id="phone1" placeholder="04.XX.XX.XX.XX" name="phonenumber1" minlength="10" maxlength="10" required>
                                         </div>
                                         <div class="content">
                                             <label for="address1">Address:</label>
-                                            <input type="text" id="address1" placeholder="Villefranche-sur-Mer" name="add1" required>
+                                            <input class="Deliveryrequired" type="text" id="address1" placeholder="Villefranche-sur-Mer" name="add1" required>
                                         </div>
                                         <div class="content">
                                             <label for="city1">City:</label>
@@ -108,59 +108,60 @@
                                     </div>
                                 </div>
                                 <div id="cash" class="column">
-                                    <h4>Payment</h4>
                                     <div class="content-align">
+                                        <h4 style="text-align: center;">Cash</h4>
+                                        <p style="text-align: center;"><i>*Pay upon pickup or Delivery.</i></p>
                                         <div class="content">    
                                             <label for="tip1">$ Tip</label>
-                                            <input type="text" id="tip1" placeholder="$0.00" name="tips1">
+                                            <input type="text" id="tip1" placeholder="$0.00" name="tips1" >
                                         </div>
-                                        <div class="content">    
+                                        <!-- <div class="content">    
                                             <label for="tip&total1">$ Total + Tip</label>
-                                            <input type="text" id="tip&total1" placeholder="$0.00" name="tips-total1">
-                                        </div>
-                                    </div>
-                                    <h4>Pickup or Delivery?</h4>
-                                    <div class="content">    
-                                        <div class="dropdown">
-                                            <select class="select">
-                                                <option id="none1" value="n/a1"></option>
-                                                <option id="pickup1" value="pickup-1">Pickup</option>
-                                                <option id="delivery1" value="delivery-1">Delivery</option>
-                                            </select>
+                                            <input type="number" id="tip&total1" placeholder="$0.00" name="tips-total1">
+                                        </div> -->
+                                        <div class="content"> 
+                                            <h4 style="text-align: center;">Pickup or Delivery?</h4>
+                                            <div style="text-align: center;" class="dropdown">
+                                                <select class="required" class="select" id="selectOption" required>
+                                                    <option id="none1" value="n/a1"></option>
+                                                    <option id="pickup1" value="pickup-1">Pickup</option>
+                                                    <option id="delivery1" value="delivery-1">Delivery</option>
+                                                </select>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div id="cardcredit" class="column">
-                                    <h4>Payment</h4>
                                     <div class="content-align">
+                                        <h4 style="text-align: center;">Credit/Debit</h4>
                                         <div class="content">
                                             <label for="cardName">Name on card:</label>
                                             <input type="text" id="cardName" placeholder="Name on Card" name="Name-card">
                                         </div>
                                         <div class="content">
                                             <label for="creditCard">Credit/Debit card:</label>
-                                            <input type="text" id="creditCard" placeholder="1234-1234-1234-1234" name="Card_Number" minlength="16" maxlength="16" required>
+                                            <input class="required" type="text" id="creditCard" placeholder="1234-1234-1234-1234" name="Card_Number" minlength="16" maxlength="16" required>
                                         </div>
                                         <div class="content">    
                                             <label for="exMonth">Expiration Month</label>
-                                            <input type="text" id="exMonth" placeholder="Expiration Month" name="month" required>
+                                            <input class="required" type="text" id="exMonth" placeholder="09" name="month" minlength="2" maxlength="2" required>
                                         </div>
                                         <div class="content">
                                             <label for="exYear">Exp Year</label>
-                                            <input type="text" id="exYear" placeholder="Expiration Year" name="year" required>
+                                            <input class="required" type="text" id="exYear" placeholder="2023" name="year" minlength="4" maxlength="4" required>
                                         </div>
                                         <div class="content">  
                                             <label for="cvvNumb">CVV</label>
-                                            <input type="password" id="cvvNumb" placeholder="123" name="cvv" maxlength="3" required>
+                                            <input class="required" type="password" id="cvvNumb" placeholder="123" name="cvv" minlength="3" maxlength="3" required>
                                         </div>
                                         <div class="content">    
                                             <label for="tip2">$ Tip</label>
-                                            <input type="text" id="tip2" placeholder="$0.00" name="tips2">
+                                            <input type="text" id="tip2" placeholder="$0.00" min="0" name="tips2">
                                         </div>
-                                        <h4>Pickup or Delivery?</h4>
-                                        <div class="content">    
-                                            <div class="dropdown">
-                                                <select class="select" required>
+                                        <div class="content"> 
+                                            <h4 style="text-align: center;">Pickup or Delivery?</h4>
+                                            <div style="text-align: center;" class="dropdown">
+                                                <select class="required" class="select" required>
                                                     <option id="none1" value="n/a1"></option>
                                                     <option id="pickup1" value="pickup-1">Pickup</option>
                                                     <option id="delivery1" value="delivery-1">Delivery</option>
@@ -173,7 +174,8 @@
                                 <div id="cartItems" class="column">
                                     <h4>Items in Cart</h4>
                                     <div class="content-align">
-                                        <div id="itemsincart" class="content"><hr>
+                                        <div id="itemsincart" class="content" onclick>
+
                                         </div>
                                     </div>
                                 </div>

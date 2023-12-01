@@ -131,6 +131,7 @@ body {
     margin: 1%;
 }
 
+
 .b1 p {
     width: 300px;
     padding: 3%;
@@ -332,7 +333,7 @@ body {
 }
 
 #cart {
-    background-color: rgba(250, 235, 215, 0.492);
+    background-color: rgba(115, 71, 14, 0.492);
     font-family: Glass Antiqua;
 }
 
@@ -363,19 +364,26 @@ body {
 
 .cart-item {
     width: 25%;
+    font-family: glass antiqua; 
+    color: white;
 }
 
 .cart-price {
     width: 20%;
     font-size: 1.2em;
+    font-family: cursive;
+    font-family: glass antiqua; 
     color: white;
 }
 
-.cart-quantity {
+.cart-quantity
+{
     width: 20%;
 }
 
-.cart-item-title {
+.cart-item-title
+{
+    font-family: glass antiqua; 
     color: white;
     margin-left: .5em;
     font-size: 1.2em;
@@ -390,20 +398,23 @@ body {
 .cart-total {
     text-align: end;
     margin-top: 200px;
+    
     margin-right: 325px;
 }
 
 .cart-total-title {
     font-weight: bold;
     font-size: 1.5em;
-    color: white;
+    
     margin-right: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .cart-total-price {
-    color: white;
     font-size: 130%;
     text-align: right;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 

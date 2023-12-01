@@ -51,9 +51,8 @@
 .column-container
 {
     display: flex;
-    flex-direction: row;
 }
-.column
+.column 
 {
     display: flex;
     flex-direction: column;
@@ -68,12 +67,14 @@
 }
 .content-align
 {
-    text-align: right;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
 }
 .content
 {
     padding: 10px;
-    
 }
 .column button
 {
@@ -90,14 +91,7 @@
 
 
 /*FORMS FOR PAYMENT PAGE*/
-#cash
-{
-    text-align: center;
-}
-#itemsincart
-{
-    
-}
+
 #itemsincart button, h1
 {
     display: none;
@@ -142,6 +136,10 @@
 }
 .cart-items .cart-column{
     border-bottom: none;
+}
+.cart-total{
+    text-align: right;
+    font-size: 150%;
 }
 
 /*CART SECTIOn*/
