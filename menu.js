@@ -1,3 +1,8 @@
+window.onload = function() {
+
+  document.getElementById('menus').contentEditable = false
+
+}
 let cart = {};
 if (localStorage.getItem("cart")) {
     cart = JSON.parse(localStorage.getItem("cart"));
@@ -144,7 +149,7 @@ function updateQuantity(itemName, quantity) {
     }
 }
 
-}
+
 
 function purchaseProducts() {
     if (Object.keys(cart).length === 0) {
