@@ -1,9 +1,20 @@
+window.onload = function() {
+
+  document.getElementById('menus').contentEditable = false
+
+}
 let cart = {};
 if (localStorage.getItem("cart")) {
     cart = JSON.parse(localStorage.getItem("cart"));
     displayCartItems();
     updateCartTotal();
 }
+// let cart = JSON.parse(localStorage.getItem('cartarray'))??[];
+// // if (localStorage.getItem("cart")) {
+// //     // cart = JSON.parse(localStorage.getItem("cart"));
+// //     displayCartItems();
+// //     updateCartTotal();
+// // }
 
 function addToCart(itemName, itemPrice) {
 
@@ -13,7 +24,7 @@ function addToCart(itemName, itemPrice) {
         alert(`${itemName} is already in the cart!`);
     } else {
         cart[itemName] = { price: itemPrice, quantity: 1 };
-        console.log(cart);
+        // localStorage.setItem('cart', JSON.stringify(cart))
         displayCartItems();
         updateCartTotal();
         localStorage.setItem("cart", JSON.stringify(cart));
@@ -45,7 +56,7 @@ function displayCartItems() {
           <input class="cart-quantity-input" type="number" value="${
             item.quantity
           }" data-item-name="${itemName}">
-          <button onclick="removeFromCart('${itemName}')" class="btn btn-danger" type="button">REMOVE</button>
+          <button onclick="removeFromCart('${itemName}')" class="btn btn-danger">REMOVE</button>
         </div>
       `;
 
@@ -116,12 +127,43 @@ function updateQuantity(itemName, quantity) {
 
 
 function purchaseProducts() {
+    let completecart = document.getElementById('cart')
+    localStorage.setItem("cart", completecart.outerHTML);
     if (Object.keys(cart).length === 0) {
         alert("Your cart is empty!");
     } else {
-        alert("Thank you for your purchase!");
         location.replace("payment.html");
-        // document.getElementsByClassName("cart-quantity-input").disabled = true;
     }
-
 }
+
+
+//Payment page
+
+function openForm1(){
+    document.getElementById('forms').style.display = "block"
+    document.getElementById('cardcredit').style.display = "none"
+    document.getElementById('cash').style.display = "block"
+};
+function openForm2(){
+    document.getElementById('forms').style.display = "block"
+    document.getElementById('cardcredit').style.display = "block"
+    document.getElementById('cash').style.display = "none"
+};
+function closeForm1(){
+    document.getElementById('forms').style.display = "none";
+    alert("Thank you for your purchase!")
+    window.location.assign("/receipt.html")
+};
+function closeForm2(){
+    document.getElementById('forms').style.display = "none"
+    alert("Thank you for your purchase!")
+    window.location.assign("/receipt.html")
+};
+function back(){
+    document.getElementById('forms').style.display = "none"
+}
+
+
+// var storedcart = localStorage.getItem('cart')
+// // console.log('storedcart')
+// document.getElementById('itemsincart').innerHTML = storedcart
