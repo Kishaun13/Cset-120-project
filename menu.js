@@ -1,3 +1,8 @@
+window.onload = function() {
+
+  document.getElementById('menus').contentEditable = false
+
+}
 let cart = {};
 if (localStorage.getItem("cart")) {
     cart = JSON.parse(localStorage.getItem("cart"));
