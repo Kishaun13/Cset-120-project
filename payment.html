@@ -33,10 +33,11 @@
             <a class="navbar-brand" href="#"> <img src="images/Logo.jpg" alt="logo"> Jean-Claude’s Patisserie</a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="true" aria-label="Toggle navigation">
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="true" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
 
-            </button>
+ 
             <div class="collapse navbar-collapse " id="navbar-content ">
                  <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll " style="--bs-scroll-height: 100px; ">
                     <li class="nav-item ">
@@ -126,7 +127,7 @@
                                                     <option id="none1" value="n/a1"></option>
                                                     <option id="pickup1" value="pickup-1">Pickup</option>
                                                     <option id="delivery1" value="delivery-1">Delivery</option>
-                                                </select>
+          
                                             </div>
                                         </div>
                                     </div>
@@ -161,11 +162,16 @@
                                         <div class="content"> 
                                             <h4 style="text-align: center;">Pickup or Delivery?</h4>
                                             <div style="text-align: center;" class="dropdown">
+
+                                               // <select class="required" class="select" required>
+
+
                                                 <select class="required" class="select">
+
                                                     <option id="none1" value="n/a1"></option>
                                                     <option id="pickup1" value="pickup-1">Pickup</option>
                                                     <option id="delivery1" value="delivery-1">Delivery</option>
-                                                </select>
+               
                                             </div>
                                         </div>
                                     </div>
@@ -181,7 +187,7 @@
                                 </div>
 
                             </div>
-                        </div>
+
                     <div class="row">
                         <div class="column-container">
                             <div class="column"><button type="submit" onclick="closeForm1()">Submit</button></div>
@@ -193,6 +199,7 @@
         </section>
 
         
+
         <!--<section class="form2">
             <div class="form-popup" id="form-credit">
                 <form class="form-contain">
@@ -330,7 +337,8 @@
     <script>
         console.log(cart)
         var storedcart = localStorage.getItem('cart')
-        // console.log('storedcart')
+
+  
         document.getElementById('itemsincart').innerHTML = storedcart
     </script>
     </body>

@@ -141,31 +141,32 @@ function purchaseProducts() {
 
 //Payment page
 
-function openForm1(){
+
+function openForm1() {
     document.getElementById('forms').style.display = "block"
     document.getElementById('cardcredit').style.display = "none"
     document.getElementById('cash').style.display = "block"
 };
-function openForm2(){
+
+function openForm2() {
     document.getElementById('forms').style.display = "block"
     document.getElementById('cardcredit').style.display = "block"
     document.getElementById('cash').style.display = "none"
 };
-function closeForm1(){
+
+function closeForm1() {
     document.getElementById('forms').style.display = "none";
     // alert("Thank you for your purchase!")
     window.location.assign("/receipt.html")
 };
-function closeForm2(){
+
+function closeForm2() {
     document.getElementById('forms').style.display = "none"
     // alert("Thank you for your purchase!")
     window.location.assign("/receipt.html")
 };
-function back(){
+
+function back() {
     document.getElementById('forms').style.display = "none"
 }
 
-
-// var storedcart = localStorage.getItem('cart')
-// // console.log('storedcart')
-// document.getElementById('itemsincart').innerHTML = storedcart
