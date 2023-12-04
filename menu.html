@@ -79,11 +79,11 @@
         <h2>Everyday Menu Items (always in)</h2>
     </div>
 
- <div id="display-menu">
+    <div id="display-menu">
 
-   
 
- </div>
+
+    </div>
 
     <section id="cart">
         <br><br>
@@ -107,110 +107,62 @@
         <br>
 
 
-            <div class="buttons">
-                <div id="clear"><button onclick="clearCart()">Clear Order</button></div>
-                <div id="checkout"><button href="payment.html" onclick="purchaseProducts()">Purchase Order</button></div>
-            </div>
-            <br>
-        </section>
-    
-    
-    
-    
-    
-    
-        <section class="footer ">
-            <div class="social ">
-                <a href="# "><i class="fab fa-facebook-f "></i></a>
-                <a href="https://www.instagram.com/princek_._/ "><i class="fab fa-instagram "></i></a>
-                <a href="# "><i class="fab fa-twitter "></i></a>
-            </div>
-            <ul class="list ">
-                <li><a href="about.html ">About Us</a>
-                </li>
-                <li><a href="contact.html ">Contact Us</a>
-                </li>
-                <li><a href="# ">Privacy Policy</a>
-                </li>
-                <li><a href="# ">Terms & Conditions</a>
-                </li>
-            </ul>
-            <p class="copyright ">
-                Jean-Claude’s Patisserie © 2021
-            </p>
-        </section>
-    
-
-
-      
+        <div class="buttons">
+            <div id="clear"><button onclick="clearCart()">Clear Order</button></div>
+            <div id="checkout"><button onclick="purchaseProducts()">Purchase Order</button></div>
+        </div>
+        </div>
+        <br>
+    </section>
 
 
 
 
 
 
-    
+    <section class="footer ">
+        <div class="social ">
+            <a href="# "><i class="fab fa-facebook-f "></i></a>
+            <a href="https://www.instagram.com/princek_._/ "><i class="fab fa-instagram "></i></a>
+            <a href="# "><i class="fab fa-twitter "></i></a>
+        </div>
+        <ul class="list ">
+            <li><a href="about.html ">About Us</a>
+            </li>
+            <li><a href="contact.html ">Contact Us</a>
+            </li>
+            <li><a href="# ">Privacy Policy</a>
+            </li>
+            <li><a href="# ">Terms & Conditions</a>
+            </li>
+        </ul>
+        <p class="copyright ">
+            Jean-Claude’s Patisserie © 2021
+        </p>
+    </section>
+
+
+
+
 
     <script src="index.js"></script>
     <script src="menu.js"></script>
 
     <script>
-        $(document).ready(function ()
-        {
-           var element = document.getElementById('display-menu')
-           element.innerHTML = localStorage.getItem('Original-Menu')
+        $(document).ready(function() {
+            var element = document.getElementById('display-menu')
+            element.innerHTML = localStorage.getItem('Original-Menu')
         })
-    </script> 
+    </script>
 
 
 
 
 
-    <script src="index.js"></script>
+    <!-- <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> -->
 
-
-
-    </section>
-    <script>
-        $(document).ready(function ()
-        {
-           var element = document.getElementById('display-menu')
-           element.innerHTML = localStorage.getItem('Original-Menu')
-        })
-    </script> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-<!-- 
-<script src="index.js"></script>
-
-
-
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
-<script>
+    <!-- <script>
     if (localStorage.getItem("cart")) {
     // cart = JSON.parse(localStorage.getItem("cart"));
     displayCartItems();
