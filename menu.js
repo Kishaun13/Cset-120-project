@@ -85,7 +85,10 @@ function removeFromCart(itemName) {
 function updateCartTotal() {
     let total = 0;
     for (let itemName in cart) {
+      if(isNaN){
         total += cart[itemName].price * cart[itemName].quantity;
+      }
+        
     }
 
     document.querySelector(".cart-total-price").innerText =
