@@ -8,16 +8,6 @@ console.log(sessionStorage.getItem('Original-Menu'))
 console.log(displayItems())
 
 
-
-stopEdit()
-function removeFromMenu(itemName) {
-    // delete cart[itemName];
-    // displayCartItems();
-    // updateCartTotal();
-    // localStorage.setItem("cart", JSON.stringify(cart));
-    var testdiv = document.getElementById('products-container')
-    // console.log(testdiv.outerHTML)
-  }
   function removeSelected(){
     const checkedItems = document.querySelectorAll('.checkedItems')
     checkedItems.forEach(item => {
@@ -35,24 +25,26 @@ function removeItem(divToRemove){
     divToRemove.remove()
   }
   function addNewItems(){
-    let newTitle = document.getElementById('productName')
-    let newPrice = document.getElementById('product-price')
-    let newImg = document.getElementById('product-img')
-
+    const menuItemsContainer = document.querySelector("#menus");
+    let newTitle = document.getElementById('productName').value
+    let newPrice = document.getElementById('product-price').value
+    let newImg = document.getElementById('product-img').value
+    const newProduct = document.createElement('div')
     const newItem = `
-    <div id = "pasteMenu" class ="item">
-    <img id ="product-img" width="200" src="" alt="">
-    <h3 class="product-title">Croque Madame</h3>
+    <div id="products-container" class="items-container">
+    <div class = "pasteMenu" class ="item product-item">
+    <img id ="productimg" width="200" src="${newImg}" alt="">
+    <h3 class="product-title">${newTitle}</h3>
     <div class="products-item-details">
-        <p>Smoked ham & Swiss with garlic cream sauce baked on country bread & topped with a fried egg. Served with wild field & balsamic on the side. Daily before 11am.</p>
-        <p class="product-price">$29</p>
-        <button onclick="addToCart('Croque Madame', 29.00)" class="btn prime-btn product-btn">Add To Cart</button>
+        <p></p>
+        <p class="product-price">${newPrice}</p>
+        <button onclick="addToCart()" class="btn prime-btn product-btn">Add To Cart</button>
+    </div>
+    </div>
     </div>`
-}
-function addToMenu(){
-    const additemsform = document.querySelector('item')
-    const cartRows = document.createElement('div')
-    let newProduct = document.getElementsByClassName('')
+    
+    newProduct.innerHTML = newItem
+    menuItemsContainer.appendChild(newProduct)
     
 }
   function displayCartItems(newItems){

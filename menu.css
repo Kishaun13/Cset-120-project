@@ -99,7 +99,7 @@ body {
 #every-menu {
     color: rgb(30, 85, 67);
     font-size: 150%;
-    background-color: rgba(250, 235, 215, 0.492);
+    background-color: rgba(182, 160, 130, 0.492);
     text-align: center;
     padding: 20px;
     font-family: Glass Antiqua;
@@ -109,7 +109,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: rgba(250, 235, 215, 0.492);
+    background-color: rgba(182, 160, 130, 0.492);
     padding: 2%;
 }
 
@@ -119,12 +119,12 @@ body {
     justify-content: center;
     align-content: center;
     font-family: Glass Antiqua;
-    color: rgb(174, 107, 20);
+    color: rgb(204, 168, 117);
 }
 
 .b1 {
-    border-color: white;
-    background-color: white;
+    border:3px solid rgb(174, 146, 146);
+    background-color: rgb(121, 34, 34);
     box-sizing: border-box;
     text-align: center;
     padding: 3%;
@@ -139,8 +139,8 @@ body {
 }
 
 .b2 {
-    border-color: white;
-    background-color: white;
+    border:3px solid rgb(174, 146, 146);
+    background-color: rgb(121, 34, 34);
     text-align: center;
     padding: 3%;
     margin: 1%;
@@ -153,8 +153,8 @@ body {
 }
 
 .b3 {
-    border-color: white;
-    background-color: white;
+    border:3px solid rgb(174, 146, 146);
+    background-color: rgb(121, 34, 34);
     text-align: center;
     padding: 3%;
     margin: 1%;
@@ -167,8 +167,8 @@ body {
 }
 
 .b4 {
-    border-color: white;
-    background-color: white;
+    border:3px solid rgb(174, 146, 146);
+    background-color: rgb(121, 34, 34);
     text-align: center;
     padding: 1%;
     margin: 20px;
@@ -181,8 +181,8 @@ body {
 }
 
 .b5 {
-    border-color: white;
-    background-color: white;
+    border:3px solid rgb(174, 146, 146);
+    background-color: rgb(121, 34, 34);
     text-align: center;
     padding: 1%;
     margin: 20px;
@@ -195,8 +195,8 @@ body {
 }
 
 .b6 {
-    border-color: white;
-    background-color: white;
+    border:3px solid rgb(174, 146, 146);
+    background-color: rgb(121, 34, 34);
     text-align: center;
     padding: 1%;
     margin: 20px;
@@ -209,8 +209,8 @@ body {
 }
 
 .b7 {
-    border-color: white;
-    background-color: white;
+    border:3px solid rgb(174, 146, 146);
+    background-color: rgb(121, 34, 34);
     text-align: center;
     padding: 1%;
     margin: 20px;
@@ -226,7 +226,7 @@ body {
 /* add to cart buttons/links */
 
 #breakfeast-contain button {
-    color: rgb(174, 107, 20);
+    color: rgb(204, 168, 117);
     font-size: 150%;
     border-radius: 20px;
 }
@@ -255,12 +255,12 @@ body {
 
 .item 
 {
-    border-color: white;
-    background-color: white;
+    border:3px solid rgb(174, 146, 146);
+    background-color: rgb(121, 34, 34);
     text-align: center;
     padding: 1%;
     margin: 1%;
-    color: rgb(131, 80, 14);
+    color: rgb(204, 168, 117);
     width: 300px;
     padding: 1%;
     margin: 10px;
@@ -275,14 +275,14 @@ body {
 } */
 
 .item button {
-    color: rgb(174, 107, 20);
+    color: rgb(204, 168, 117);
     font-size: 150%;
     border-radius: 20px;
 }
 
 .item button:hover {
     background-color: rgba(233, 145, 29, 0.542);
-    color: rgb(160, 106, 106);
+    color: rgb(204, 168, 117);
 }
 
 
@@ -317,8 +317,8 @@ body {
 }
 
 #clear button:hover {
-    background-color: rgba(233, 145, 29, 0.542);
-    color: rgb(160, 106, 106);
+    background-color: rgba(216, 172, 114, 0.542);
+    color: rgb(232, 221, 221);
 }
 
 #checkout button {
@@ -333,13 +333,13 @@ body {
 }
 
 #cart {
-    background-color: rgba(115, 71, 14, 0.492);
+    background-color: rgba(118, 69, 69, 0.492);
     font-family: Glass Antiqua;
 }
 
 #checkout button:hover {
-    background-color: rgba(233, 145, 29, 0.542);
-    color: rgb(160, 106, 106);
+    background-color: rgba(216, 172, 114, 0.542);
+    color: rgb(232, 221, 221);
 }
 
 .cart-header {
