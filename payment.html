@@ -32,7 +32,6 @@
 
     <a class="navbar-brand" href="#"> <img src="images/Logo.jpg" alt="logo"> Jean-Claude’s Patisserie</a>
 
-
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="true" aria-label="Toggle navigation">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="true" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
@@ -55,7 +54,6 @@
             <li class="nav-item ">
                 <a class="nav-link " href="logorsignup.html ">Log In</a>
             </li>
-
 
             <li class="nav-item">
                 <a class="nav-link" href="staff-sign-up.html">Staff</a>
@@ -130,7 +128,6 @@
                                                     <option id="none1" value="n/a1"></option>
                                                     <option id="pickup1" value="pickup-1">Pickup</option>
                                                     <option id="delivery1" value="delivery-1">Delivery</option>
-
                                                 </select>
                                         </div>
                                     </div>
@@ -171,129 +168,15 @@
                                                     <option id="pickup1" value="pickup-1">Pickup</option>
                                                     <option id="delivery1" value="delivery-1">Delivery</option>
                                                 </select>
-
-          
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="cardcredit" class="column">
-                                    <div class="content-align">
-                                        <h4 style="text-align: center;">Credit/Debit</h4>
-                                        <div class="content">
-                                            <label for="cardName">Name on card:</label>
-                                            <input type="text" id="cardName" placeholder="Name on Card">
-                                        </div>
-                                        <div class="content">
-                                            <label for="creditCard">Credit/Debit card:</label>
-                                            <input class="required" type="text" id="creditCard" placeholder="1234-1234-1234-1234" minlength="16" maxlength="16" required>
-                                        </div>
-                                        <div class="content">    
-                                            <label for="exMonth">Expiration Month</label>
-                                            <input class="required" type="text" id="exMonth" placeholder="09" name="month" minlength="2" maxlength="2" required>
-                                        </div>
-                                        <div class="content">
-                                            <label for="exYear">Exp Year</label>
-                                            <input class="required" type="text" id="exYear" placeholder="2023" name="year" minlength="4" maxlength="4" required>
-                                        </div>
-                                        <div class="content">  
-                                            <label for="cvvNumb">CVV</label>
-                                            <input class="required" type="password" id="cvvNumb" placeholder="123" name="cvv" minlength="3" maxlength="3" required>
-                                        </div>
-                                        <div class="content">    
-                                            <label for="tip2">$ Tip</label>
-                                            <input type="text" id="tip2" placeholder="$0.00" min="0" name="tips2">
-                                        </div>
-                                        <div class="content"> 
-                                            <h4 style="text-align: center;">Pickup or Delivery?</h4>
-                                            <div style="text-align: center;" class="dropdown">
-
-                                               // <select class="required" class="select" required>
-
-
-                                                <select class="required" class="select">
-
-                                                    <option id="none1" value="n/a1"></option>
-                                                    <option id="pickup1" value="pickup-1">Pickup</option>
-                                                    <option id="delivery1" value="delivery-1">Delivery</option>
-               
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div id="cartItems" class="column">
-                                    <h4>Items in Cart</h4>
-                                    <div class="content-align">
-                                        <div id="itemsincart" class="content" onclick>
-
-
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-
                             <div id="cartItems" class="column">
                                 <h4>Items in Cart</h4>
                                 <div class="content-align">
                                     <div id="itemsincart" class="cart-items" onclick>
-
-
-                    <div class="row">
-                        <div class="column-container">
-                            <div class="column"><button type="submit" onclick="closeForm1()">Submit</button></div>
-                            <div class="column"><button onclick="back()">Cancel</button></div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </section>
-
-        
-
-        <!--<section class="form2">
-            <div class="form-popup" id="form-credit">
-                <form class="form-contain">
-                    <div class="column"><h4>~ Checkout ~</h4></div>
-                    <br>
-                        <div class="row">
-                            <div class="column-container">
-                                <div class="column">
-                                    <h4>Personal Information</h4>
-                                    <div class="content-align">
-                                        <div class="content">
-                                            <label for="name2">Name:</label>
-                                            <input type="text" id="name2" placeholder="Name for Order" name="namefororder2" required>
-                                        </div>
-                                        <div class="content">
-                                            <label for="phone2">Phone Number:</label>
-                                            <input type="text" id="phone2" placeholder="04.XX.XX.XX.XX" name="phonenumber2" minlength="10" maxlength="10" required>
-                                        </div>
-                                        <div class="content">
-                                            <label for="address2">Address:</label>
-                                            <input type="text" id="address2" placeholder="Villefranche-sur-Mer" name="add2" required>
-                                        </div>
-                                        <div class="content">
-                                            <label for="city2">City:</label>
-                                            <input type="text" id="city2" placeholder="Èze" name="cities2" required>
-                                        </div>
-                                        <div class="content">
-                                            <label for="region2">Region/Department:</label>
-                                            <input type="text" id="region2" placeholder="Provence-Alpes-Côte d'Azur" name="deparment2" required>
-                                        </div>
-                                    </div>
-                                    <br>
-                                    <h4>Pickup or Delivery?</h4>
-                                    <div class="content">    
-                                        <div class="select">
-                                            <select class="select">
-                                                <option id="none2" value="n/a2"></option>
-                                                <option id="pickup2" value="pickup-2">Pickup</option>
-                                                <option id="delivery2" value="delivery-2">Delivery</option>
-                                            </select>
-                                        </div>
-
                                     </div>
                                     <div class="cart-total">
                                         <strong class="cart-total-title" style="font-family: 'Times New Roman', Times, serif; color: white;">Total</strong>
@@ -322,11 +205,7 @@
         <!-- <script>
         console.log(cart)
         var storedcart = localStorage.getItem('cart')
-
             // console.log('storedcart')
-
-
-
         document.getElementById('itemsincart').innerHTML = storedcart
     </script> -->
         </body>
