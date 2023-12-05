@@ -23,11 +23,13 @@ function login() {
             localStorage.setItem('Original-Menu', orgMenu)
             location.replace("menu.html");
             alert("Login Successful");
-        } else {
-            alert("Login Failed");
+        } else if (pass == "") {
+            alert("Login Failed please enter your password");
         }
-    } else {
-        alert("Login Failed");
+    } else if (email == "") {
+        alert("Login Failed please enter your email");
+    } else if (localStorage.getItem(email) == null || pass == "") {
+        alert("Login Failed Unknown credential combination");
     }
 }
 function customerLogout(){
@@ -36,6 +38,7 @@ function customerLogout(){
     location.replace('login.html')
     localStorage.setItem('Original-Menu', orgMenu)
 }
+
 
 const orgMenu = `
 <div id ="menus">
@@ -285,7 +288,7 @@ function staffLogin() {
         sessionStorage.setItem('manager', true)
         alert('You are now in manager mode.')
 
-        if(firstLogin === false){
+        if (firstLogin === false) {
             localStorage.setItem('Original-Menu', orgMenu)
 
 
@@ -296,6 +299,7 @@ function staffLogin() {
         alert('Login failed')
     }
 }
+
 
     
 function staffLogout(){
@@ -309,7 +313,7 @@ const header = document.querySelector('.navbar');
 
 window.onscroll = function() {
     var top = window.scrollY;
-    // console.log(top);
+    //console.log(top);
     if (top >= 100) {
         header.classList.add('navbarDark');
     } else {
