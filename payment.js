@@ -3,7 +3,7 @@
 //     if (totalPrice) {
 //         document.querySelector(".total-price").innerText = "$" + parseFloat(totalPrice).toFixed(2);
 //     }
-    
+
 //     // let cartItems = localStorage.getItem('cartItems');
 //     // if (cartItems) {
 //     // let x.innerText = document.querySelector(".cart-items")
@@ -55,3 +55,14 @@
 // }
 
 //AFter purchasig order make sure cart automatically clears its items
+
+function setTipAmount() {
+    let tipamount = document.getElementById("tip2").value;
+
+    if (tipamount == "0") {
+        alert("Please select a tip amount.");
+    } else {
+        localStorage.setItem("tipamount", tipamount);
+    }
+
+}

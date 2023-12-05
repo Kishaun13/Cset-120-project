@@ -22,14 +22,15 @@ function login() {
             localStorage.setItem('Original-Menu', orgMenu)
             location.replace("menu.html");
             alert("Login Successful");
-        } else {
-            alert("Login Failed");
+        } else if (pass == "") {
+            alert("Login Failed please enter your password");
         }
-    } else {
-        alert("Login Failed");
+    } else if (email == "") {
+        alert("Login Failed please enter your email");
+    } else if (localStorage.getItem(email) == null || pass == "") {
+        alert("Login Failed Unknown credential combination");
     }
 }
-
 
 const orgMenu = `
 <div id ="menus">
@@ -250,7 +251,7 @@ function staffLogin() {
         sessionStorage.setItem('manager', true)
         alert('You are now in manager mode.')
 
-        if(firstLogin === false){
+        if (firstLogin === false) {
             localStorage.setItem('Original-Menu', orgMenu)
 
 
@@ -262,8 +263,8 @@ function staffLogin() {
     }
 }
 
-    
-function staffLogout(){
+
+function staffLogout() {
     sessionStorage.setItem('manager', true)
     localStorage.setItem('Original-Menu', orgMenu)
     localStorage.clear()
