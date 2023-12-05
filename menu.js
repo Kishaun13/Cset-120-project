@@ -4,16 +4,17 @@ window.onload = function() {
 
 }
 let cart = {};
+var parentElement = item.parentNode;
+var itemName = parentElement.children[0].textContent;
+var itemPrice = parentElement.children[1].textContent;
 if (localStorage.getItem("cart")) {
     cart = JSON.parse(localStorage.getItem("cart"));
     displayCartItems();
     updateCartTotal();
 }
 
-function addToCart(itemName, itemPrice) {
-
-
-
+function addToCart(item) {
+    
     if (cart[itemName]) {
         alert(`${itemName} is already in the cart!`);
     } else {
@@ -22,7 +23,7 @@ function addToCart(itemName, itemPrice) {
         displayCartItems();
         updateCartTotal();
         localStorage.setItem("cart", JSON.stringify(cart));
-        alert(`${itemName} is added to the cart!`);
+        alert(`${parentElement} is added to the cart!`);
     }
 }
 
@@ -34,8 +35,7 @@ function displayCartItems() {
 
   for (let itemName in cart) {
     const item = cart[itemName];
-//     for (itemName in cart) {
-//         const item = cart[itemName];
+
 
 
         const cartRow = document.createElement("div");
@@ -69,7 +69,7 @@ function displayCartItems() {
     });
 }
 
-function removeFromCart(itemName) {
+function removeFromCart() {
     delete cart[itemName];
     displayCartItems();
     updateCartTotal();
@@ -96,30 +96,30 @@ function clearCart() {
     updateCartTotal();
 }
 
-function updateQuantity(itemName, quantity) {
+function updateQuantity(quantity) {
     if (cart[itemName]) {
         cart[itemName].quantity = quantity;
         updateCartTotal();
         localStorage.setItem("cart", JSON.stringify(cart));
     }
 }
-let quantityInputs = document.querySelectorAll(".cart-quantity-input");
-quantityInputs.forEach((input) => {
-    input.addEventListener("change", (event) => {
-        let newQuantity = parseInt(event.target.value);
-        let itemName = event.target.getAttribute("data-item-name");
-        console.log(`Item Name: ${itemName}, New Quantity: ${newQuantity}`);
-        updateQuantity(itemName, newQuantity);
-    });
-});
+// let quantityInputs = document.querySelectorAll(".cart-quantity-input");
+// quantityInputs.forEach((input) => {
+//     input.addEventListener("change", (event) => {
+//         let newQuantity = parseInt(event.target.value);
+//         let itemName = event.target.getAttribute("data-item-name");
+//         console.log(`Item Name: ${itemName}, New Quantity: ${newQuantity}`);
+//         updateQuantity(itemName, newQuantity);
+//     });
+// });
 
-function updateQuantity(itemName, quantity) {
-    if (cart[itemName]) {
-        cart[itemName].quantity = quantity;
-        updateCartTotal();
-        localStorage.setItem("cart", JSON.stringify(cart));
-    }
-}
+// function updateQuantity(quantity) {
+//     if (cart[itemName]) {
+//         cart[itemName].quantity = quantity;
+//         updateCartTotal();
+//         localStorage.setItem("cart", JSON.stringify(cart));
+//     }
+// }
 
 
 

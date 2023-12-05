@@ -25,7 +25,7 @@
                         <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="menuBtn" href="menu.html">Menu</a>
+                        <a class="nav-link" href="menu.html">Menu</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact</a>
@@ -45,18 +45,19 @@
             </div>
         </div>
     </nav>
+<br><br><br>
     <div class="managerMode">
         <p>Add items to the Menu</p>
         <input type="text" name="product-name" id="productName">
         <input type="text" name="product-price" id="product-price">
         <input type="text" name="product-img" id="product-img">
-        
-        
+        <button onclick="addNewIetms()">Add</button>
+        <br>
+        <button id="saveBtn" onclick="saveSession()">Save</button>
+        <button onclick="removeSelected()">Remove</button>
+            
     </div>
-    <button onclick="addNewItems()">Add</button>
-    <br>
-    <button id="saveBtn" onclick="saveSession()">Save</button>
-    <button onclick="removeSelected()">Remove</button>
+    
     <br><br><br>
     <div id="every-menu">
         <h2>Everyday Menu Items (always in)</h2>
