@@ -52,6 +52,7 @@
 
     <br><br><br><br> -->
     <h1 style="color: #ffffff;">Thank you
+        <div id="displayName"></div>
         <section class="displayName" style="color: white;"></section> here is Your Receipt</h1>
 
 
@@ -89,6 +90,12 @@
     </script>
     <script src="receipt.js"></script>
     <script src="menu.js"></script>
+    <script>
+        window.onload = function() {
+            var element = document.getElementById('displayName')
+            element.innerHTML = localStorage.getItem('name', name)
+        }
+    </script>
 </body>
 
 </html>

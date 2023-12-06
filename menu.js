@@ -62,14 +62,14 @@ function removeFromCart(itemName) {
 function updateCartTotal() {
     let total = 0;
     for (let itemName in cart) {
-      if(isNaN){
-        total += cart[itemName].price * cart[itemName].quantity;
-      }
-        
+        if (isNaN) {
+            total += cart[itemName].price * cart[itemName].quantity;
+        }
+
     }
     document.querySelector(".cart-total-price").innerText =
         "$" + total.toFixed(2);
-        console.log(total)
+    console.log(total)
 }
 
 function clearCart() {
@@ -127,14 +127,20 @@ function openForm2() {
 };
 
 function closeForm1() {
-    document.getElementById('forms').style.display = "none";
-    // alert("Thank you for your purchase!")
-    window.location.assign("/receipt.html")
-};
+    if (Object.keys(cart).length === 0) {
+        alert("Your cart is empty!");
+    } else if (document.getElementById('tip2').value == 0) {
+        alert("Please select a tip amount.");
+    } else {
+        document.getElementById('forms').style.display = "none";
+        // alert("Thank you for your purchase!")
+        window.location.assign("/receipt.html");
+    }
+}
 
 function closeForm2() {
     document.getElementById('forms').style.display = "none"
-    // alert("Thank you for your purchase!")
+        // alert("Thank you for your purchase!")
     window.location.assign("/receipt.html")
 };
 
@@ -184,4 +190,3 @@ function updateTotalWithTip() {
 
     totalElement.textContent = `$${total.toFixed(2)}`;
 }
-

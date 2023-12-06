@@ -66,3 +66,23 @@ function setTipAmount() {
     }
 
 }
+
+function checkForms() {
+    if (document.getElementById("phone1").value == "" && document.getElementById("phone2").value == "") {
+        alert("Please enter a phone number.");
+    } else if (document.getElementById("name1").value == "" && document.getElementById("name2").value == "") {
+        alert("Please enter a name.");
+    } else if (document.getElementById("address1").value == "" && document.getElementById("address2").value == "") {
+        alert("Please enter an address.");
+    } else if (document.getElementById(city1).value == "" && document.getElementById(city2).value == "") {
+        alert("Please enter a city.");
+    } else if (document.getElementById(region1).value == "" && document.getElementById(reigion2).value == "") {
+        alert("Please enter a state.");
+    } else {
+        alert("Thank you for your purchase!")
+        window.location.assign("/receipt.html")
+
+    }
+
+
+}
