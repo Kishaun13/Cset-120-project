@@ -278,3 +278,12 @@ body {
 .gallery .col-md-4 {
     padding: 15px;
 }
+
+#receipt {
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    background-color: grey;
+    font-family: Glass Antiqua;
+}

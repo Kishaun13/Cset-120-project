@@ -75,3 +75,14 @@
 
 
 
+
+function setTipAmount() {
+    let tipamount = document.getElementById("tip2").value;
+
+    if (tipamount == "0") {
+        alert("Please select a tip amount.");
+    } else {
+        localStorage.setItem("tipamount", tipamount);
+    }
+
+}

@@ -1,5 +1,4 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -19,8 +18,8 @@ input::-webkit-inner-spin-button {
 .home{
     background-image: linear-gradient(), url(images/background/OIP\ \(1\).jpg);
 }
-.container1
-{
+
+.container1 {
     display: flex;
     justify-content: center;
     font-family: glass antiqua;
@@ -30,12 +29,12 @@ input::-webkit-inner-spin-button {
     margin-top: 120px;
     color: bisque;
 }
-.hero_button
-{
+
+.hero_button {
     color: bisque;
 }
-.form-popup
-{
+
+.form-popup {
     display: none;
     position: absolute;
     font-size: 250%;
@@ -55,20 +54,17 @@ input::-webkit-inner-spin-button {
     flex-direction: column;
 }
 
-.row
-{
+.row {
     display: flex;
     flex-direction: row;
     padding: 10px;
-  }
+}
 
-.column-container
-{
+.column-container {
     display: flex;
 }
-.column 
-{
 
+.column {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -93,17 +89,14 @@ input::-webkit-inner-spin-button {
 {
     padding: 10px;
 }
-.column button
-{
 
+.column button {
     border-radius: 15px;
     width: 200px;
     height: 30px;
 }
 
-.select
-{
-
+.select {
     padding: 15px;
     width: 100px;
 }
@@ -111,12 +104,12 @@ input::-webkit-inner-spin-button {
 
 /*FORMS FOR PAYMENT PAGE*/
 
-#itemsincart button, h1
-{
+#itemsincart button,
+h1 {
     display: none;
 }
-#itemsincart input
-{
+
+#itemsincart input {
     background-color: transparent;
     border: transparent;
     width: 30px;
@@ -162,9 +155,7 @@ input::-webkit-inner-spin-button {
 {
     border-bottom: none;
 }
-.cart-total
-{
-
+.cart-total {
     text-align: right;
     font-size: 150%;
 }
