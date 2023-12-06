@@ -4,11 +4,11 @@
 //         document.querySelector(".total-price").innerText = "$" + parseFloat(totalPrice).toFixed(2);
 //     }
     
-//     // let cartItems = localStorage.getItem('cartItems');
-//     // if (cartItems) {
-//     // let x.innerText = document.querySelector(".cart-items")
-//     // return x
-//     // }
+    // let cartItems = localStorage.getItem('cartItems');
+    // if (cartItems) {
+    // let x.innerText = document.querySelector(".cart-items")
+    // return x
+    // }
 // }
 
 // function openForm1(){
@@ -55,3 +55,23 @@
 // }
 
 //AFter purchasig order make sure cart automatically clears its items
+
+
+// function onInvalid (e) {
+//     e.target.getElementsByClassName('required');
+//   }
+  
+//   let form = document.querySelector('forms');
+  
+//   document.querySelectorAll('input').forEach(input => {
+//     input.addEventListener('required', onInvalid);
+//   });
+  
+//   form.addEventListener('submit', (e) => {
+//     e.preventDefault();
+    
+//     let valid = form.reportValidity();
+//   })
+
+
+

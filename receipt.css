@@ -83,7 +83,6 @@
     background-color: grey;
     font-family: Glass Antiqua;
 }
-
 .returnHome button:hover {
     background-color: rgba(233, 145, 29, 0.542);
     color: rgb(160, 106, 106);
@@ -123,11 +122,11 @@
 }
 
 .displayName {
-    font-size: 1.5em;
     color: white;
     margin-left: 20px;
     font-family: Glass Antiqua;
     text-align: center;
     font-weight: bold;
-    font-size: 1.25em;
+    font-size: 200%;
+    font-style: italic;
 }

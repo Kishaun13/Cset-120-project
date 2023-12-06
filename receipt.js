@@ -98,6 +98,7 @@ function clearCart() {
 
 window.onload = function() {
     let name = localStorage.getItem('name');
+    
     document.querySelector(".displayName").innerText = name;
 }
 

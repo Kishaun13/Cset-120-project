@@ -3,6 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+@media (max-width: 800px){
+    .column-container{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    }
+}
 .home{
     background-image: linear-gradient(), url(images/background/OIP\ \(1\).jpg);
 }
@@ -64,6 +76,8 @@
     background-color: rgb(54, 79, 71);
     border: 2px solid black;
     border-radius: 15px;
+    overflow: hidden;
+
 }
 .content-align
 {
@@ -142,80 +156,8 @@
     font-size: 150%;
 }
 
-/*CART SECTIOn*/
-
-/* #cart-container 
+/* for the required sections that need filled out */
+/* .required
 {
-    background-color: bisque;
-    justify-content: center;
-}
-
-#cart-header {
-    font-size: 200%;
-    display: flex;
-    justify-content: center;
-}
-
-#cart {
-    font-family: Glass Antiqua;
-}
-
-#checkout button:hover {
-    background-color: rgba(233, 145, 29, 0.542);
-    color: rgb(160, 106, 106);
-}
-
-.cart-header {
-    font-weight: bold;
-    font-size: 1.25em;
-    color: white;
-}
-
-.cart-column {
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid black;
-    margin-right: 1.5em;
-    padding-bottom: 10px;
-    margin-top: 10px;
-}
-
-.cart-row {
-    display: flex;
-    justify-content: center;
-}
-
-.cart-item {
-    width: 25%;
-}
-.cart-price {
-    font-size: 1.2em;
-    color: white;
-}
-
-.cart-quantity {
-    width: 20%;
-}
-
-.cart-item-title {
-    color: white;
-    margin-left: .5em;
-    font-size: 1.2em;
-}
-
-.cart-item-image {
-    display: none;
-}
-
-.cart-total-title {
-    font-weight: bold;
-    font-size: 1.5em;
-    color: white;
-    margin-right: 20px;
-}
-
-.cart-total-price {
-    color: white;
-    font-size: 120%;
-    text-align: right;
+    border: 1px solid red
 } */
