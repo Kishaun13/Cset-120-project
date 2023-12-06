@@ -2,13 +2,18 @@ window.onload = function() {
     document.getElementById('menus').contentEditable = false
 }
 let cart = {};
+var parentElement = item.parentNode;
+var itemName = parentElement.children[0].textContent;
+var itemPrice = parentElement.children[1].textContent;
 if (localStorage.getItem("cart")) {
     cart = JSON.parse(localStorage.getItem("cart"));
     displayCartItems();
     updateCartTotal();
 }
 
-function addToCart(itemName, itemPrice) {
+
+function addToCart(item) {
+    
     if (cart[itemName]) {
         alert(`${itemName} is already in the cart!`);
     } else {
@@ -16,13 +21,14 @@ function addToCart(itemName, itemPrice) {
         displayCartItems();
         updateCartTotal();
         localStorage.setItem("cart", JSON.stringify(cart));
-        alert(`${itemName} is added to the cart!`);
+        alert(`${parentElement} is added to the cart!`);
     }
 }
 
 function displayCartItems() {
     const cartItemsContainer = document.querySelector(".cart-items");
     cartItemsContainer.innerHTML = "";
+
     for (let itemName in cart) {
         const item = cart[itemName];
         const cartRow = document.createElement("div");
@@ -52,7 +58,7 @@ function displayCartItems() {
     });
 }
 
-function removeFromCart(itemName) {
+function removeFromCart() {
     delete cart[itemName];
     displayCartItems();
     updateCartTotal();
@@ -78,6 +84,7 @@ function clearCart() {
     displayCartItems();
     updateCartTotal();
 }
+
 
 function updateQuantity(itemName, quantity) {
     if (cart[itemName]) {
@@ -107,6 +114,23 @@ function purchaseProducts() {
         alert("Thank you for ordering!");
     }
 }
+// let quantityInputs = document.querySelectorAll(".cart-quantity-input");
+// quantityInputs.forEach((input) => {
+//     input.addEventListener("change", (event) => {
+//         let newQuantity = parseInt(event.target.value);
+//         let itemName = event.target.getAttribute("data-item-name");
+//         console.log(`Item Name: ${itemName}, New Quantity: ${newQuantity}`);
+//         updateQuantity(itemName, newQuantity);
+//     });
+// });
+
+// function updateQuantity(quantity) {
+//     if (cart[itemName]) {
+//         cart[itemName].quantity = quantity;
+//         updateCartTotal();
+//         localStorage.setItem("cart", JSON.stringify(cart));
+//     }
+// }
 
 
 
