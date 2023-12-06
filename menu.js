@@ -1,5 +1,6 @@
 window.onload = function() {
-    document.getElementById('menus').contentEditable = false
+  document.getElementById('menus').contentEditable = false
+
 }
 let cart = {};
 var parentElement = item.parentNode;
@@ -28,7 +29,6 @@ function addToCart(item) {
 function displayCartItems() {
     const cartItemsContainer = document.querySelector(".cart-items");
     cartItemsContainer.innerHTML = "";
-
     for (let itemName in cart) {
         const item = cart[itemName];
         const cartRow = document.createElement("div");
@@ -75,7 +75,6 @@ function updateCartTotal() {
     }
     document.querySelector(".cart-total-price").innerText =
         "$" + total.toFixed(2);
-        console.log(total)
 }
 
 function clearCart() {
@@ -102,6 +101,14 @@ quantityInputs.forEach((input) => {
     });
 });
 
+function updateQuantity(itemName, quantity) {
+    if (cart[itemName]) {
+        cart[itemName].quantity = quantity;
+        updateCartTotal();
+        localStorage.setItem("cart", JSON.stringify(cart));
+    }
+}
+
 function purchaseProducts() {
     if (Object.keys(cart).length === 0) {
         alert("Your cart is empty!");
@@ -111,7 +118,7 @@ function purchaseProducts() {
         alert('Time for Checkout!');
 
         location.replace("payment.html");
-        alert("Thank you for ordering!");
+        // alert("Thank you for ordering!");
     }
 }
 // let quantityInputs = document.querySelectorAll(".cart-quantity-input");
@@ -137,35 +144,60 @@ function purchaseProducts() {
 //Payment page
 
 
-
-function openForm1() {
+window.onload = function(){
+    let name = localStorage.getItem('name');
+    // document.querySelector(".displayName").innerHTML = name; ////WAS GETTING ERRORS BUT MY CODE STILL WORKS WITHOUT IT?????
+};
+function openForm1(){
+    let inputs = document.querySelectorAll('input.requiredcard')
+    for(const input of inputs){
+        input.removeAttribute("required")
+    }
     document.getElementById('forms').style.display = "block"
-    document.getElementById('cardcredit').style.display = "none"
-    document.getElementById('cash').style.display = "block"
+    document.getElementById('cardcredit').setAttribute("hidden", "hidden")
+    document.getElementById('cash').removeAttribute("hidden")
 };
-
-function openForm2() {
+function openForm2(){
+    let inputs = document.querySelectorAll('input.requiredcard')
+    for(const input of inputs){
+        input.setAttribute("required", '')
+    }
     document.getElementById('forms').style.display = "block"
-    document.getElementById('cardcredit').style.display = "block"
-    document.getElementById('cash').style.display = "none"
+    document.getElementById('cardcredit').removeAttribute("hidden")
+    document.getElementById('cash').setAttribute("hidden", "hidden")
 };
 
-function closeForm1() {
-    document.getElementById('forms').style.display = "none";
-    // alert("Thank you for your purchase!")
-    window.location.assign("/receipt.html")
-};
-
-function closeForm2() {
+function back(){
     document.getElementById('forms').style.display = "none"
-    // alert("Thank you for your purchase!")
-    window.location.assign("/receipt.html")
 };
 
-function back() {
-    document.getElementById('forms').style.display = "none"
+function checkNumb(event){
+    var asciikey = event.keyCode ? event.keyCode : event.charCode; //: event.which ? event.which
+    if(asciikey === 13 || (asciikey >= 48 && asciikey <= 57)){
+        return true;
+    }
+    else{ 
+        alert('Error!\nPlease input only numbers in that field!')
+        return false;
+
+    }
+    //Was going to use this to make the function above to check if input is a number
+        // event.preventDefault()
+    // const form = event.target.elements
+    // const phone = form.phone1.value
+    // const credit = form.credCard.value
+    // const expMonth = form.month.value
+    // const expYear = form.year.value
+    // const code = form.cvv.value
+};
+
+function formCheck(){  
+    let valid = true;
+    if(valid){
+        location.replace("receipt.html")
+    }
+
 }
-
 
 function generateReceipt() {
     let receipt = 'Receipt\n';
