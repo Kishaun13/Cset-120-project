@@ -13,7 +13,7 @@ if (localStorage.getItem("cart")) {
 }
 
 
-function addToCart(item) {
+function addToCart(itemName,itemPrice) {
     
     if (cart[itemName]) {
         alert(`${itemName} is already in the cart!`);
@@ -22,7 +22,7 @@ function addToCart(item) {
         displayCartItems();
         updateCartTotal();
         localStorage.setItem("cart", JSON.stringify(cart));
-        alert(`${parentElement} is added to the cart!`);
+        alert(`${itemName} is added to the cart!`);
     }
 }
 
