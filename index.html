@@ -99,7 +99,8 @@
     <script src="https://kit.fontawesome.com/yourcode.js " crossorigin="anonymous "></script>
     <script>
         window.onbeforeunload = function() {
-            localStorage.clear()
+            localStorage.removeItem("cart");
+            localStorage.removeItem("receipt");
         }
     </script>
     </body>
