@@ -6,7 +6,8 @@
 
 body {
     background-image: url(images/background/paris.jpeg);
-    background-position: fill;
+    height: 100vh;
+    background-size: cover;
     font-family: Glass Antiqua;
 }
 

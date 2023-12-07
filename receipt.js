@@ -141,7 +141,7 @@ function displayCartItems() {
         <div class="cart-item cart-column">
           <span class="cart-item-title">${itemName}</span>
         </div>
-        <span class="cart-price cart-column">$${item.price.toFixed(2)}</span>
+        <span class="cart-price cart-column">$${itemprice.toFixed(2)}</span>
         <div class="cart-quantity cart-column">
             <input class="cart-quantity-input" type="number" value="${
                 item.quantity
@@ -192,11 +192,10 @@ function clearCart() {
     updateCartTotal();
 }
 
-window.onload = function() {
-    let name = localStorage.getItem('name');
-    
-    document.querySelector(".displayName").innerText = name;
-}
+// window.onload = function() {
+//     let name = localStorage.getItem('name');
+//     document.querySelector(".displayName").innerText = name;
+// }
 
 
 
