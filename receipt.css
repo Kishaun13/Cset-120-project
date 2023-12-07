@@ -1,4 +1,4 @@
-#cart {
+/* #cart {
     background-color: rgba(250, 235, 215, 0.492);
     font-family: Glass Antiqua;
 }
@@ -83,6 +83,7 @@
     background-color: grey;
     font-family: Glass Antiqua;
 }
+
 .returnHome button:hover {
     background-color: rgba(233, 145, 29, 0.542);
     color: rgb(160, 106, 106);
@@ -122,24 +123,23 @@
 }
 
 .displayName {
+    font-size: 1.5em;
     color: white;
     margin-left: 20px;
     font-family: Glass Antiqua;
     text-align: center;
     font-weight: bold;
-    font-size: 200%;
-    font-style: italic;
     font-size: 1.25em;
-} 
+} */
 
-/* .receipt {
+.receipt {
     margin-top: 50px;
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 50px;
     background-color: white;
     font-family: Glass Antiqua;
-} */
+}
 
 .receipt h1 {
     text-align: center;
@@ -150,19 +150,18 @@
 }
 
 .receipt button {
-    padding: 2%;
+    padding: 1%;
     width: 200px;
-    margin-left: 1200px;
+    margin-left: 100px;
     border-radius: 20px;
     color: rgb(106, 79, 40);
     font-size: 150%;
     border-color: rgb(165, 86, 86);
     background-color: rgb(219, 178, 178);
-    ;
+    font-family: Glass Antiqua;
 }
 
 .receipt button:hover {
     background-color: rgba(233, 145, 29, 0.542);
     color: rgb(160, 106, 106);
-    display: flex;
 }

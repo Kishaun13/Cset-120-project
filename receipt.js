@@ -1,3 +1,4 @@
+
 // window.onload = function() {
 //     let totalPrice = localStorage.getItem('totalPrice');
 //     if (totalPrice) {
@@ -185,6 +186,7 @@ function updateCartTotal() {
 }
 
 
+
 function clearCart() {
     cart = {};
     localStorage.removeItem("cart");
@@ -192,102 +194,11 @@ function clearCart() {
     updateCartTotal();
 }
 
-window.onload = function() {
-    let name = localStorage.getItem('name');
-    
-    document.querySelector(".displayName").innerText = name;
-}
-
-
-
 // window.onload = function() {
 //     let name = localStorage.getItem('name');
-//     document.getElementById('name').innerText = name;
-//     console.log(name);
+//     document.querySelector(".displayName").innerHTML = name;
 // }
 
-
-
-
-// function updateQuantity(itemName, quantity) {
-//     if (cart[itemName]) {
-//         cart[itemName].quantity = quantity;
-//         updateCartTotal();
-//         localStorage.setItem("cart", JSON.stringify(cart));
-//     }
-// }
-// let quantityInputs = document.querySelectorAll(".cart-quantity-input");
-// quantityInputs.forEach((input) => {
-//     input.addEventListener("change", (event) => {
-//         let newQuantity = parseInt(event.target.value);
-//         let itemName = event.target.getAttribute("data-item-name");
-//         console.log(`Item Name: ${itemName}, New Quantity: ${newQuantity}`);
-//         updateQuantity(itemName, newQuantity);
-//     });
-//     updateCartTotal();
-// });
-
-
-// function purchaseProducts() {
-//     if (Object.keys(cart).length === 0) {
-//         alert("Your cart is empty!");
-//     } else {
-//         alert("Thank you for your purchase!");
-//         location.replace("payment.html");
-//         // document.getElementsByClassName("cart-quantity-input").disabled = true;
-//     }
-// }
-
-
-
-
-
-// window.onload = function() {
-//         let cart = JSON.parse(localStorage.getItem("cart"));
-//         console.log(cart);
-//         if (cart && Object.keys(cart).length > 0) {
-//             let receiptDiv = document.createElement("div"); // Create a new div element
-//             for (let itemName in cart) {
-//                 let item = cart[itemName];
-//                 console.log(item);
-//                 let itemDiv = document.createElement("div");
-//                 itemDiv.innerHTML = `
-//                 <h2>${itemName}</h2>
-//                 <p>Price: $${item.price.toFixed(2)}</p>
-//                 <p>Quantity: ${item.quantity}</p>
-//             `;
-//                 receiptDiv.appendChild(itemDiv);
-//             }
-//             let totalDiv = document.createElement("div");
-//             totalDiv.innerHTML = `<h2>Total: $${localStorage.getItem('totalPrice')}</h2>`;
-//             receiptDiv.appendChild(totalDiv);
-
-//             document.body.appendChild(receiptDiv); // Append the receiptDiv to the document body
-//         } else {
-//             console.log("The cart is empty.");
-//         }
-//     }
-// window.onload = function() {
-//     let cart = localStorage.getItem("cart");
-//     console.log(cart);
-//     if (cart) {
-//         let receiptDiv = document.createElement("div"); // Create a new div element
-//         for (let itemName in cart) {
-//             let item = cart[itemName];
-//             console.log(item);
-//             let itemDiv = document.createElement("div");
-//             itemDiv.innerHTML = `
-//                 <h2>${itemName}</h2>
-//                 <p>Price: $${item.price.toFixed(2)}</p>
-//                 <p>Quantity: ${item.quantity}</p>
-//             `;
-//             receiptDiv.appendChild(itemDiv);
-//         }
-//         let totalDiv = document.createElement("div");
-//         totalDiv.innerHTML = `<h2>Total: $${localStorage.getItem('totalPrice')}</h2>`;
-//         receiptDiv.appendChild(totalDiv);
-
-//         document.body.appendChild(receiptDiv); // Append the receiptDiv to the document body
-//     }
-// }
-// /
+function returnHome() {
+    location.replace("index.html");
+}

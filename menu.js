@@ -139,10 +139,9 @@ function purchaseProducts() {
 
 //Payment page
 
-
 window.onload = function(){
     let name = localStorage.getItem('name');
-    // document.querySelector(".displayName").innerHTML = name; ////WAS GETTING ERRORS BUT MY CODE STILL WORKS WITHOUT IT?????
+    document.querySelector(".displayName").innerHTML = name;
 };
 function openForm1(){
     let inputs = document.querySelectorAll('input.requiredcard')
@@ -195,6 +194,7 @@ function formCheck(){
 
 }
 
+///Receipt PAGE
 function generateReceipt() {
     let receipt = 'Receipt\n';
     receipt += '----------------------\n';
@@ -221,7 +221,6 @@ function generateReceipt() {
     localStorage.setItem('receipt', receipt);
     window.location.href = 'receipt.html';
 }
-
 
 function updateTotalWithTip() {
     let totalElement = document.querySelector('.cart-total-price');
