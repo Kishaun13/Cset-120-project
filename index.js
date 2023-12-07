@@ -1,4 +1,3 @@
-
 function signUp() {
     let name = document.getElementById("name").value;
     let email = document.getElementById("email").value;
@@ -32,14 +31,13 @@ function login() {
         alert("Login Failed Unknown credential combination");
     }
 }
-function customerLogout(){
+
+function customerLogout() {
     localStorage.setItem('Original-Menu', orgMenu)
     localStorage.clear()
     location.replace('login.html')
     localStorage.setItem('Original-Menu', orgMenu)
 }
-
-
 const orgMenu = `
 <div id ="menus">
 <div class="Breakfast">
@@ -278,6 +276,9 @@ const orgMenu = `
     </div>
 </div>
 </div>`
+
+
+
 let firstLogin = false
 
 function staffLogin() {
@@ -303,11 +304,11 @@ function staffLogin() {
 }
 
 
-    
-function staffLogout(){
+
+function staffLogout() {
     sessionStorage.setItem('manager', false)
     location.replace('staff-login.html')
-    
+
 }
 
 
