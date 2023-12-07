@@ -22,7 +22,7 @@ function addToCart(item) {
         displayCartItems();
         updateCartTotal();
         localStorage.setItem("cart", JSON.stringify(cart));
-        alert(`${parentElement} is added to the cart!`);
+        alert(`${itemName} is added to the cart!`);
     }
 }
 
@@ -226,32 +226,29 @@ function closeForm2() {
         receipt += '----------------------\n';
         for (let itemName in cart) {
             const item = cart[itemName];
-            receipt += `${itemName}: $${item.price.toFixed(2)} x ${item.quantity} = $${(item.price * item.quantity).toFixed(2)}\n`;
+            receipt += `${itemName}: $${item.price} x ${item.quantity} = $${(item.price * item.quantity).toFixed(2)}\n`;
         }
-        let total = Object.values(cart).reduce((acc, item) => acc + item.price * item.quantity, 0);
+        let total = Object.values(cart).reduce((acc, item) => acc + parseFloat(item.price) * item.quantity, 0);
 
-        // Get the tip value from the input field and parse it as a float
         let tipElement = document.getElementById('tip2');
         let tip = parseFloat(tipElement.value);
 
-        // Check if the tip is a number and greater than or equal to 0
         if (!isNaN(tip) && tip >= 0) {
             receipt += `Tip: $${tip.toFixed(2)}\n`;
-            total += tip; // Add the tip to the total
+            total += tip;
         }
 
         receipt += '----------------------\n';
-        receipt += `Total: $${total.toFixed(2)}\n`; // Display the total including the tip
+        receipt += `Total: $${total.toFixed(2)}\n`;
         receipt += '----------------------\n';
         receipt += 'Thank you for your purchase!\n';
         localStorage.setItem('receipt', receipt);
         window.location.href = 'receipt.html';
     }
 
-
     function updateTotalWithTip() {
         let totalElement = document.querySelector('.cart-total-price');
-        let total = Object.values(cart).reduce((acc, item) => acc + item.price * item.quantity, 0);
+        let total = Object.values(cart).reduce((acc, item) => acc + parseFloat(item.price) * item.quantity, 0);
 
         let tipElement = document.getElementById('tip2');
         let tip = parseFloat(tipElement.value);
@@ -262,4 +259,47 @@ function closeForm2() {
 
         totalElement.textContent = `$${total.toFixed(2)}`;
     }
+
+
+    //     function generateReceipt() {
+    //         let receipt = 'Receipt\n';
+    //         receipt += '----------------------\n';
+    //         for (let itemName in cart) {
+    //             const item = cart[itemName];
+    //             receipt += `${itemName}: $${item.price.toFixed(2)} x ${item.quantity} = $${(item.price * item.quantity).toFixed(2)}\n`;
+    //         }
+    //         let total = Object.values(cart).reduce((acc, item) => acc + item.price * item.quantity, 0);
+
+    //         // Get the tip value from the input field and parse it as a float
+    //         let tipElement = document.getElementById('tip2');
+    //         let tip = parseFloat(tipElement.value);
+
+    //         // Check if the tip is a number and greater than or equal to 0
+    //         if (!isNaN(tip) && tip >= 0) {
+    //             receipt += `Tip: $${tip.toFixed(2)}\n`;
+    //             total += tip; // Add the tip to the total
+    //         }
+
+    //         receipt += '----------------------\n';
+    //         receipt += `Total: $${total.toFixed(2)}\n`; // Display the total including the tip
+    //         receipt += '----------------------\n';
+    //         receipt += 'Thank you for your purchase!\n';
+    //         localStorage.setItem('receipt', receipt);
+    //         window.location.href = 'receipt.html';
+    //     }
+
+
+    //     function updateTotalWithTip() {
+    //         let totalElement = document.querySelector('.cart-total-price');
+    //         let total = Object.values(cart).reduce((acc, item) => acc + item.price * item.quantity, 0);
+
+    //         let tipElement = document.getElementById('tip2');
+    //         let tip = parseFloat(tipElement.value);
+
+    //         if (!isNaN(tip) && tip >= 0) {
+    //             total += tip;
+    //         }
+
+    //         totalElement.textContent = `$${total.toFixed(2)}`;
+    //     }
 }
