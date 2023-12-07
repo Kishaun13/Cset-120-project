@@ -265,8 +265,33 @@ body {
     padding: 1%;
     margin: 10px;
 }
-
-
+#newest-menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.new-item{
+    display: inline-block;
+    border:3px solid rgb(174, 146, 146);
+    background-color: rgb(121, 34, 34);
+    margin: 1cm;
+    padding: 1%;
+    margin: 1%;
+    color: rgb(204, 168, 117);
+    width: 300px;
+    padding: 1%;
+    margin: 10px;
+}
+.new-item button{
+    color: rgb(204, 168, 117);
+    font-size: 150%;
+    border-radius: 20px;
+}
+.new-item button:hover {
+    background-color: rgba(233, 145, 29, 0.542);
+    color: rgb(204, 168, 117);
+}
 /* .item p
 {
     width: 300px;

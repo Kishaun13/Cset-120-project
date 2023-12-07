@@ -24,27 +24,30 @@ function removeItem(divToRemove){
     divToRemove.remove()
   }
   function addNewItems(){
-    const menuItemsContainer = document.querySelector("#display-menu");
+    const menuItemsContainer = document.querySelector("#menus");
     let newTitle = document.getElementById('productName').value
     let newPrice = document.getElementById('product-price').value
     let newImg = document.getElementById('product-img').value
     const newProduct = document.createElement('div')
+    newProduct.classList.add('new-item')
     const newItem = `
-    <div id="products-container" class="items-container">
-    <div class = "pasteMenu" class ="item product-item">
+    <h1 style="color: rgb(174, 107, 20); text-align: center; font-family: glass antiqua;">New Items</h1>
+    <div id="newItem">
     <img id ="productimg" width="200" src="${newImg}" alt="">
-    <h3 class="product-title">${newTitle}</h3>
     <div class="products-item-details">
-        <p></p>
+      <h3 class="product-title">${newTitle}</h3>
+        <p>New item to the menu</p>
         <p class="product-price">${newPrice}</p>
-        <button onclick="addToCart()" class="btn prime-btn product-btn">Add To Cart</button>
-    </div>
+        <button onclick="addToCart(this)" class="btn prime-btn product-btn">Add To Cart</button>
     </div>
     </div>`
-    
     newProduct.innerHTML = newItem
     menuItemsContainer.appendChild(newProduct)
-    
+    clearInputs()
+}
+function clearInputs(){
+  let clearAllInputTags = document.querySelectorAll('input');
+  clearAllInputTags.forEach(eachInput => eachInput.value = '');
 }
   function displayItems(){
     let sessionMenu = sessionStorage.getItem('Original-Menu')
@@ -64,9 +67,4 @@ function saveSession(){
     console.log(localStorage.getItem('Original-Menu'))
     // location.replace('menu.html')
   }
-function newItemClass(){
-  let newClass;
-  let newName = prompt('What category is this new product?')
-  newName.innerHTML = newClass
-}
 
