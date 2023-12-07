@@ -3,9 +3,7 @@ window.onload = function() {
 
 }
 let cart = {};
-var parentElement = item.parentNode;
-var itemName = parentElement.children[0].textContent;
-var itemPrice = parentElement.children[1].textContent;
+
 if (localStorage.getItem("cart")) {
     cart = JSON.parse(localStorage.getItem("cart"));
     displayCartItems();
@@ -13,8 +11,10 @@ if (localStorage.getItem("cart")) {
 }
 
 
-function addToCart(itemName, itemPrice) {
-    
+function addToCart(item) {
+var parentElement = item.parentNode;
+var itemName = parentElement.children[0].textContent;
+var itemPrice = parentElement.children[2].textContent;
     if (cart[itemName]) {
         alert(`${itemName} is already in the cart!`);
     } else {
@@ -22,13 +22,14 @@ function addToCart(itemName, itemPrice) {
         displayCartItems();
         updateCartTotal();
         localStorage.setItem("cart", JSON.stringify(cart));
-        alert(`${itemName} is added to the cart!`);
+        alert(`${parentElement} is added to the cart!`);
     }
 }
 
 function displayCartItems() {
     const cartItemsContainer = document.querySelector(".cart-items");
     cartItemsContainer.innerHTML = "";
+
     for (let itemName in cart) {
         const item = cart[itemName];
         const cartRow = document.createElement("div");
@@ -37,7 +38,7 @@ function displayCartItems() {
         <div class="cart-item cart-column">
           <span class="cart-item-title">'${itemName}'</span>
         </div>
-        <span class="cart-price cart-column">$${item.price.toFixed(2)}</span>
+        <span class="cart-price cart-column">${(item.price)}</span>
         <div class="cart-quantity cart-column">
           <input class="cart-quantity-input" type="number" min = 1 value="${
             item.quantity
@@ -52,13 +53,13 @@ function displayCartItems() {
     quantityInputs.forEach((input) => {
         input.addEventListener("change", (event) => {
             let newQuantity = parseInt(event.target.value);
-            let itemName = event.target.getAttribute("data-item-name");
+            var itemName = event.target.getAttribute("data-item-name");
             updateQuantity(itemName, newQuantity);
         });
     });
 }
 
-function removeFromCart() {
+function removeFromCart(itemName) {
     delete cart[itemName];
     displayCartItems();
     updateCartTotal();
@@ -67,11 +68,10 @@ function removeFromCart() {
 
 function updateCartTotal() {
     let total = 0;
+    
     for (let itemName in cart) {
-      if(isNaN){
-        total += cart[itemName].price * cart[itemName].quantity;
-      }
-        
+        price = (cart[itemName].price).substring(1);
+       total += parseFloat(price) * cart[itemName].quantity;
     }
     document.querySelector(".cart-total-price").innerText =
         "$" + total.toFixed(2);

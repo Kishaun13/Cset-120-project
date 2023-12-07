@@ -482,3 +482,31 @@ body {
     font-size: 13px;
     color: #777;
 }
+.dessert-container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    font-family: Glass Antiqua;
+    color: rgb(204, 168, 117);
+}
+/* .product-bread{
+    display:flex;
+    flex-wrap: wrap;
+}
+.product-bread div{
+    flex-direction: row;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+.product-beverage{
+    display: flex;
+    flex-wrap: wrap;
+}
+.product-beverage div{
+    flex-direction: row;
+}
+.product-dessert{
+    display: flex;
+    flex-wrap: wrap;
+} */
