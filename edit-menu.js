@@ -4,8 +4,7 @@ window.onload = function() {
 
 }
 let priceChange = document.querySelectorAll('.product-price')
-console.log(sessionStorage.getItem('Original-Menu'))
-console.log(displayItems())
+
 
 
   function removeSelected(){
@@ -20,12 +19,12 @@ console.log(displayItems())
         }
         )
 };
-        
+  
 function removeItem(divToRemove){
     divToRemove.remove()
   }
   function addNewItems(){
-    const menuItemsContainer = document.querySelector("#menus");
+    const menuItemsContainer = document.querySelector("#display-menu");
     let newTitle = document.getElementById('productName').value
     let newPrice = document.getElementById('product-price').value
     let newImg = document.getElementById('product-img').value
@@ -47,33 +46,6 @@ function removeItem(divToRemove){
     menuItemsContainer.appendChild(newProduct)
     
 }
-  function displayCartItems(newItems){
-    const cartItemsContainer = document.querySelector(".cart-items");
-    cartItemsContainer.innerHTML = "";
-  
-    for (let itemName in cart) {
-      const item = cart[itemName];
-  
-      const cartRow = document.createElement("div");
-      cartRow.classList.add("cart-row");
-  
-      const cartRowHTML = `
-          <div class="cart-item cart-column">
-            <span class="cart-item-title">${itemName}</span>
-          </div>
-          <span class="cart-price cart-column">$${item.price.toFixed(2)}</span>
-          <div class="cart-quantity cart-column">
-            <input class="cart-quantity-input" type="number" value="${
-              item.quantity
-            }" data-item-name="${itemName}">
-            <button onclick="removeFromCart('${itemName}')" class="btn btn-danger" type="button">REMOVE</button>
-          </div>
-        `;
-  
-      cartRow.innerHTML = cartRowHTML;
-      cartItemsContainer.append(cartRow);
-    }
-  }
   function displayItems(){
     let sessionMenu = sessionStorage.getItem('Original-Menu')
      var displayMenu = document.getElementById("display-menu")
@@ -92,5 +64,9 @@ function saveSession(){
     console.log(localStorage.getItem('Original-Menu'))
     // location.replace('menu.html')
   }
-
+function newItemClass(){
+  let newClass;
+  let newName = prompt('What category is this new product?')
+  newName.innerHTML = newClass
+}
 
