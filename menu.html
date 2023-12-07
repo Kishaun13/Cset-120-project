@@ -81,8 +81,6 @@
 
     <div id="display-menu">
 
-
-
     </div>
 
     <section id="cart">
@@ -156,6 +154,9 @@
             var element = document.getElementById('display-menu')
             element.innerHTML = localStorage.getItem('Original-Menu')
         })
+     window.onload = function() {
+    document.getElementById('menus').contentEditable = false;
+    }
     </script>
 
 
@@ -167,7 +168,7 @@
 
     <!-- <script>
 
-<!-- <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+ <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> -->
 
 <!-- <script>

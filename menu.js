@@ -1,7 +1,3 @@
-window.onload = function() {
-  document.getElementById('menus').contentEditable = false
-
-}
 let cart = {};
 
 if (localStorage.getItem("cart")) {
@@ -22,7 +18,7 @@ var itemPrice = parentElement.children[2].textContent;
         displayCartItems();
         updateCartTotal();
         localStorage.setItem("cart", JSON.stringify(cart));
-        alert(`${parentElement} is added to the cart!`);
+        alert(`${itemName} is added to the cart!`);
     }
 }
 
@@ -36,7 +32,7 @@ function displayCartItems() {
         cartRow.classList.add("cart-row");
         const cartRowHTML = `
         <div class="cart-item cart-column">
-          <span class="cart-item-title">'${itemName}'</span>
+          <span class="cart-item-title">${itemName}</span>
         </div>
         <span class="cart-price cart-column">${(item.price)}</span>
         <div class="cart-quantity cart-column">

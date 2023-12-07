@@ -112,21 +112,21 @@ if (localStorage.getItem("cart")) {
     displayCartItems();
     updateCartTotal();
 }
-
-function addToCart(itemName, itemPrice) {
-    if (cart[itemName]) {
-        alert(`${itemName} is already in the cart!`);
-    } else {
-        cart[itemName] = { price: itemPrice, quantity: 1 };
-        console.log(cart);
-        displayCartItems();
-        updateCartTotal();
-        localStorage.setItem("cart", JSON.stringify(cart));
-        alert(`You added ${itemName} to your cart!`);
+function addToCart(item) {
+    var parentElement = item.parentNode;
+    var itemName = parentElement.children[0].textContent;
+    var itemPrice = parentElement.children[2].textContent;
+        if (cart[itemName]) {
+            alert(`${itemName} is already in the cart!`);
+        } else {
+            cart[itemName] = { price: itemPrice, quantity: 1 };
+            displayCartItems();
+            updateCartTotal();
+            localStorage.setItem("cart", JSON.stringify(cart));
+            alert(`${itemName} is added to the cart!`);
+        }
     }
-    // console.log(cart);
-}
-
+    
 function displayCartItems() {
     const cartItemsContainer = document.querySelector(".cart-items");
     cartItemsContainer.innerHTML = "";
@@ -141,7 +141,7 @@ function displayCartItems() {
         <div class="cart-item cart-column">
           <span class="cart-item-title">${itemName}</span>
         </div>
-        <span class="cart-price cart-column">$${item.price.toFixed(2)}</span>
+        <span class="cart-price cart-column">${item.price}</span>
         <div class="cart-quantity cart-column">
             <input class="cart-quantity-input" type="number" value="${
                 item.quantity

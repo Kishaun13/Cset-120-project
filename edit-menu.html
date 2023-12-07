@@ -20,17 +20,31 @@
         </div>
     </nav>
 <br><br><br>
-    <div class="managerMode">
+<div class="managerMode">
         <p>Add items to the Menu</p>
-        <input type="text" name="product-name" id="productName">
-        <input type="text" name="product-price" id="product-price">
-        <input type="text" name="product-img" id="product-img">
+        <div>
+    <form action="">
+            <label for="">Name:</label>
+            <input type="text" class="newProducts" name="product-name" id="productName">
+        </div>
+        <div>
+            <label for="">Price:</label>
+            <input type="text" class="newProducts" name="product-price" id="product-price">
+        </div>
+        <div>
+            <label for="">Image address:</label>
+            <input type="text" class="newProducts" name="product-img" id="product-img">
+        </div>
+    </form>
         <button onclick="addNewItems()">Add</button>
         <br>
         <button id="saveBtn" onclick="saveSession()">Save</button>
+        <br>
         <button onclick="removeSelected()">Remove</button>
+        <br>
+        <button onclick="staffLogout()">Log Out</button>
             
-    </div>
+</div>
     
     <br><br><br>
     <div id="every-menu">
@@ -38,9 +52,10 @@
     </div>
 
     <div id="display-menu">
-        
+        <div id="newest-menu">
+
+        </div>
     </div>
-    <button onclick="staffLogout()">Log Out</button>
     <script>
         $(document).ready(function ()
         {
