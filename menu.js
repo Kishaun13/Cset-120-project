@@ -13,7 +13,7 @@ if (localStorage.getItem("cart")) {
 }
 
 
-function addToCart(itemName,itemPrice) {
+function addToCart(itemName, itemPrice) {
     
     if (cart[itemName]) {
         alert(`${itemName} is already in the cart!`);
