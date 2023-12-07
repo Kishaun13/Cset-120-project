@@ -76,33 +76,75 @@
 
 
 
-function setTipAmount() {
-    let tipamount = document.getElementById("tip2").value;
+// function setTipAmount() {
+//     let tipamount = document.getElementById("tip2").value;
 
-    if (tipamount == "0") {
-        alert("Please select a tip amount.");
-    } else {
-        localStorage.setItem("tipamount", tipamount);
-    }
+//     if (tipamount == "0") {
+//         alert("Please select a tip amount.");
+//     } else {
+//         localStorage.setItem("tipamount", tipamount);
+//     }
 
-}
+// }
 
-function checkForms() {
-    if (document.getElementById("phone1").value == "" && document.getElementById("phone2").value == "") {
-        alert("Please enter a phone number.");
-    } else if (document.getElementById("name1").value == "" && document.getElementById("name2").value == "") {
-        alert("Please enter a name.");
-    } else if (document.getElementById("address1").value == "" && document.getElementById("address2").value == "") {
-        alert("Please enter an address.");
-    } else if (document.getElementById(city1).value == "" && document.getElementById(city2).value == "") {
-        alert("Please enter a city.");
-    } else if (document.getElementById(region1).value == "" && document.getElementById(reigion2).value == "") {
-        alert("Please enter a state.");
-    } else {
-        alert("Thank you for your purchase!")
-        window.location.assign("/receipt.html")
+// function checkForms() {
+//     if (document.getElementById("phone1").value == "" && document.getElementById("phone2").value == "") {
+//         alert("Please enter a phone number.");
+//     } else if (document.getElementById("name1").value == "" && document.getElementById("name2").value == "") {
+//         alert("Please enter a name.");
+//     } else if (document.getElementById("address1").value == "" && document.getElementById("address2").value == "") {
+//         alert("Please enter an address.");
+//     } else if (document.getElementById(city1).value == "" && document.getElementById(city2).value == "") {
+//         alert("Please enter a city.");
+//     } else if (document.getElementById(region1).value == "" && document.getElementById(reigion2).value == "") {
+//         alert("Please enter a state.");
+//     } else {
+//         alert("Thank you for your purchase!")
+//         window.location.assign("/receipt.html")
 
-    }
+//     }
 
 
-}
+// }
+
+// function generateReceipt() {
+//     let receipt = 'Receipt\n';
+//     receipt += '----------------------\n';
+//     for (let itemName in cart) {
+//         const item = cart[itemName];
+//         receipt += `${itemName}: $${item.price.toFixed(2)} x ${item.quantity} = $${(item.price * item.quantity).toFixed(2)}\n`;
+//     }
+//     let total = Object.values(cart).reduce((acc, item) => acc + item.price * item.quantity, 0);
+
+//     // Get the tip value from the input field and parse it as a float
+//     let tipElement = document.getElementById('tip2');
+//     let tip = parseFloat(tipElement.value);
+
+//     // Check if the tip is a number and greater than or equal to 0
+//     if (!isNaN(tip) && tip >= 0) {
+//         receipt += `Tip: $${tip.toFixed(2)}\n`;
+//         total += tip; // Add the tip to the total
+//     }
+
+//     receipt += '----------------------\n';
+//     receipt += `Total: $${total.toFixed(2)}\n`; // Display the total including the tip
+//     receipt += '----------------------\n';
+//     receipt += 'Thank you for your purchase!\n';
+//     localStorage.setItem('receipt', receipt);
+//     window.location.href = 'receipt.html';
+// }
+
+
+// function updateTotalWithTip() {
+//     let totalElement = document.querySelector('.cart-total-price');
+//     let total = Object.values(cart).reduce((acc, item) => acc + item.price * item.quantity, 0);
+
+//     let tipElement = document.getElementById('tip2');
+//     let tip = parseFloat(tipElement.value);
+
+//     if (!isNaN(tip) && tip >= 0) {
+//         total += tip;
+//     }
+
+//     totalElement.textContent = `$${total.toFixed(2)}`;
+// }
