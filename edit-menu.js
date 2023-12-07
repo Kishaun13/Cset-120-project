@@ -19,7 +19,7 @@ let priceChange = document.querySelectorAll('.product-price')
         }
         )
 };
-        
+  
 function removeItem(divToRemove){
     divToRemove.remove()
   }
@@ -64,5 +64,9 @@ function saveSession(){
     console.log(localStorage.getItem('Original-Menu'))
     // location.replace('menu.html')
   }
-
+function newItemClass(){
+  let newClass;
+  let newName = prompt('What category is this new product?')
+  newName.innerHTML = newClass
+}
 
