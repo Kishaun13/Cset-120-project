@@ -51,13 +51,22 @@
     </nav>
 
     <br><br><br><br> -->
-    <h1 style="color: #ffffff;">Thank you
+    <h1 style="color: #ffffff; text-align: center;">Thank you
+        <div id="displayName"></div>
         <section class="displayName" style="color: white;"></section> here is Your Receipt</h1>
+    <br>
+    <br>
+
+    <h2 style="color: white; text-align: center;">Your order will be ready for
+        <div id="pickOrDeliery"></div> in
+        <section id="prepTime" style="color: white;"></section> minutes</h2>
+
+    <br><br>
 
 
     <br>
     <section class="receipt">
-        <pre id="receipt" style="background-color: white; background-size: contain;"></pre>
+        <pre id="receipt" style="background-color: white; background-size: fill ;"></pre>
         <button onclick="returnHome(),clearCart()">Return Home</button>
 
     </section>
@@ -88,7 +97,33 @@
         document.getElementById('receipt').textContent = receipt;
     </script>
     <script src="receipt.js"></script>
-    <script src="menu.js"></script>
+    <!-- <script src="menu.js"></script> -->
+    <script>
+        // window.onload = function() {
+        //     const namee = document.getElementById('displayName')
+        //     namee.innerHTML = localStorage.getItem('name', name)
+        // }
+
+        window.onload = function() {
+                let name = localStorage.getItem('name');
+                document.querySelector(".displayName").innerHTML = name;
+
+                document.getElementById('prepTime').textContent = 30;
+
+                let pickOrDelivery = localStorage.getItem('pickOrDelivery');
+                document.querySelector(".pickOrDelivery").innerHTML = pickOrDelivery;
+            }
+            // window.onload = function() {
+            //     let name = localStorage.getItem('name');
+            //     document.querySelector(".displayName").innerHTML = name;
+            // }
+
+
+        // window.onload = function() {
+        //     var element = document.getElementById('pickOrDelivery')
+        //     element.innerHTML = localStorage.getItem('pickOrDelivery')
+        // }
+    </script>
 </body>
 
 </html>
