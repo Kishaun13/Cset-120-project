@@ -3,6 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+.backgroundimg8 {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.099), rgba(0, 0, 0, 0.663)), url(images/background/pexels-photo-683039.jpeg);
+    background-size: cover;
+    position: relative;
+    animation: fadeIn 2s ease-in-out;
+}
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -72,7 +79,7 @@ input::-webkit-inner-spin-button {
     padding: 10px;
     margin: 5px;
     color: aliceblue;
-    background-color: rgb(54, 79, 71);
+    background-color: rgb(112, 90, 57);
     border: 2px solid black;
     border-radius: 15px;
     overflow: hidden;

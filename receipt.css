@@ -150,19 +150,12 @@
 }
 
 .receipt button {
-    padding: 2%;
+    padding: 1%;
     width: 200px;
-    margin-left: 1200px;
+    margin-left: 1470px;
     border-radius: 20px;
     color: rgb(106, 79, 40);
     font-size: 150%;
     border-color: rgb(165, 86, 86);
     background-color: rgb(219, 178, 178);
-    ;
-}
-
-.receipt button:hover {
-    background-color: rgba(233, 145, 29, 0.542);
-    color: rgb(160, 106, 106);
-    display: flex;
 }
