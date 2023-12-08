@@ -17,7 +17,6 @@
     <link rel=" preconnect " href="https://fonts.gstatic.com/ " crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Caveat&family=Glass+Antiqua&family=Indie+Flower&family=Lato:wght@100;300;400&family=Shadows+Into+Light&family=Sometype+Mono&display=swap " rel="stylesheet ">
 </head>
-
 <body>
     <nav class="navbar navbar-expand-lg fixed-top navbarScroll ">
         <div class="container ">
@@ -72,15 +71,15 @@
                                     <div class="content-align">
                                         <div class="content">
                                             <label for="phone1">*Phone Number:</label>
-                                            <input class="required" type="text" id="phone1" placeholder="04.XX.XX.XX.XX" name="phonenumber1" minlength="10" maxlength="10" name="phone1" onkeypress="return checkNumb(event)" required>
+                                            <input class="required" value="0412345678" type="text" id="phone1" placeholder="04.XX.XX.XX.XX" name="phonenumber1" minlength="10" maxlength="10" name="phone1" onkeypress="return checkNumb(event)" required>
                                         </div>
                                         <div class="content">
                                             <label for="address1">*Address:</label>
-                                            <input class="required" type="text" id="address1" placeholder="Villefranche-sur-Mer" required>
+                                            <input class="required" value="Villefranche-sur-Mer" type="text" id="address1" placeholder="Villefranche-sur-Mer" required>
                                         </div>
                                         <div class="content">
                                             <label for="city1">*City:</label>
-                                            <input class="required" type="text" id="city1" placeholder="Èze" name="cities1" required>
+                                            <input class="required" value="Èze" type="text" id="city1" placeholder="Èze" name="cities1" required>
                                         </div>
                                         <div class="content">
                                             <label for="region1">Region/Department:</label>
@@ -102,7 +101,7 @@
                                         <div class="content"> 
                                             <h4 style="text-align: center;">*Pickup or Delivery?</h4>
                                             <div style="text-align: center;" class="dropdown">
-                                                <select class="select" name="selected">
+                                                <select id="select1" name="selected" onchange="selectedOptions()">
                                                     <option id="pickup1" value="pickup-1">Pickup</option>
                                                     <option id="delivery1" value="delivery-1">Delivery</option>
                                                 </select>    
@@ -123,15 +122,15 @@
                                         </div>
                                         <div class="content">    
                                             <label for="exMonth">*Expiration Month</label>
-                                            <input class="requiredcard" type="text" id="exMonth" placeholder="09" name="month" minlength="2" maxlength="2" onkeypress="return checkNumb(event)" required>
+                                            <input class="requiredcard" value="09" type="text" id="exMonth" placeholder="09" name="month" minlength="2" maxlength="2" onkeypress="return checkNumb(event)" required>
                                         </div>
                                         <div class="content">
                                             <label for="exYear">*Exp Year</label>
-                                            <input class="requiredcard" type="text" id="exYear" placeholder="2023" name="year" minlength="4" maxlength="4" onkeypress="return checkNumb(event)" required>
+                                            <input class="requiredcard" value="2023" type="text" id="exYear" placeholder="2023" name="year" minlength="4" maxlength="4" onkeypress="return checkNumb(event)" required>
                                         </div>
                                         <div class="content">  
                                             <label for="cvvNumb">*CVV</label>
-                                            <input class="requiredcard" type="password" id="cvvNumb" placeholder="123" name="cvv" minlength="3" maxlength="3" onkeypress="return checkNumb(event)" required>
+                                            <input class="requiredcard" value="123" type="password" id="cvvNumb" placeholder="123" name="cvv" minlength="3" maxlength="3" onkeypress="return checkNumb(event)" required>
                                         </div>
                                         <div class="content">    
                                             <label for="tip2">$ Tip</label>
@@ -140,7 +139,7 @@
                                         <div class="content"> 
                                             <h4 style="text-align: center;">*Pickup or Delivery?</h4>
                                             <div style="text-align: center;" class="dropdown">
-                                                <select class="select" name="selected" >
+                                                <select id="select2" name="selected" onchange="selectedOptions()">
                                                     <option id="pickup1" value="pickup-1">Pickup</option>
                                                     <option id="delivery1" value="delivery-1">Delivery</option>
                                                 </select> 

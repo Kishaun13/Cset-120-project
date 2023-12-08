@@ -145,8 +145,10 @@ function purchaseProducts() {
 
 window.onload = function(){
     let name = localStorage.getItem('name');
-    document.querySelector(".displayName").innerHTML = name;
+    // document.querySelector(".displayName").innerHTML = name;
 };
+
+//Function to open either the cash or credit form (only really switching between the two middle divs)
 function openForm1(){
     let inputs = document.querySelectorAll('input.requiredcard')
     for(const input of inputs){
@@ -165,11 +167,12 @@ function openForm2(){
     document.getElementById('cardcredit').removeAttribute("hidden")
     document.getElementById('cash').setAttribute("hidden", "hidden")
 };
-
+//Cancel button on form
 function back(){
     document.getElementById('forms').style.display = "none"
 };
 
+//This function checks for some of the inputs whether they're a number
 function checkNumb(event){
     var asciikey = event.keyCode ? event.keyCode : event.charCode; //: event.which ? event.which
     if(asciikey === 13 || (asciikey >= 48 && asciikey <= 57)){
@@ -190,13 +193,27 @@ function checkNumb(event){
     // const code = form.cvv.value
 };
 
+//// trying to GRAB the value of pickup or delivery
+// function selectedOptions(){
+// var e = document.getElementById('select1')
+// var value = e.options[e.selectedIndex].text
+// console.log(value)
+// // if(sel.value === "pickup-1"){
+// //     console.log(sel)
+// // }
+// // else if(sel.value === "delivery-1"){
+// //     console.log(sel)
+// // }
+// }
+
+//Checks to make sure all the required form inputs are filled out
 function formCheck(){  
     let valid = true;
     if(valid){
         location.replace("receipt.html")
     }
-
 }
+
 
 ///Receipt PAGE
 function generateReceipt() {
@@ -228,14 +245,20 @@ function generateReceipt() {
 
 function updateTotalWithTip() {
     let totalElement = document.querySelector('.cart-total-price');
-    let total = Object.values(cart).reduce((acc, item) => acc + item.price * item.quantity, 0);
+    // let total = Object.values(cart).reduce((acc, item) => acc + item.price * item.quantity, 0);
+    let total = parseFloat(totalElement.textContent.substring(1));
+
 
     let tipElement = document.getElementById('tip2');
     let tip = parseFloat(tipElement.value);
 
     if (!isNaN(tip) && tip >= 0) {
         total += tip;
+    } else {
+        tip = 0;
     }
+
+    localStorage.setItem('tipamount', tip);
 
     totalElement.textContent = `$${total.toFixed(2)}`;
 }
