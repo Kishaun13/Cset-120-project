@@ -311,7 +311,7 @@ function staffLogin() {
     let staffEmail = document.getElementById('staffU').value;
     let staffPass = document.getElementById('Staffpass').value;
 
-    if (staffEmail === 'Gorlock' && staffPass === 'Quack') {
+    if (staffEmail === 'admin22@gmail.com' && staffPass === 'Quack') {
 
         sessionStorage.setItem('manager', true)
         alert('You are now in manager mode.')
