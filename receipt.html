@@ -121,7 +121,8 @@
         //     showRandomNumber();
         // }
 
-        document.getElementById('prepTime').textContent = localStorage.getItem('prepTime');
+        var element = document.getElementById('prepTime')
+        element.innerHTML = getRandomInt(5, 10)
 
         // document.getElementById('prepTime').textContent = 30;
 

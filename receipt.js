@@ -204,3 +204,7 @@ function returnHome() {
     localStorage.removeItem('cart');
     localStorage.removeItem('tipamount');
 }
+
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (60 - 20 + 1)) + 20;
+}

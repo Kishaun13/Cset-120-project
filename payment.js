@@ -87,6 +87,8 @@ function setTipAmount() {
 
 }
 
+
+
 // function pickUpOrDelivery() {
 //     let pickUpOrDelivery = document.querySelector("pickDeliv").value;
 //     localStorage.setItem("pickUpOrDelivery", pickUpOrDelivery);
