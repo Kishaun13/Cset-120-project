@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Caveat&family=Glass+Antiqua&family=Indie+Flower&family=Lato:wght@100;300;400&family=Shadows+Into+Light&family=Sometype+Mono&display=swap " rel="stylesheet ">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
+
 <body>
     <h1>Manager's View</h1>
     <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
@@ -19,37 +20,54 @@
             </button>
         </div>
     </nav>
-<br><br><br>
+    <br><br><br>
     <div class="managerMode">
         <p>Add items to the Menu</p>
-        <input type="text" name="product-name" id="productName">
-        <input type="text" name="product-price" id="product-price">
-        <input type="text" name="product-img" id="product-img">
+        <div>
+            <form action="">
+                <label for="">Name:</label>
+                <input type="text" class="newProducts" name="product-name" id="productName">
+        </div>
+        <div>
+            <label for="">Price:</label>
+            <input type="text" class="newProducts" name="product-price" id="product-price">
+        </div>
+        <div>
+            <label for="">Image address:</label>
+            <input type="text" class="newProducts" name="product-img" id="product-img">
+        </div>
+        </form>
         <button onclick="addNewItems()">Add</button>
         <br>
         <button id="saveBtn" onclick="saveSession()">Save</button>
+        <br>
         <button onclick="removeSelected()">Remove</button>
-            
+        <br>
+        <button onclick="staffLogout()">Log Out</button>
+
     </div>
-    
+
     <br><br><br>
     <div id="every-menu">
         <h2>Everyday Menu Items (always in)</h2>
     </div>
 
     <div id="display-menu">
-        
+        <div id="newest-menu">
+
+        </div>
     </div>
-    <button onclick="staffLogout()">Log Out</button>
     <script>
-        $(document).ready(function ()
-        {
-           var element = document.getElementById('display-menu')
-           element.innerHTML = localStorage.getItem('Original-Menu')
+        $(document).ready(function() {
+            var element = document.getElementById('display-menu')
+            element.innerHTML = localStorage.getItem('Original-Menu')
         })
+        window.onload = function() {
+            document.getElementById('menus').contentEditable = true;
+        }
     </script>
     <script src="index.js"></script>
     <script src="edit-menu.js"></script>
 </body>
-</html>
 
+</html>
