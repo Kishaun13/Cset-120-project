@@ -97,7 +97,7 @@ const orgMenu = `
 </div>
 </div><br><br><br><br><br>
 
-<h1 style="color: rgb(174, 107, 20); text-align: center; font-family: glass antiqua;">Beverages</h1>
+<h1 style="color: rgb(174, 107, 20); text-align: center; font-family: glass antiqua;">Bread</h1>
 <div id="products-container" class="items-container">
     <div class="item product-bread">
         <img id ="product-img" class="shop-item-image" width="200" src="images/products/bagel.jpeg" alt="" srcset="">
@@ -119,6 +119,32 @@ const orgMenu = `
         <button class="btn" onclick="addToCart(this)" style="text-decoration: none;">Add To Cart</button>
     </div>
     </div>
+    <div class="item product-bread">
+        <img id ="product-img" class="shop-item-image" width="200" src="https://www.simplyrecipes.com/thmb/tR-5eHAZ3lgNR6Yvu3yxdHMNpk8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Easy-Banana-Bread-LEAD-2-2-63dd39af009945d58f5bf4c2ae8d6070.jpg" alt="" srcset="">
+        <input type="checkbox" id="checkedItem" class = "checkedItems" >
+        <div class="products-item-details">
+        <h3 class="shop-item-title">Banana Bread</h3>
+        <p class="product-desc">Banana bread is a type of sweet bread made from mashed bananas.</p>
+        <div class="shop-item-price">$20.00</div>
+        <button class="btn" onclick="addToCart(this)" style="text-decoration: none;">Add To Cart</button>
+    </div>
+    </div>
+    <div class="item product-bread">
+    <img id ="product-img" class="shop-item-image" width="200" src="https://static01.nyt.com/images/2023/07/21/multimedia/21baguettesrex-hbkc/21baguettesrex-hbkc-threeByTwoMediumAt2X.jpg" alt="" srcset="">
+    <input type="checkbox" id="checkedItem" class = "checkedItems" >
+    <div class="products-item-details">
+    <h3 class="shop-item-title">Baguette</h3>
+    <p class="product-desc">A baguette is a long, thin type of bread of French origin that is commonly made from basic lean dough.</p>
+    <div class="shop-item-price">$15.00</div>
+    <button class="btn" onclick="addToCart(this)" style="text-decoration: none;">Add To Cart</button>
+</div>
+</div>
+</div>
+<br>
+<br>
+<br>
+<h1 style="color: rgb(174, 107, 20); text-align: center; font-family: glass antiqua;">Beverages</h1>
+<div id="products-container" class="items-container">
     <div class="item product-beverage">
         <img id ="product-img" class="shop-item-image" width="200" src="images/products/affogato-el-cafe.jpeg" alt="">
         <input type="checkbox" id="checkedItem" class = "checkedItems" >
@@ -285,7 +311,7 @@ function staffLogin() {
     let staffEmail = document.getElementById('staffU').value;
     let staffPass = document.getElementById('Staffpass').value;
 
-    if (staffEmail === 'Gorlock' && staffPass === 'Quack') {
+    if (staffEmail === 'admin22@gmail.com' && staffPass === 'Quack') {
 
         sessionStorage.setItem('manager', true)
         alert('You are now in manager mode.')
