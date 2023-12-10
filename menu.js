@@ -141,7 +141,7 @@ function purchaseProducts() {
 
 window.onload = function() {
     let name = localStorage.getItem('name');
-    document.querySelector(".displayName").innerHTML = name;
+    // document.querySelector(".displayName").innerHTML = name;
 };
 
 //Function to open either the cash or credit form (only really switching between the two middle divs)
@@ -253,7 +253,6 @@ function updateTotalWithTip() {
     } else {
         tip = 0;
     }
-
     localStorage.setItem('tipamount', tip);
 
     totalElement.textContent = `$${total.toFixed(2)}`;
