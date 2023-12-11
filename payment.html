@@ -17,6 +17,7 @@
     <link rel=" preconnect " href="https://fonts.gstatic.com/ " crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Caveat&family=Glass+Antiqua&family=Indie+Flower&family=Lato:wght@100;300;400&family=Shadows+Into+Light&family=Sometype+Mono&display=swap " rel="stylesheet ">
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg fixed-top navbarScroll ">
         <div class="container ">
@@ -92,10 +93,10 @@
                                 <div class="content-align">
                                     <h4 style="text-align: center;">Cash</h4>
                                     <p style="text-align: center;"><i>Pay upon pickup or Delivery.</i></p>
-                                    <!-- <div class="content">
+                                    <div class="content">
                                         <label for="tip1">$ Tip</label>
-                                        <input type="text" id="tip1" placeholder="$0.00" name="tips1">
-                                    </div> -->
+                                        <input type="text" class="tip" id="tip1" placeholder="$0.00" min="0" name="tips1" onchange="updateTotalWithTip()">
+                                    </div>
                                     <div class="content">
                                         <h4 style="text-align: center;">*Pickup or Delivery?</h4>
                                         <div style="text-align: center;" class="dropdown">
@@ -130,10 +131,12 @@
                                         <label for="cvvNumb">*CVV</label>
                                         <input class="requiredcard" type="password" id="cvvNumb" placeholder="123" name="cvv" minlength="3" maxlength="3" onkeypress="return checkNumb(event)" required>
                                     </div>
+
                                     <div class="content">
                                         <label for="tip2">$ Tip</label>
-                                        <input type="text" id="tip2" placeholder="$0.00" min="0" name="tips2" onchange="updateTotalWithTip()">
+                                        <input type="text" class="tip" id="tip2" placeholder="$0.00" min="0" name="tips2" onchange="updateTotalWithTip()">
                                     </div>
+
                                     <div class="content">
                                         <h4 style="text-align: center;">*Pickup or Delivery?</h4>
                                         <div style="text-align: center;" class="dropdown">
