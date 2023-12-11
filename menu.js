@@ -244,7 +244,6 @@ function updateTotalWithTip() {
     // let total = Object.values(cart).reduce((acc, item) => acc + item.price * item.quantity, 0);
     let total = parseFloat(totalElement.textContent.substring(1));
 
-
     let tipElement = document.getElementById('tip2');
     let tip = parseFloat(tipElement.value);
 
@@ -254,7 +253,6 @@ function updateTotalWithTip() {
         tip = 0;
     }
     localStorage.setItem('tipamount', tip);
-
     totalElement.textContent = `$${total.toFixed(2)}`;
 }
 
