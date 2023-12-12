@@ -1,29 +1,29 @@
 window.onload = function() {
 
-  document.getElementById('menus').contentEditable = true
+    document.getElementById('menus').contentEditable = true
 
 }
 let priceChange = document.querySelectorAll('.product-price')
 
 
 
-  function removeSelected(){
+function removeSelected() {
     const checkedItems = document.querySelectorAll('.checkedItems')
     checkedItems.forEach(item => {
-        
-            if(item.checked){
-                var card = item.parentElement
-                removeItem(card)
-            }
-           
+
+        if (item.checked) {
+            var card = item.parentElement
+            removeItem(card)
         }
-        )
+
+    })
 };
-  
-function removeItem(divToRemove){
+
+function removeItem(divToRemove) {
     divToRemove.remove()
-  }
-  function addNewItems(){
+}
+
+function addNewItems() {
     const menuItemsContainer = document.querySelector("#menus");
     let newTitle = document.getElementById('productName').value
     let newPrice = document.getElementById('product-price').value
@@ -45,26 +45,27 @@ function removeItem(divToRemove){
     menuItemsContainer.appendChild(newProduct)
     clearInputs()
 }
-function clearInputs(){
-  let clearAllInputTags = document.querySelectorAll('input');
-  clearAllInputTags.forEach(eachInput => eachInput.value = '');
+
+function clearInputs() {
+    let clearAllInputTags = document.querySelectorAll('input');
+    clearAllInputTags.forEach(eachInput => eachInput.value = '');
 }
-  function displayItems(){
+
+function displayItems() {
     let sessionMenu = sessionStorage.getItem('Original-Menu')
-     var displayMenu = document.getElementById("display-menu")
-     console.log(displayMenu)
-     displayMenu.innerHTML = sessionMenu
-     
+    var displayMenu = document.getElementById("display-menu")
+    console.log(displayMenu)
+    displayMenu.innerHTML = sessionMenu
 
-  }
-  displayItems()
-  
 
-function saveSession(){
+}
+displayItems()
+
+
+function saveSession() {
     var testdiv = document.getElementById('menus').outerHTML
     localStorage.setItem('Original-Menu', testdiv)
-    document.getElementById('menus').contentEditable = false
+        // document.getElementById('menus').contentEditable = false
     console.log(localStorage.getItem('Original-Menu'))
-    // location.replace('menu.html')
-  }
-
+        // location.replace('menu.html')
+}
