@@ -28,7 +28,7 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Glass Antiqua;
 }
 
 
@@ -36,12 +36,12 @@ body {
 
 .navbar a {
     color: black;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Glass Antiqua;
 }
 
 .navbar a:hover {
     color: gold;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Glass Antiqua;
 }
 
 .navbar img {
@@ -93,7 +93,7 @@ body {
 
 #title-menu {
     justify-content: center;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Glass Antiqua;
 }
 
 #every-menu {
@@ -102,7 +102,7 @@ body {
     background-color: rgba(182, 160, 130, 0.755);
     text-align: center;
     padding: 20px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Glass Antiqua;
 }
 
 .Breakfast {
@@ -118,7 +118,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Glass Antiqua;
     color: rgb(204, 168, 117);
 }
 
@@ -264,6 +264,7 @@ body {
     width: 300px;
     padding: 1%;
     margin: 10px;
+    font-family: Glass Antiqua;
 }
 #newest-menu{
     display: flex;
@@ -303,6 +304,7 @@ body {
     color: rgb(204, 168, 117);
     font-size: 150%;
     border-radius: 20px;
+    font-family: Glass Antiqua;
 }
 
 .item button:hover {
@@ -323,6 +325,7 @@ body {
     font-size: 200%;
     display: flex;
     justify-content: center;
+    font-family: Glass Antiqua;
 }
 
 .buttons {
@@ -339,6 +342,7 @@ body {
     font-size: 150%;
     border-color: rgb(165, 86, 86);
     background-color: rgb(219, 178, 178);
+    font-family: Glass Antiqua;
 }
 
 #clear button:hover {
@@ -355,6 +359,7 @@ body {
     font-size: 150%;
     border-color: rgb(165, 86, 86);
     background-color: rgb(219, 178, 178);
+    font-family: Glass Antiqua;
 }
 
 #cart {
@@ -385,11 +390,12 @@ body {
 .cart-row {
     display: flex;
     justify-content: center;
+    font-family: Glass Antiqua;
 }
 
 .cart-item {
     width: 25%;
-    font-family: 'Times New Roman', Times, serif; 
+    font-family: Glass Antiqua;
     color: white;
 }
 
@@ -397,7 +403,7 @@ body {
     width: 20%;
     font-size: 1.2em;
     font-family: cursive;
-    font-family: 'Times New Roman', Times, serif; 
+    font-family: Glass Antiqua;
     color: white;
 }
 
@@ -408,7 +414,7 @@ body {
 
 .cart-item-title
 {
-    font-family: 'Times New Roman', Times, serif; 
+    font-family: Glass Antiqua;
     color: white;
     margin-left: .5em;
     font-size: 1.2em;
@@ -431,14 +437,12 @@ body {
     font-weight: bold;
     font-size: 1.5em;
     margin-right: 20px;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 .cart-total-price {
     font-size: 130%;
     text-align: right;
     color: white;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 
