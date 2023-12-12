@@ -33,11 +33,20 @@
             <input type="text" class="newProducts" name="product-price" id="product-price">
         </div>
         <div>
+            <label for="">Description:</label>
+            <input type="text" class="newProducts" name="product-desc" id="product-desc">
+        </div>
+        <div>
             <label for="">Image address:</label>
             <input type="text" class="newProducts" name="product-img" id="product-img">
         </div>
         </form>
-        <button onclick="addNewItems()">Add</button>
+        <div>
+            <button onclick="addBreadItems()">Add to Bread section</button>
+            <button onclick="addBeverageItems()">Add to Beverage section</button>
+            <button onclick="addDessertItems()">Add to Dessert section</button>
+        </div>
+        
         <br>
         <button id="saveBtn" onclick="saveSession()">Save</button>
         <br>
@@ -63,7 +72,7 @@
             element.innerHTML = localStorage.getItem('Original-Menu')
         })
         window.onload = function() {
-            document.getElementById('menus').contentEditable = true;
+            document.getElementsByClassName('product-price').contentEditable = true;
         }
     </script>
     <script src="index.js"></script>
