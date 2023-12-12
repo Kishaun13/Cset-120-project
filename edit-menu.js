@@ -1,66 +1,113 @@
 window.onload = function() {
 
-  document.getElementById('menus').contentEditable = true
+    document.getElementById('menus').contentEditable = true
 
 }
 let priceChange = document.querySelectorAll('.product-price')
 
 
 
-  function removeSelected(){
+function removeSelected() {
     const checkedItems = document.querySelectorAll('.checkedItems')
     checkedItems.forEach(item => {
-        
-            if(item.checked){
-                var card = item.parentElement
-                removeItem(card)
-            }
-           
+
+        if (item.checked) {
+            var card = item.parentElement
+            removeItem(card)
         }
-        )
+
+    })
 };
-  
-function removeItem(divToRemove){
+
+function removeItem(divToRemove) {
     divToRemove.remove()
   }
-  function addNewItems(){
-    const menuItemsContainer = document.querySelector("#menus");
-    let newTitle = document.getElementById('productName').value
-    let newPrice = document.getElementById('product-price').value
-    let newImg = document.getElementById('product-img').value
-    const newProduct = document.createElement('div')
-    newProduct.classList.add('new-item')
+  function addBreadItems(){
+    const breadItemsContainer = document.querySelector("#bread-container");
+    let newBreadTitle = document.getElementById('productName').value
+    let newBreadPrice = document.getElementById('product-price').value
+    let newBreadImg = document.getElementById('product-img').value
+    let newBreadDescrip = document.getElementById('product-desc').value
+    const newBreadProduct = document.createElement('div')
+    newBreadProduct.classList.add('new-item')
     const newItem = `
     <h1 style="color: rgb(174, 107, 20); text-align: center; font-family: glass antiqua;">New Items</h1>
-    <div id="newItem">
-    <img id ="productimg" width="200" src="${newImg}" alt="">
+    <div id="item newItem">
+    <img id ="productimg" width="200" src="${newBreadImg}" alt="">
     <div class="products-item-details">
-      <h3 class="product-title">${newTitle}</h3>
-        <p>New item to the menu</p>
-        <p class="product-price">${newPrice}</p>
+      <h3 class="product-title">${newBreadTitle}</h3>
+        <p>${newBreadDescrip}</p>
+        <p class="product-price">${newBreadPrice}</p>
         <button onclick="addToCart(this)" class="btn prime-btn product-btn">Add To Cart</button>
     </div>
     </div>`
-    newProduct.innerHTML = newItem
-    menuItemsContainer.appendChild(newProduct)
+    newBreadProduct.innerHTML = newItem
+    breadItemsContainer.appendChild(newBreadProduct)
     clearInputs()
+}
+function addBeverageItems(){
+  const menuItemsContainer = document.querySelector("#beverage-container");
+  let newTitle = document.getElementById('productName').value
+  let newPrice = document.getElementById('product-price').value
+  let newImg = document.getElementById('product-img').value
+  let newDescrip = document.getElementById('product-desc').value
+  const newBeverageProduct = document.createElement('div')
+  newBeverageProduct.classList.add('new-item')
+  const newItem = `
+  <h1 style="color: rgb(174, 107, 20); text-align: center; font-family: glass antiqua;">New Item</h1>
+  <div id="item newItem">
+  <img id ="productimg" width="200" src="${newImg}" alt="">
+  <div class="products-item-details">
+    <h3 class="product-title">${newTitle}</h3>
+      <p>${newDescrip}</p>
+      <p class="product-price">${newPrice}</p>
+      <button onclick="addToCart(this)" class="btn prime-btn product-btn">Add To Cart</button>
+  </div>
+  </div>`
+  newBeverageProduct.innerHTML = newItem
+  menuItemsContainer.appendChild(newBeverageProduct)
+  clearInputs()
+}
+function addDessertItems(){
+  const dessertItemsContainer = document.querySelector("#beverage-container");
+  let dessertTitle = document.getElementById('productName').value
+  let dessertPrice = document.getElementById('product-price').value
+  let dessertImg = document.getElementById('product-img').value
+  let dessertDescrip = document.getElementById('product-desc').value
+  const newDessertProduct = document.createElement('div')
+  newDessertProduct.classList.add('new-item')
+  const newItem = `
+  <h1 style="color: rgb(174, 107, 20); text-align: center; font-family: glass antiqua;">New Item</h1>
+  <div id="item newItem">
+  <img id ="productimg" width="200" src="${dessertImg}" alt="">
+  <div class="products-item-details">
+    <h3 class="product-title">${dessertTitle}</h3>
+      <p>${dessertDescrip}</p>
+      <p class="product-price">${dessertPrice}</p>
+      <button onclick="addToCart(this)" class="btn prime-btn product-btn">Add To Cart</button>
+  </div>
+  </div>`
+  newDessertProduct.innerHTML = newItem
+  dessertItemsContainer.appendChild(newDessertProduct)
+  clearInputs()
 }
 function clearInputs(){
   let clearAllInputTags = document.querySelectorAll('input');
   clearAllInputTags.forEach(eachInput => eachInput.value = '');
 }
-  function displayItems(){
+
+function displayItems() {
     let sessionMenu = sessionStorage.getItem('Original-Menu')
-     var displayMenu = document.getElementById("display-menu")
-     console.log(displayMenu)
-     displayMenu.innerHTML = sessionMenu
-     
+    var displayMenu = document.getElementById("display-menu")
+    console.log(displayMenu)
+    displayMenu.innerHTML = sessionMenu
 
-  }
-  displayItems()
-  
 
-function saveSession(){
+}
+displayItems()
+
+
+function saveSession() {
     var testdiv = document.getElementById('menus').outerHTML
     localStorage.setItem('Original-Menu', testdiv)
     document.getElementById('menus').contentEditable = false

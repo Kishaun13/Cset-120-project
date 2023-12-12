@@ -199,7 +199,7 @@ function clearCart() {
 // }
 
 function returnHome() {
-    location.replace("index.html");
+    location.replace("menu.html");
     localStorage.removeItem('totalPrice');
     localStorage.removeItem('cart');
     localStorage.removeItem('tipamount');
