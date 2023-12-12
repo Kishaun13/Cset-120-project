@@ -19,7 +19,7 @@ function login() {
 
     if (localStorage.getItem(email)) {
         if (pass == localStorage.getItem(email)) {
-            localStorage.setItem('Original-Menu', orgMenu)
+            // localStorage.setItem('Original-Menu', orgMenu)
             location.replace("menu.html");
             alert("Login Successful");
         } else if (pass == "") {
