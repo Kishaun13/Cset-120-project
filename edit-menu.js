@@ -69,7 +69,7 @@ function addBeverageItems(){
   clearInputs()
 }
 function addDessertItems(){
-  const dessertItemsContainer = document.querySelector("#beverage-container");
+  const dessertItemsContainer = document.querySelector("#dessert-container");
   let dessertTitle = document.getElementById('productName').value
   let dessertPrice = document.getElementById('product-price').value
   let dessertImg = document.getElementById('product-img').value
