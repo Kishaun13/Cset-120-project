@@ -131,12 +131,18 @@
     font-weight: bold;
     font-size: 1.25em;
 } */
-
+.center{
+display: flex;
+justify-content: center;
+}
+#cartItems{
+    width: fit-content;
+    padding: 30px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
 .receipt {
-    margin-top: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 50px;
+    width: fit-content;
     background-color: white;
     font-family: Glass Antiqua;
 }
@@ -148,11 +154,13 @@
     margin-top: 20px;
     width: 100%;
 }
+.details{
+    text-align: center;
+    font-size: 200%;
+}
 
-.receipt button {
-    padding: 1%;
-    width: 200px;
-    margin-left: 100px;
+.returnHomeButton button {
+
     border-radius: 20px;
     color: rgb(106, 79, 40);
     font-size: 150%;
@@ -161,13 +169,13 @@
     font-family: Glass Antiqua;
 }
 
-.receipt button:hover {
+.returnHomeButton button:hover {
     background-color: rgba(233, 145, 29, 0.542);
     color: rgb(160, 106, 106);
 }
 
 #displayName {
-    text-align: right;
+    /* text-align: right; */
     font-size: 1.5em;
     color: white;
     margin-left: 20px;
@@ -175,4 +183,10 @@
     text-align: center;
     font-weight: bold;
     font-size: 1.25em;
+}
+
+.footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
 }
