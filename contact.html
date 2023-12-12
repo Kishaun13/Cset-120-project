@@ -59,7 +59,7 @@
                             </div>
                             <div class="form-group ">
                                 <label for="phone ">Phone Number:</label>
-                                <input type="tel " class="form-control " id="phone " name="phone " required>
+                                <input type="text" class="form-control " id="phone " name="phone " maxlength="10" onkeypress="return checkNumb(event)" required >
                             </div>
                             <div id="review ">
                                 <label for="message ">Leave a review</label>
@@ -107,6 +107,7 @@
 
 
 <script src="index.js "></script>
+<script src="menu.js"></script>
 
 <body>
 

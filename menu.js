@@ -177,7 +177,6 @@ function checkNumb(event) {
     } else {
         alert('Error!\nPlease input only numbers in that field!')
         return false;
-
     }
     //Was going to use this to make the function above to check if input is a number
     // event.preventDefault()
