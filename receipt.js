@@ -206,5 +206,5 @@ function returnHome() {
 }
 
 function getRandomInt(min, max) {
-    return Math.floor(Math.random() * (60 - 20 + 1)) + 20;
+    return Math.floor(Math.random() * (40 - 20 + 1)) + 20 + " minutes.";
 }
