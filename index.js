@@ -94,7 +94,7 @@ const orgMenu = `
 </div><br><br><br><br><br>
 
 <h1 style="color: blue; text-align: center; font-family: glass antiqua;">Bread</h1>
-<div id="products-container" class="items-container">
+<div id="bread-container" class="items-container">
     <div class="item product-bread">
         <img id ="product-img" class="shop-item-image" width="200" src="images/products/bagel.jpeg" alt="" srcset="">
         <input type="checkbox" id="checkedItem" class = "checkedItems" >
@@ -140,7 +140,7 @@ const orgMenu = `
 <br>
 <br>
 <h1 style="color: rgb(174, 107, 20); text-align: center; font-family: glass antiqua;">Beverages</h1>
-<div id="products-container" class="items-container">
+<div id="beverage-container" class="items-container">
     <div class="item product-beverage">
         <img id ="product-img" class="shop-item-image" width="200" src="images/products/affogato-el-cafe.jpeg" alt="">
         <input type="checkbox" id="checkedItem" class = "checkedItems" >
@@ -216,7 +216,7 @@ const orgMenu = `
 <br>
 <br>
 <h1 style="color: rgb(174, 107, 20); text-align: center; font-family: glass antiqua;">Desserts</h1>
-<div class="dessert-container">
+<div id="dessert-container" class="dessert-container">
   <div  class="item product-dessert">
     <img id ="product-img" width="200" src="images/products/cheese-cake-2.jpeg" alt="">
     <input type="checkbox" id="checkedItem" class = "checkedItems" >
