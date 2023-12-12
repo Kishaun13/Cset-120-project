@@ -1,4 +1,3 @@
-
 function signUp() {
     let name = document.getElementById("name").value;
     let email = document.getElementById("email").value;
@@ -32,7 +31,8 @@ function login() {
         alert("Login Failed Unknown credential combination");
     }
 }
-function customerLogout(){
+
+function customerLogout() {
     localStorage.setItem('Original-Menu', orgMenu)
     localStorage.clear()
     location.replace('login.html')
@@ -329,11 +329,11 @@ function staffLogin() {
 }
 
 
-    
-function staffLogout(){
+
+function staffLogout() {
     sessionStorage.setItem('manager', false)
     location.replace('staff-login.html')
-    
+
 }
 
 
@@ -353,5 +353,7 @@ window.onscroll = function() {
 
 function contactAlert() {
     alert("Thank you for contacting us. We will get back to you as soon as possible.");
+    let review = document.getElementById("review").value;
+    localStorage.setItem("review", review);
 
 }
