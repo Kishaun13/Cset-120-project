@@ -20,7 +20,6 @@ function login() {
 
     if (localStorage.getItem(email)) {
         if (pass == localStorage.getItem(email)) {
-            localStorage.setItem('Original-Menu', orgMenu)
             location.replace("menu.html");
             alert("Login Successful");
         } else if (pass == "") {
@@ -33,10 +32,7 @@ function login() {
     }
 }
 function customerLogout(){
-    localStorage.setItem('Original-Menu', orgMenu)
-    localStorage.clear()
     location.replace('login.html')
-    localStorage.setItem('Original-Menu', orgMenu)
 }
 
 
@@ -97,7 +93,7 @@ const orgMenu = `
 </div>
 </div><br><br><br><br><br>
 
-<h1 style="color: rgb(174, 107, 20); text-align: center; font-family: glass antiqua;">Bread</h1>
+<h1 style="color: blue; text-align: center; font-family: glass antiqua;">Bread</h1>
 <div id="products-container" class="items-container">
     <div class="item product-bread">
         <img id ="product-img" class="shop-item-image" width="200" src="images/products/bagel.jpeg" alt="" srcset="">
@@ -313,7 +309,7 @@ function staffLogin() {
 
     if (staffEmail === 'admin22@gmail.com' && staffPass === 'Quack') {
 
-        sessionStorage.setItem('manager', true)
+        localStorage.setItem('manager', true)
         alert('You are now in manager mode.')
 
         if (firstLogin === false) {
@@ -331,9 +327,8 @@ function staffLogin() {
 
     
 function staffLogout(){
-    sessionStorage.setItem('manager', false)
     location.replace('staff-login.html')
-    
+    alert('you are no longer in manager mode')
 }
 
 

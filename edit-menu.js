@@ -28,15 +28,16 @@ function removeItem(divToRemove){
     let newTitle = document.getElementById('productName').value
     let newPrice = document.getElementById('product-price').value
     let newImg = document.getElementById('product-img').value
+    let newDescrip = document.getElementById('product-desc').value
     const newProduct = document.createElement('div')
     newProduct.classList.add('new-item')
     const newItem = `
     <h1 style="color: rgb(174, 107, 20); text-align: center; font-family: glass antiqua;">New Items</h1>
-    <div id="newItem">
+    <div id="item newItem">
     <img id ="productimg" width="200" src="${newImg}" alt="">
     <div class="products-item-details">
       <h3 class="product-title">${newTitle}</h3>
-        <p>New item to the menu</p>
+        <p>${newDescrip}</p>
         <p class="product-price">${newPrice}</p>
         <button onclick="addToCart(this)" class="btn prime-btn product-btn">Add To Cart</button>
     </div>
