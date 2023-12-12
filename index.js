@@ -1,4 +1,3 @@
-
 function signUp() {
     let name = document.getElementById("name").value;
     let email = document.getElementById("email").value;
@@ -32,6 +31,8 @@ function login() {
     }
 }
 function customerLogout(){
+    localStorage.setItem('Original-Menu', orgMenu)
+    localStorage.clear()
     location.replace('login.html')
 }
 
@@ -327,8 +328,9 @@ function staffLogin() {
 
     
 function staffLogout(){
+    sessionStorage.setItem('manager', false)
     location.replace('staff-login.html')
-    alert('you are no longer in manager mode')
+    
 }
 
 
@@ -348,5 +350,7 @@ window.onscroll = function() {
 
 function contactAlert() {
     alert("Thank you for contacting us. We will get back to you as soon as possible.");
+    let review = document.getElementById("review").value;
+    localStorage.setItem("review", review);
 
 }

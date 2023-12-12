@@ -36,7 +36,7 @@
             <div class="collapse navbar-collapse" id="navbar-content">
                 <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="signOut.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About</a>
@@ -96,7 +96,7 @@
         </div>
 
         <div class="cart-total">
-            <strong class="cart-total-title" style="font-family: glass antiqua; color: white;">Total</strong>
+            <strong class="cart-total-title" style="font-family: glass antiqua; color: white;">Sub-Total</strong>
             <span class="cart-total-price" style="font-family: glass antiqua; color: white;">$0.00</span>
         </div>
         <br>
@@ -151,9 +151,9 @@
             var element = document.getElementById('display-menu')
             element.innerHTML = localStorage.getItem('Original-Menu')
         })
-     window.onload = function() {
-    document.getElementById('product-price').contentEditable = false;
-    }
+        window.onload = function() {
+            document.getElementById('menus').contentEditable = false;
+        }
     </script>
 
 
@@ -169,7 +169,7 @@
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> -->
 
-<!-- <script>
+    <!-- <script>
 
     if (localStorage.getItem("cart")) {
     // cart = JSON.parse(localStorage.getItem("cart"));

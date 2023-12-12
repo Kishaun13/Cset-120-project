@@ -1,26 +1,25 @@
 window.onload = function() {
 
-  document.getElementById('menus').contentEditable = true
+    document.getElementById('menus').contentEditable = true
 
 }
 let priceChange = document.querySelectorAll('.product-price')
 
 
 
-  function removeSelected(){
+function removeSelected() {
     const checkedItems = document.querySelectorAll('.checkedItems')
     checkedItems.forEach(item => {
-        
-            if(item.checked){
-                var card = item.parentElement
-                removeItem(card)
-            }
-           
+
+        if (item.checked) {
+            var card = item.parentElement
+            removeItem(card)
         }
-        )
+
+    })
 };
-  
-function removeItem(divToRemove){
+
+function removeItem(divToRemove) {
     divToRemove.remove()
   }
   function addBreadItems(){
@@ -69,47 +68,27 @@ function addBeverageItems(){
   menuItemsContainer.appendChild(newProduct)
   clearInputs()
 }
-function addDessertItems(){
-  const dessertItemsContainer = document.querySelector("#dessert-container");
-  let newDessertTitle = document.getElementById('productName').value
-  let newDessertPrice = document.getElementById('product-price').value
-  let newDessertImg = document.getElementById('product-img').value
-  let newDessertDescrip = document.getElementById('product-desc').value
-  const newDairyProduct = document.createElement('div')
-  newDairyProduct.classList.add('new-item')
-  const newItem = `
-  <h1 style="color: rgb(174, 107, 20); text-align: center; font-family: glass antiqua;">New Item</h1>
-  <div id="item newItem">
-  <img id ="productimg" width="200" src="${newDessertImg}" alt="">
-  <div class="products-item-details">
-    <h3 class="product-title">${newDessertTitle}</h3>
-      <p>${newDessertDescrip}</p>
-      <p class="product-price">${newDessertPrice}</p>
-      <button onclick="addToCart(this)" class="btn prime-btn product-btn">Add To Cart</button>
-  </div>
-  </div>`
-  newDairyProduct.innerHTML = newItem
-  dessertItemsContainer.appendChild(newDairyProduct)
-  clearInputs()
-}
 function clearInputs(){
   let clearAllInputTags = document.querySelectorAll('input');
   clearAllInputTags.forEach(eachInput => eachInput.value = '');
 }
-  function displayItems(){
+
+function displayItems() {
     let sessionMenu = sessionStorage.getItem('Original-Menu')
-     var displayMenu = document.getElementById("display-menu")
-     console.log(displayMenu)
-     displayMenu.innerHTML = sessionMenu
-     
+    var displayMenu = document.getElementById("display-menu")
+    console.log(displayMenu)
+    displayMenu.innerHTML = sessionMenu
 
-  }
-  displayItems()
-  
 
-function saveSession(){
+}
+displayItems()
+
+
+function saveSession() {
     var testdiv = document.getElementById('menus').outerHTML
     localStorage.setItem('Original-Menu', testdiv)
+    document.getElementById('menus').contentEditable = false
     console.log(localStorage.getItem('Original-Menu'))
+    // location.replace('menu.html')
   }
 
