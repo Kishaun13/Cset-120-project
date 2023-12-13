@@ -318,7 +318,6 @@ function staffLogin() {
 
 
         }
-
         location.replace('edit-menu.html')
     } else {
         alert('Login failed')
