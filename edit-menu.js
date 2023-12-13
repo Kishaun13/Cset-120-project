@@ -34,6 +34,7 @@ function removeItem(divToRemove) {
     <h1 style="color: rgb(174, 107, 20); text-align: center; font-family: glass antiqua;">New Items</h1>
     <div id="item newItem">
     <img id ="productimg" width="200" src="${newBreadImg}" alt="">
+    <input type="checkbox" id="checkedItem" class = "checkedItems" >
     <div class="products-item-details">
       <h3 class="product-title">${newBreadTitle}</h3>
         <p>${newBreadDescrip}</p>
