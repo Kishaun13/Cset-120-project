@@ -239,13 +239,13 @@ body {
 /* Starting the removable menu items */
 
 #menu h1 {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: glass antiqua;
     font-size: 200%;
     color: rgb(23, 59, 48);
 }
 
 #beverage-container {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: glass antiqua;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -253,7 +253,7 @@ body {
     margin: 1cm;
 }
 #bread-container {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: glass antiqua;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -371,7 +371,7 @@ body {
 
 #cart {
     background-color: rgba(118, 69, 69, 0.492);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: glass antiqua;
 }
 
 #checkout button:hover {

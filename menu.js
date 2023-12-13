@@ -141,7 +141,7 @@ function purchaseProducts() {
 
 window.onload = function() {
     let name = localStorage.getItem('name');
-    document.querySelector(".displayName").innerHTML = name;
+    // document.querySelector(".displayName").innerHTML = name;
 };
 
 //Function to open either the cash or credit form (only really switching between the two middle divs)
@@ -238,6 +238,7 @@ function formCheck() {
 //     window.location.href = 'receipt.html';
 // }
 
+
 function updateTotalWithTip() {
     let totalElement = document.querySelector('.cart-total-price');
     let total = parseFloat(totalElement.textContent.substring(1));
@@ -256,6 +257,7 @@ function updateTotalWithTip() {
 
     totalElement.textContent = `$${total.toFixed(2)}`;
 }
+
 
 function addTipToTotal() {
     let totalElement = document.querySelector('.cart-total-price');
