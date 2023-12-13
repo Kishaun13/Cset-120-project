@@ -91,6 +91,29 @@ function addDessertItems(){
   dessertItemsContainer.appendChild(newDessertProduct)
   clearInputs()
 }
+function addBreakfastItems(){
+  const mainItemsContainer = document.querySelector("#breakfeast-contain");
+  let breakfastTitle = document.getElementById('productName').value
+  let breakfastPrice = document.getElementById('product-price').value
+  let breakfastImg = document.getElementById('product-img').value
+  let breakfastDescrip = document.getElementById('product-desc').value
+  const newBreakfastProduct = document.createElement('div')
+  newBreakfastProduct.classList.add('new-item')
+  const newItem = `
+  <h1 style="color: rgb(174, 107, 20); text-align: center; font-family: glass antiqua;">New Item</h1>
+  <div id="item newItem">
+  <img id ="productimg" width="200" src="${breakfastImg}" alt="">
+  <div class="products-item-details">
+    <h3 class="product-title">${breakfastTitle}</h3>
+      <p>${breakfastDescrip}</p>
+      <p class="product-price">${breakfastPrice}</p>
+      <button onclick="addToCart(this)" class="btn prime-btn product-btn">Add To Cart</button>
+  </div>
+  </div>`
+  newBreakfastProduct.innerHTML = newItem
+  mainItemsContainer.appendChild(newBreakfastProduct)
+  clearInputs()
+}
 function clearInputs(){
   let clearAllInputTags = document.querySelectorAll('input');
   clearAllInputTags.forEach(eachInput => eachInput.value = '');
@@ -110,7 +133,6 @@ displayItems()
 function saveSession() {
     var testdiv = document.getElementById('menus').outerHTML
     localStorage.setItem('Original-Menu', testdiv)
-    document.getElementById('menus').contentEditable = false
     console.log(localStorage.getItem('Original-Menu'))
     // location.replace('menu.html')
   }
