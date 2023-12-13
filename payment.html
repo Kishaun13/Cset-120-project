@@ -184,6 +184,13 @@
         </section>
         <!-- <script src="payment.js"></script> -->
         <script src="menu.js"></script>
+        <script>
+            window.onload = function() {
+                if (localStorage.getItem('tipamount') == null) {
+                    localStorage.setItem('tipamount', 0);
+                }
+            }
+        </script>
 </body>
 
 </html>
